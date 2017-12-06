@@ -144,8 +144,6 @@ Een `transition` laat de overgang tussen twee states soepel verlopen. In dit voo
 
 De transition zorgt ervoor dat de kleuren geleidelijk in elkaar overlopen
 
-Transforms werken goed samen met transitions. In dit voorbeeld groeit het album en krijgt het een schaduw on mouse hover:
-
 HTML
 ```
 <nav>
@@ -198,6 +196,7 @@ CSS
 
 ##  Reading list
 
+- [CSS Diner - a guide to smart selectors](https://flukeout.github.io)
 - [A complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition)
 - [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)

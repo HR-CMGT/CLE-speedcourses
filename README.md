@@ -1,5 +1,10 @@
 # CLE 2 Speedcourses
 
+- CSS Basics start
+- CSS Basics finished
+- JS Basics start
+- JS Basics finished
+
 ## Workshop CSS basics 
 
 - semantische tags

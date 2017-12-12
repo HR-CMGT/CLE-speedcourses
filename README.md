@@ -1,6 +1,6 @@
-# CLE-css-basics
+# CLE 2 Speedcourses
 
-Workshop CSS basics 
+## Workshop CSS basics 
 
 - semantische tags
 - flexbox

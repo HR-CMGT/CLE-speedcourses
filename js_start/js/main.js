@@ -1,5 +1,5 @@
 // stap 1 - luister naar het load event, roep een functie aan
-// window.addEventListener(...)
+window.addEventListener("load", () => startApp())
 
 const bar = document.getElementsByTagName("loading")[0]
 const answercontainer = document.getElementById("answercontainer")
@@ -7,45 +7,51 @@ const button = document.getElementById("nextquestion")
 const question = document.getElementById("question")
 
 // stap 2 - we gaan de vragen en antwoorden groeperen in een array van objecten
-const question1 = "Wat is de bitcoin nu waard?"
-const answers1 = ["5 euro", "15 euro", "10.000 euro"]
 
-const question2 = "Wat is de bitcoin nu waard?"
-const answers2 = ["5 euro", "15 euro", "10.000 euro"]
-
-const question3 = "Wat is de bitcoin nu waard?"
-const answers3 = ["5 euro", "15 euro", "10.000 euro"]
+const vragen = [{
+    question: "Wat is de bitcoin nu waard?",
+    answers: ["5 euro", "15 euro", "10.000 euro"],
+    correct: 2
+}, {
+    question: "Wat is de bitcoin nu waard?",
+    answers: ["5 euro", "15 euro", "10.000 euro"],
+    correct: 2
+}, {
+    question: "Wat is de bitcoin nu waard?",
+    answers: ["5 euro", "15 euro", "10.000 euro"],
+    correct: 2
+}]
 
 
 // stap 3 - de knop zorgt dat we een vraag gaan laden
-function startApp(){
-    //button.addEventListener(...)
+function startApp() {
+    button.addEventListener("click", () => loadQuestion())
 }
 
-function loadQuestion() { 
+function loadQuestion() {
     // stap 4 - de huidige inhoud van de answer container weggooien
 
     // stap 5 - je ziet hier dat de loading bar animatie start. je kan via javascript
     // checken of de animatie is afgelopen. als dat zo is roepen we "showAnswers" aan
-    // bar.addEventListener(...)
+    bar.addEventListener("animationend", ()=>showAnswers())
     bar.classList.add("loadinganimation")
 }
 
-function showAnswers(){
+function showAnswers() {
     bar.classList.remove("loadinganimation")
 
     // stap 6, toon het nummer van de vraag met behulp van ${} syntax
     // stap 7, haal de eerste vraag uit de vragen array en plaats die in een tijdelijke variabele
     // toon de vraagtekst in de html met de ${} syntax
-    question.innerHTML = `<h2>Question 1</h2><p>Wat is de bitcoin nu waard?</p>`
+    question.innerHTML = `<h2>Question 1</h2><p>${vragen[0].question}</p>`
 
     // stap 8, loop nu door alle antwoorden heen in een for loop
     // we gaan voor elk antwoord een blokje html aanmaken en in de answerscontainer plaatsen
     // vul de html met de juiste antwoordtekst met behulp van ${}
-    
-    for (let i = 0; i < 3; i++){
+
+    for (let i = 0; i < 3; i++) {
         let answer = document.createElement("answer")
-        answer.innerHTML = `<h3>Antwoord</h3><p>Dit is een antwoord</p>`
+        answer.innerHTML = `<h3>Antwoord</h3><p>${vragen[0].answers[i]}</p>`
         answercontainer.appendChild(answer)
 
         // stap 9, als je op een antwoord klikt moet de "answerClicked" functie worden aangeroepen
@@ -54,17 +60,17 @@ function showAnswers(){
 
         // bonus! animatie met javascript
         TweenLite.set(answer, { opacity: 0, x: -100 })
-        TweenLite.to(answer, 0.4, {opacity:1, delay:i*0.2, x:0})
+        TweenLite.to(answer, 0.4, { opacity: 1, delay: i * 0.2, x: 0 })
     }
 
 }
 
-function answerClicked(e){
+function answerClicked(e) {
     const answers = document.getElementsByTagName("answer")
     const clicked = e.target
 
-    for(let i = 0;i<answers.length;i++){
-        if(clicked == answers[i]) {
+    for (let i = 0; i < answers.length; i++) {
+        if (clicked == answers[i]) {
             // Stap 10 - toon het nummer van het aangeklikte antwoord
             // Stap 11 - als de speler op nextquestion klikt, moet de volgende vraag getoond worden en niet weer dezelfde vraag
             // Stap 12 - hoe gaan we checken of dit het goede antwoord is?

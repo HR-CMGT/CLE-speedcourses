@@ -9,13 +9,16 @@ let counter = 0
 
 const questions = [{
         question:"Wat is de bitcoin nu waard?", 
-        answers: ["5 euro", "15 euro", "10.000 euro"]
+        answers: ["5 euro", "15 euro", "10.000 euro"],
+        correct: 1
     },{
         question: "Wat is de bitcoin nu waard?",
-        answers: ["100 euro", "200 euro", "15.000 euro"]
+        answers: ["100 euro", "200 euro", "15.000 euro"],
+        correct: 0
     },{
         question: "Wat is de bitcoin nu waard?",
-        answers: ["150 euro", "500 euro", "25.000 euro"]
+        answers: ["150 euro", "500 euro", "25.000 euro"],
+        correct: 2
     }]
 
 function startApp(){
@@ -56,10 +59,11 @@ function selectAnswer(e){
 
     for(let i = 0;i<answers.length;i++){
         if(clicked == answers[i]) {
-            // hier weten we dat i het gegeven antwoord is van de speler
-            // todo: voeg de index van het goede antwoord toe aan de vragen array
-            // check daarna of i het goede antwoord is
-            question.innerHTML = `<h2>Feedback</h2><p>Jouw antwoord is ${i}</p>`
+            if (i == questions[counter].correct){
+                question.innerHTML = `<h2>Feedback voor antwoord ${i}</h2><p>Jouw antwoord is goed!!!</p>`
+            } else {
+                question.innerHTML = `<h2>Feedback voor antwoord ${i}</h2><p>Jouw antwoord is fout!!!</p>`
+            }
         }
     }
 

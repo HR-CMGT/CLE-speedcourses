@@ -1,14 +1,45 @@
-# Javascript basics 
+# Javascript workshops 
 
+- Accessing dom elements
 - Event Listeners: load, click, animationend
 - Creating objects
 - Adding CSS classes using javascript
 - String templates with ${}
-- Creating dom elements
+
+### Accessing DOM elements
+
+Om via javascript je DOM elementen te kunnen manipuleren, kan je ze opzoeken met `getElementBy`. Als je elementen zoekt via de classname of tagname krijg je een array terug, omdat er meerdere elementen kunnen zijn met die naam.
+
+HTML
+```
+<button id="mybutton"></button>
+<div class="menu"></div>
+<article>Hello</article>
+```
+JS
+```
+let button = document.getElementById("mybutton")
+let menu = document.getElementsByClassName("menu")[0]
+let art = document.getElementsByTagName("article")[0]
+```
+Je kan CSS style syntax gebruiken om DOM elementen op te zoeken:
+```
+// zoek alle divs met de class menu
+let myitem = document.querySelector("div.menu");
+```
+
+#### Elementen aanmaken
+
+Het is mogelijk om DOM elementen via script aan te maken en aan je document toe te voegen:
+```
+let el = document.createElement("div")
+el.innerHTML = "Hello world!"
+document.body.appendChild(el)
+```
 
 ### Event listeners
 
-DOM elementen zoals window, een button of een animatie kunnen Events genereren zodra er een bepaalde gebeurtenis plaatsvindt. Met EventListeners kan je op die gebeurtenis reageren. Drie voorbeelden:
+DOM elementen zoals window, een button of zelfs animaties genereren Events om aan te geven dat er iets is veranderd in hun status. Met EventListeners kan je op die verandering reageren. Drie voorbeelden:
 
 ```
 // Voer startApp uit als het window klaar is met laden
@@ -20,6 +51,8 @@ button.addEventListener("click", () => loadQuestion())
 // voer showAnswers uit als de balk klaar is met animeren
 bar.addEventListener("animationend", showAnswers)
 ```
+
+*note: de ()=> syntax hoort bij ES6 en werkt niet in oudere browsers. In PHPStorm kan je onder settings > language > javascript de taal op ES6 zetten*
 
 ### Creating objects
 
@@ -55,22 +88,15 @@ CSS
 }
 ```
 
-### String templates with ${}
+### String templates met ${}
 
 String templates maken het invoegen van variabelen in een tekst minder foutgevoelig. Tussen de ${} syntax kan je javascript typen, zonder dat je de quotes van de string hoeft af te sluiten.
 ```
 let value = 3
-let txt = `Is de waarde ${value} groter dan 4 ${value > 4} of niet?`
+let txt = `Is de waarde ${value} groter dan 4 ${value > 4}?`
 ``` 
-
-### Manipulating DOM elements
-
-Via javascript kan je HTML elementen opzoeken en aanpassen.
-
-### Creating DOM elements
-
-Via javascript kan je HTML elementen aanmaken.
 
 #  Reading list
 
 - [Events](https://developer.mozilla.org/en-US/docs/Web/Events)
+- [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)

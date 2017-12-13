@@ -1,0 +1,155 @@
+html {
+    min-height: 100%;
+}
+
+body {
+	color: #000305;
+	font-size: 14pt;
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+	margin: 0;padding: 0;
+	background-color: lightgrey;
+	background: linear-gradient(#E64B8C, #95BFD8);
+}
+
+h1 {font-size: 2em}	
+h2 {font-size: 1.8em}
+h3 {font-size: 1.4em}
+
+h1, h2, h3 {
+	font-family: 'Audiowide', cursive;
+	margin-bottom: .8em; margin-top:.1em;
+}
+
+a, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+div, answer, article {
+	box-sizing: border-box;
+}
+
+section {
+	margin-top:2vh;
+	margin-bottom:2vh;
+}
+
+section#answercontainer {
+	min-height:120vh;
+}
+
+article {
+	display: block;
+	max-width:780px;
+	background-color:white;
+	margin: 0 auto;
+	padding:2vw;
+}
+
+/* navigation */
+
+nav {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background: rgb(66, 66, 66);
+  color:white;
+}
+
+nav div {
+	padding: 15px;
+	text-decoration: none;
+	transition: all 0.4s ease-out;
+}
+
+nav div:nth-child(1) {
+	flex:1 1 auto;
+}
+
+nav div:nth-child(n + 2):hover {
+	color: rgb(66, 66, 66);
+	background: white;
+	cursor:pointer;
+}
+
+#nextquestion {
+	background-color:lightgrey;
+	padding:10px;
+	display: inline-block;
+	cursor:pointer;
+}
+
+#nextquestion:hover {
+	background-color:grey;
+}
+
+#nextquestion * {
+    pointer-events: none; /* hiermee zorgen we dat alleen het hele album clickable is, en niet de children */
+}
+
+/* albums and artists */
+
+answer {
+	display:block;
+	max-width:780px;
+	background-color:white;
+	margin: 2vh auto; padding:2vw;
+	cursor:pointer;
+}
+
+answer * {
+    pointer-events: none; /* hiermee zorgen we dat alleen het hele album clickable is, en niet de children */
+}
+
+/* responsive */
+
+@media screen and (max-width: 600px) { 
+	nav {
+		flex-direction:column;
+	}
+}
+
+/* footer */
+
+footer {
+	width:100vw;
+	background-color:rgb(66, 66, 66);
+	color:white;
+}
+
+footer div {
+	max-width:780px;
+	margin: 0 auto;
+	padding: 2vh 0;
+}
+
+/* laadbalkje */
+
+loading {
+	position: absolute;
+	width:400px; height:30px;
+	left:calc(50vw - 200px);
+	top:50vh; opacity:0;
+	background-color:white;
+	border-radius: 14px;
+}
+
+loading::after {
+	content:"";
+    display: block;
+    position: absolute;
+	width: 396px; height: 26px;
+	border:3px solid white;
+	border-radius: 14px;
+}
+
+.loadinganimation {
+	animation:fillbar 0.8s forwards linear;
+}
+
+@keyframes fillbar {
+  0% { width: 0px; opacity:1;}
+  75% { width:400px; opacity:1;}
+  100% { opacity:0;}
+}

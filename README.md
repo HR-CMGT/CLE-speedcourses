@@ -5,18 +5,11 @@
 - JS Basics start
 - JS Basics finished
 
-## Workshop CSS basics 
+# CSS basics 
 
-- semantische tags
-- flexbox
-- responsive
-- smart selections
-- position absolute
-- transform
-- transitions
-- animation
+- semantische tags, flexbox, responsive, smart selections, position absolute, transform, transitions, animation
 
-## Semantic elements
+### Semantic elements
 
 Je HTML wordt leesbaarder door tags de naam te geven van de functie die ze hebben, in plaats van `<div>`. Je hebt dan ook geen `class` meer nodig om het element via CSS te selecteren. Als je element zich wel moet gedragen als een `<div>` moet je de display mode op `block` zetten:
 
@@ -34,7 +27,7 @@ album {
 }
 ```
 
-## Flex
+### Flex
 
 Flexbox helpt om elementen in een div naast elkaar te positioneren. In dit voorbeeld wordt flex gebruikt om de menu buttons naast elkaar te zetten.
 
@@ -52,7 +45,7 @@ nav {
 }
 ```
 
-## Responsive
+### Responsive
 
 Een responsive container is eigenlijk gewoon een vlak dat meegroeit met het scherm tot een maximale breedte. Om de container te centreren gebruik je margins.
 
@@ -81,7 +74,7 @@ Om het menu responsive te maken haal je de `flex` eigenschap weer weg op kleine 
     }
 }
 ```
-## Smart selections
+### Smart selections
 
 Je hebt niet altijd `class` en `id` nodig om je HTML elementen te selecteren. Hieronder een paar voorbeelden van slimme CSS selecties. 
 
@@ -99,7 +92,7 @@ nav div:nth-child(n + 2) {
 }
 ```
 
-## Position absolute
+### Position absolute
 
 Een element met absolute positioning wordt verwijderd uit de document flow. Je moet dan zelf aangeven waar het element geplaatst moet worden.  
 
@@ -124,7 +117,7 @@ popup {
 }
 ```
 
-## Transform
+### Transform
 
 Transform is een techniek om een element een visueel effect te geven, *zonder* dat de document flow verstoord wordt. Je element blijft dus onderdeel van de responsive layout.
 
@@ -143,7 +136,7 @@ album {
 }
 ```
 
-## Transition
+### Transition
 
 Een `transition` laat de overgang tussen twee states soepel verlopen. In dit voorbeeld geven we een button een achtergrondkleur on mouse hover.
 
@@ -177,7 +170,7 @@ album:hover {
 	transform:scale(1.1);
 }
 ```
-## Animation
+### Animation
 
 In tegenstelling tot een transition gaat een animation meteen spelen zodra de pagina geladen wordt. Je kan een begin en eindstate van je animation vastleggen met `@keyframes`.
 
@@ -198,8 +191,11 @@ CSS
   to { width:100%; }
 }
 ```
+# JS Basics
 
-##  Reading list
+- todo - opdrachten staan nu in comments in de startcode
+
+#  Reading list
 
 - [CSS Diner - a guide to smart selectors](https://flukeout.github.io)
 - [A complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)

@@ -21,3 +21,11 @@
 - Creating dom elements
 
 [JS instructies](./js.md)
+
+## Materialize CSS basics 
+
+- Containers
+- Grid
+- Content
+
+[Materialize instructies](./materialize.md)

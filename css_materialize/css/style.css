@@ -1,0 +1,18 @@
+html {
+    min-height: 100%;
+}
+
+body {
+	color: #000305;
+	background: linear-gradient(#E64B8C, #95BFD8);
+}
+
+.padded {
+	padding:2vw;
+}
+
+.mountain {
+	background-image: url("../images/mountain.jpg");
+	background-size: cover;
+	height:400px;
+}

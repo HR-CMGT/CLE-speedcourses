@@ -7,9 +7,9 @@
 
 ### Responsive website basics
 
-- [Cybertruck workshop](./cybertruck-responsive/README.md)
+- [Cybertruck workshop](./cybertruck-responsive/readme.md)
 
 
 ### Internet of Things - Feather WIFI board
 
-- [Feather IoT speedcourse](./feather-iot/README.md)
+- [Feather IoT speedcourse](./feather-iot/readme.md)

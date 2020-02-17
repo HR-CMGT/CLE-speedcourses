@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB LED</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>RGB Led Color Picker</h1>
+    <p>Set the value for the remote RGB led via WIFI</p>
+
+    <label for="favcolor">Color for RGB led</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+
+    <p>Read color remotely from <a href="http://192.168.2.3/speedcourse/feather/rgb.php">http://192.168.2.3/speedcourse/feather/rgb.php</a> </p>
+    <p id="feedback"></p>
+
+    <script>
+        const feedback = document.querySelector("#feedback")
+        const wheel = document.querySelector("#favcolor")
+        wheel.addEventListener("change", () => saveColor())
+
+        async function saveColor() {
+            let color = wheel.value.replace("#", "")
+            let response = await fetch("saveajax.php?favcolor=" + color)
+            let success = await response.text()
+            console.log(success)
+            feedback.innerHTML += "<br>" + success
+        }
+
+    </script>
+
+</body>
+</html>
+

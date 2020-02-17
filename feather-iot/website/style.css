@@ -1,0 +1,10 @@
+body {
+    background-color:rgb(74, 74, 74);
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.1em;
+}
+
+a, a:visited, a:active {
+    color:white;
+}

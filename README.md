@@ -1,31 +1,15 @@
-# CLE 2 Speedcourses
+# CLE Speedcourses
 
-## CSS basics 
+### Animation with CSS and Javascript *Work in progress*
 
-- Semantische tags
-- Flexbox
-- Responsive
-- Smart selections
-- Position absolute
-- Transform, transition and animation
+- [CSS Animation](./css-animation/css.md)
+- [Javascript Animation](./css-animation/js.md)
 
-[CSS instructies](./css.md)
+### Responsive website basics
 
-## Javascript basics 
+- [Cybertruck workshop](./cybertruck-responsive/README.md)
 
-- Event Listeners: load, click, animationend
-- Creating functions
-- Creating objects
-- Adding CSS classes using javascript
-- String templates with ${}
-- Creating dom elements
 
-[JS instructies](./js.md)
+### Internet of Things - Feather WIFI board
 
-## Materialize CSS basics 
-
-- Containers
-- Grid
-- Content
-
-[Materialize instructies](./materialize.md)
+- [Feather IoT speedcourse](./feather-iot/README.md)

@@ -66,7 +66,7 @@ The Feather should now show `244,0,10` instead of the Adafruit welcome message!
 
 ## Connecting the RGB LED
 
-Make sure you have the correct type of RGB led, which needs a GND connection to the longest leg of the LED.
+Most RGB LEDs connect the long pin to GND. Some RGB LEDs need to connect the long pin to 3V. Test this out by connecting the RED and the LONG pins to 3V and GND. 
 
 ![board](feather_rgbled.png)
 

@@ -13,6 +13,10 @@ int rpin = 13;
 int gpin = 15;//todo 14 is better?
 int bpin = 16;
 
+// if anode rgb led, connect long pin to 3V and reverse r,g,b values
+// if cathode rgb led, connect long pin to GND
+bool anode = false;
+
 void setup() {
   pinMode(rpin, OUTPUT);
   pinMode(gpin, OUTPUT);
@@ -66,7 +70,8 @@ void loop() {
   String line = "";
   while (client.available()) {
     line = client.readStringUntil('\r');
-    //Serial.print(line);
+    // comment out the next line to get less debug information
+    Serial.print(line);
   }
 
   Serial.println("closing connection.. total value is:");
@@ -87,6 +92,12 @@ void updateRGBLed(String webColor) {
   valueR = r.toInt() * 4;
   valueG = g.toInt() * 4;
   valueB = b.toInt() * 4;
+  // if anode type RGB led, reverse the color values
+  if(anode){
+    valueR = 1024 - valueR;
+    valueG = 1024 - valueG;
+    valueB = 1024 - valueB;
+  }
   analogWrite(rpin, valueR);
   analogWrite(gpin, valueG);
   analogWrite(bpin, valueB);

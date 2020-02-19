@@ -35,6 +35,8 @@ Then, follow [these instructions](https://learn.adafruit.com/adafruit-feather-hu
 
 ## Connecting to WIFI
 
+![client](./esp8266-client.png)
+
 Create a new Arduino document and [copy>paste the code from the WIFI example](./feather/wifitest.ino).
 
 Fill in the SSID and USERNAME for the wifi network you are connecting to.

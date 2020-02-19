@@ -1,10 +1,8 @@
 #include <ESP8266WiFi.h>
 
-// use a mobile hotspot or a IoT enabled WIFI network
-const char* ssid     = "name_of_your_wifi_network";
-const char* password = "password_of_your_wifi_network";
+const char* ssid     = "yourssid";
+const char* password = "yourpassword";
 
-// paste the url of your own webservice here
 const char* host = "wifitest.adafruit.com";
 String url = "/testwifi/index.html";
 

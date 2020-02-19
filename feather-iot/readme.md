@@ -34,49 +34,18 @@ Then, follow [these instructions](https://learn.adafruit.com/adafruit-feather-hu
  - Set the board manager url in Arduino
  - Install esp8266 library in Arduino
  - Connect Feather via MicroUSB
- - Set the BOARD and PORT settings in arduino
- - Copy>Paste the code from [Blink example](./feather/blinktest.ino) into Arduino, and upload to the Feather
+ - In Arduino, set the BOARD to "Adafruit Feather Huzzah"
+ - In Arduino, set PORT to your relevant USB port
 
-## Connecting to WIFI
+ ## Test uploading code
 
-![client](./esp8266-client.png)
+ - Copy>Paste the code from [Blink example](./feather/blinktest.ino) into Arduino, and upload to the Feather. If the small red led starts blinking, we have successfully installed the Feather board!
 
-Create a new Arduino document and [copy>paste the code from the WIFI example](./feather/wifitest.ino).
+ ## Connecting the RGB LED
 
-Fill in the SSID and USERNAME for the wifi network you are connecting to.
-
-Make sure the Wifi network allows IoT devices. You can set up a phone hotspot if your network does not allow this.
-
-Test if the message from the adafruit website is displayed in the monitor: `If you can read this, it's working!` Make sure the BAUD of the serial monitor is **115200**.
-
-## Connecting to your own PHP page
-
-Create a simple PHP page that returns a color as a string:
-
-```php
-<?php
-   echo "244,0,10";
-```
-### Using localhost
-
-If your laptop is on the same WIFI as your Feather, you can use the IP address of your laptop to visit the PHP page from the Feather. Else you will have to host it online.
-
-Paste the url of your PHP page in the Arduino code:
-
-```arduino
-const char* host = "http://192.168.2.8";
-String url = "/test/rgb.php";
-```
-
-The Feather should now show `244,0,10` instead of the Adafruit welcome message!
-
-## Connecting the RGB LED
-
-Most RGB LEDs connect the long pin to GND. Some RGB LEDs need to connect the long pin to 3V. Test this out by connecting the RED and the LONG pins to 3V and GND. 
+Connect the RGB Led according to this example. Test if you can make the red, green and blue lights blink. Note that we use `analogWrite()` and a value from 0 to 1024.
 
 ![board](feather3.png)
-
-Try if the LED works. Make sure the three pin numbers are correct, and play around with the R,G,B values. This code displays RED. Note that the maximum value is 1024.
 
 ```arduino
 void setup() {
@@ -91,6 +60,45 @@ void loop(){
   delay(1000);
 }
 ```
+> Note that some RGB Leds need their long pin connected to 3V instead of GND.
+
+## Connecting to WIFI
+
+![client](./esp8266-client.png)
+
+Create a new Arduino document and [copy>paste the code from the WIFI example](./feather/wifitest.ino).
+
+Fill in the SSID and USERNAME for the wifi network you are connecting to.
+
+> Make sure the Wifi network allows IoT devices. You can set up a phone hotspot if your network does not allow this.
+
+Test if the message from the adafruit website is displayed in the monitor: `If you can read this, it's working!` Make sure the BAUD of the serial monitor is **115200**.
+
+## Connecting to your own PHP page
+
+Create a simple PHP page that returns a color as a string:
+
+```php
+<?php
+   echo "244,0,10";
+```
+
+### Upload PHP file
+
+Upload your PHP file to a server, so your Feather can get the data.
+
+> If your laptop is on the same WIFI as your Feather, you can serve the PHP page via localhost, and then use the IP address of your laptop to visit the PHP page.
+
+Paste the url of your PHP page in the Arduino code:
+
+```arduino
+const char* host = "http://192.168.2.8";
+String url = "/test/rgb.php";
+```
+
+The Feather should now show `244,0,10` instead of the Adafruit welcome message!
+
+
 
 ## Using the RGB Led value
 

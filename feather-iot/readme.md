@@ -68,7 +68,7 @@ The Feather should now show `244,0,10` instead of the Adafruit welcome message!
 
 Most RGB LEDs connect the long pin to GND. Some RGB LEDs need to connect the long pin to 3V. Test this out by connecting the RED and the LONG pins to 3V and GND. 
 
-![board](feather_rgbled_2.png)
+![board](feather3.png)
 
 Try if the LED works. Make sure the three pin numbers are correct, and play around with the R,G,B values. This code displays RED. Note that the maximum value is 1024.
 

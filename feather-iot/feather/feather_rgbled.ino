@@ -1,21 +1,25 @@
 #include <ESP8266WiFi.h>
 
-const char* ssid     = "H220N172C11";    // "LeanneMob";
-const char* password = "B37A138916E5";   // "hrdannyhu";
-const char* host = "192.168.2.3";   // "wifitest.adafruit.com";
-String url = "/speedcourse/feather/rgb.php";               // "/testwifi/index.html";
+// use a mobile hotspot or a IoT enabled WIFI network
+const char* ssid     = "name_of_your_wifi_network";
+const char* password = "password_of_your_wifi_network";
 
-int valueR = 0;
-int valueG = 0;
-int valueB = 0;
+// paste the url of your own webservice here
+const char* host = "wifitest.adafruit.com";
+String url = "/testwifi/index.html";
 
+// ports of your RGB led
 int rpin = 13;
-int gpin = 15;//todo 14 is better?
+int gpin = 14;
 int bpin = 16;
 
 // if anode rgb led, connect long pin to 3V and reverse r,g,b values
 // if cathode rgb led, connect long pin to GND
 bool anode = false;
+
+int valueR = 0;
+int valueG = 0;
+int valueB = 0;
 
 void setup() {
   pinMode(rpin, OUTPUT);

@@ -20,9 +20,13 @@ In this speedcourse we will connect a Microcontroller to the internet to decide 
 - Using the PHP RGB value for the LED
 - Creating a color picker
 
-## Installing drivers and Arduino
+## Install Arduino
 
-Install [Arduino](https://www.arduino.cc)
+![arduino](./arduino-logo.png)
+
+[Install the Arduino IDE](https://www.arduino.cc/en/main/software)
+
+## Install Drivers for Feather
 
 Then, follow [these instructions](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide) to install the Feather board
 

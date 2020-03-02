@@ -9,7 +9,7 @@
 
 - [Cybertruck workshop](./cybertruck-responsive/readme.md)
 
+### Internet of Things
 
-### Internet of Things - Feather WIFI board
-
-- [Feather IoT speedcourse](./feather-iot/readme.md)
+- [Circuit Playground Connections](./circuit-playground/readme.md)
+- [Feather with WIFI](./feather-iot/readme.md)

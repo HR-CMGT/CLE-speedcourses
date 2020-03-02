@@ -44,6 +44,6 @@ Connect 3.3V and GND to the outer pins. Connect A2 to the middle pin. Use code t
 
 ## DC Motor
 
-Use the CLEVER Mosfet to safely drive a DC motor. Use the **VOUT** to connect 5 Volt. Do not use the 3.3V pin.
+Use the CLEVER Mosfet to safely drive a DC motor. Use the **VOUT** to connect 5 Volt. Do not use the 3.3V pin!
 
 ![dcmotor](clever_mosfet_connectie.png)

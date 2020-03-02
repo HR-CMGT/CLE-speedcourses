@@ -27,7 +27,7 @@ Put power from 3.3V or VOUT on one of the pins. Connect the other pin to an inpu
 
 Connect GND to the short wire of the LED and A2 to the long wire. Make sure there is a small resistor (220Ohm or 330Ohm) in the ciruit.
 
-![led](led.png)
+![led](extled.png)
 
 ## Infrared communication
 
@@ -46,4 +46,4 @@ Connect 3.3V and GND to the outer pins. Connect A2 to the middle pin. Use code t
 
 Use the CLEVER Mosfet to safely drive a DC motor. Use the **VOUT** to connect 5 Volt. Do not use the 3.3V pin!
 
-![dcmotor](clever_mosfet_connectie.png)
+![dcmotor](clever_mosfet2.png)

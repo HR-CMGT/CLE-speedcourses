@@ -2,14 +2,14 @@
 
 In this speedcourse we will connect a Microcontroller to the internet to decide what color LED it should show.
 
-![picker](./colorpicker.png)
+![picker](./images/colorpicker.jpg)
 
 ## What you will need
 
 - [Adafruit Feather Huzzah ESP8266 board](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266?view=all)
 - Localhost or online PHP server
 
-![feather](./feather.jpg)
+![feather](./images/feather.jpg)
 
 ## Steps
 
@@ -22,7 +22,7 @@ In this speedcourse we will connect a Microcontroller to the internet to decide 
 
 ## Install Arduino
 
-![arduino](./arduino-logo.png)
+![arduino](./images/arduino-logo.png)
 
 [Install the Arduino IDE](https://www.arduino.cc/en/main/software)
 
@@ -45,7 +45,7 @@ Then, follow [these instructions](https://learn.adafruit.com/adafruit-feather-hu
 
 Connect the RGB Led according to this example. Test if you can make the red, green and blue lights blink. Note that we use `analogWrite()` and a value from 0 to 1024.
 
-![board](feather3.png)
+![board](./images/feather3.png)
 
 ```arduino
 void setup() {
@@ -64,7 +64,7 @@ void loop(){
 
 ## Connecting to WIFI
 
-![client](./esp8266-client.png)
+![client](./images/esp8266-client.png)
 
 Create a new Arduino document and [copy>paste the code from the WIFI example](./feather/wifitest.ino).
 
@@ -178,7 +178,7 @@ We are finished! The RGB light can now be changed by anyone who visits the color
 
 # Sending sensor data to Adafruit IO
 
-![io](./io.png)
+![io](./images/io.png)
 
 Instead of calling your own PHP page, you can send sensor data to Adafruit IO. This service will keep track of all the data that you send, and make it available as a feed for any other website.
 

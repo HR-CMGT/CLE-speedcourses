@@ -59,3 +59,4 @@ The DC Motor can be used for driving wheels. Use the CLEVER Mosfet to safely con
 The servo is used for limited but precise movement. Most servos rotate a maximum of 360 degrees.
 
 ![servo](./images/servo.jpg)
+![servo](./images/servo3.png)

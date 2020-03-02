@@ -18,7 +18,7 @@ Use USB pairing in Chrome to display sensor values from the CPE in the browser.
 
 ## ON/OFF Switch - 3 pins
 
-The 3 pin switch will send power to GND or to the A2 pin, depending on the position.
+Put 3.3V on the first pin. The position of the switch will send power to the GND or to the A2 pin, depending on the position.
 
 ![switch](./images/switch3.png)
 

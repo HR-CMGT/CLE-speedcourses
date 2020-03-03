@@ -1,13 +1,9 @@
 # CLE Speedcourses
 
-### Animation with CSS and Javascript *Work in progress*
+### HTML en CSS
 
-- [CSS Animation](./css-animation/css.md)
-- [Javascript Animation](./css-animation/js.md)
-
-### Responsive website basics
-
-- [Cybertruck workshop](./cybertruck-responsive/readme.md)
+- [Responsive Grid - Album playlist](./layout-animation/README.md)
+- [Website Layout - Cybertruck workshop](./cybertruck-responsive/readme.md)
 
 ### Internet of Things
 

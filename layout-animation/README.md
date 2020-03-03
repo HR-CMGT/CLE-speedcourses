@@ -23,14 +23,14 @@ const albums = document.querySelectorAll("album")
 
 Een grid verdeelt elementen mooi uitgelijnd over de pagina. In dit voorbeeld zie je een grid met 3 kolommen. Elke kolom neemt 1/3 van het scherm in, dit bepaal je met de `fr` unit.
 
-In dit voorbeeld komen er automatisch nieuwe rijen in het grid als je items toevoegt, dankzij `grid-auto-rows`. Een rij is nu altijd 360 pixels hoog. 
+Dit grid gebruikt `grid-auto-rows` zodat het aantal rijen niet vast staat. De afmeting is hier `max-content`, dat is de hoogte van de items die in de row staan.
 
 ```css
 
 #albums {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 360px;
+    grid-auto-rows: max-content;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
@@ -69,15 +69,30 @@ We geven de albums een iets andere layout als de muis erover heen beweegt. De ov
 }
 ```
 
-## Elementen toevoegen met Javascript
+## CSS Image Fit
 
-Je kan nieuwe albums toevoegen met `createElement`. De inhoud van het album kan je toevoegen met `innerHTML`.
+Als je afbeeldingen verschillende afmetingen hebben is het mooier om ze te passen in de beschikbare ruimte:
+
+```css
+album img {
+    width:100%;
+    object-fit: cover;
+}
+```
+
+## Albums toevoegen met Javascript
+
+Je kan nieuwe albums toevoegen met `createElement`. 
 
 ```javascript
 const container = document.querySelector("#albums")
 const newAlbum = document.createElement("album")
 container.appendChild(newAlbum)
+```
 
+We voegen een Image element en een Div toe aan het album:
+
+```javascript
 album.innerHTML = `<img src="images/cover1.jpg">
 			<div>
 				<h3>VHS Glitch</h3>
@@ -91,7 +106,9 @@ const button = document.querySelector("#add")
 button.addEventListener("click", addAlbum)
 ```
 
+
 ## Links
 
 - [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Grid Garden - a game for learning CSS Grid](https://cssgridgarden.com)
+- [Image Fit to container](https://css-tricks.com/almanac/properties/o/object-fit/)

@@ -1,6 +1,6 @@
-# Layout en Animatie
+# Grid Layout
 
-We maken een eenvoudig responsive grid, en voegen items toe via javascript.
+We maken een eenvoudig responsive grid, en voegen items toe via javascript. Download de files uit de `start` folder.
 
 ## Semantische tags
 
@@ -14,7 +14,7 @@ album {
     background-color:white;
 }
 ```
-In javascript kan je de een array van albums terugvinden met
+In javascript kan je de albums terugvinden met
 ```javascript
 const albums = document.querySelectorAll("album")
 ```
@@ -54,7 +54,7 @@ We geven het grid minder columns op kleinere schermen. In dit geval houden we re
 }
 ```
 
-## CSS transities
+## CSS hover animatie
 
 We geven de albums een iets andere layout als de muis erover heen beweegt. De overgang tussen de gewone state en de hover state kan je **animeren** met een `transition`.
 
@@ -82,33 +82,38 @@ album img {
 
 ## Albums toevoegen met Javascript
 
-Je kan nieuwe albums toevoegen met `createElement`. 
+Je kan nieuwe album elementen aanmaken met `createElement`, en je plaatst deze in de DOM met `appendChild`. 
 
 ```javascript
 const container = document.querySelector("#albums")
 const newAlbum = document.createElement("album")
 container.appendChild(newAlbum)
-```
 
-We voegen een Image element en een Div toe aan het album:
-
-```javascript
 album.innerHTML = `<img src="images/cover1.jpg">
-			<div>
-				<h3>VHS Glitch</h3>
-				<p>Land with no Future</p>
-            </div>`
+    <div>
+        <h3>VHS Glitch</h3>
+        <p>Land with no Future</p>
+    </div>`
 ```
 
-Plaats deze code in een `addAlbum()` functie, en roep de functie aan met de *add album* button.
+Plaats alle code in een `addAlbum()` functie, en roep die functie aan met de button:
+
 ```javascript
+function addAlbum(){
+   ...
+}
+
 const button = document.querySelector("#add")
 button.addEventListener("click", addAlbum)
 ```
 
+## Scroll animatie
+
+In de map [animation](./animation) vind je een voorbeeld van *Fade in after scroll*. De albumhoezen verschijnen pas in beeld als je er naar toe scrolled.
 
 ## Links
 
 - [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Grid Garden - a game for learning CSS Grid](https://cssgridgarden.com)
 - [Image Fit to container](https://css-tricks.com/almanac/properties/o/object-fit/)
+- [Fade in after Scroll - Animation](https://alligator.io/js/intersection-observer/)

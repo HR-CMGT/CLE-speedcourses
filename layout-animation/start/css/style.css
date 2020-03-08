@@ -1,0 +1,33 @@
+body {
+    color: #02243a;
+    background-color: rgb(214, 219, 232);
+    font-size: 14pt;
+    margin: 0;
+    padding: 0;
+    font-family: 'Audiowide', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    margin-top:0;
+}
+
+button {
+    padding: 8px;
+    font-size: 1.1em;
+}
+
+section {
+    margin: 30px;
+}
+
+#albums {
+
+}
+
+.album {
+    background-color: white;
+}

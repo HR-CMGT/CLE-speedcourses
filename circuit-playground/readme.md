@@ -50,9 +50,21 @@ Connect 3.3V and GND to the outer pins. Connect A2 to the middle pin. Use code t
 
 ## DC Motor
 
-The DC Motor can be used for driving wheels. Use the CLEVER Mosfet to safely control a DC motor. Use the **VOUT** to get 5 Volt from the CPE. 
+The DC Motor can be used for driving wheels. Use the **CLEVER Mosfet** to safely control a DC motor.
+
+| Pin  | Connection                                                 |
+|------|------------------------------------------------------------|
+| OUT- | GND of the DC Motor                                        |
+| OUT+ | PLUS of the DC Motor                                       |
+| IN-  | GND of the battery AND the GND of the Circuit Playground   |
+| IN+  | PLUS of the battery, OR the VOUT of the Circuit Playground |
+| S    | Connect to playground pin **A1 - A5** to send a PWM signal to the Motor    |
 
 ![dcmotor](./images/clever_mosfet2.png)
+This example uses the **VOUT** to get 5 Volt from the CPE. Do **not** use the 3.3V port!
+
+![dcbattery](./images/clever_mosfet_extpower_bb.png)
+It's safer to use an external battery to drive the motor. Just make sure the GND of the battery and the Playground are connected.
 
 ## Servo 
 

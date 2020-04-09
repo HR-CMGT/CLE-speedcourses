@@ -79,8 +79,14 @@ The servo is used for limited but precise movement. Most servos rotate a maximum
 
 You can connect external Neopixel (RGB LED) strips to the Circuit Playground.
 
+![neopixel](./images/neopixel.png)
+
 - [Code Examples](https://learn.adafruit.com/neopixels-with-makecode?view=all)
 - [MakeCode Example](https://www.youtube.com/watch?v=HnmjztjSqIo)
 - [Different types of connections](https://www.youtube.com/watch?v=vCDfyxNFeEw)
 
 If you want to power a LOT of neopixels at the same time, you need an external power source. Otherwise, you will draw too much ampere through your Circuit Playground.
+
+The Playground sends data through the A3 port. The GND of the neopixels needs to be connected to the GND of the battery, **AND** the GND of the Playground.
+
+![external](./images/neo_external_power.png)

@@ -85,8 +85,12 @@ You can connect external Neopixel (RGB LED) strips to the Circuit Playground.
 - [MakeCode Example](https://www.youtube.com/watch?v=HnmjztjSqIo)
 - [Different types of connections](https://www.youtube.com/watch?v=vCDfyxNFeEw)
 
-If you want to power a LOT of neopixels at the same time, you need an external power source. Otherwise, you will draw too much ampere through your Circuit Playground.
+If you connect a LOT of neopixels at the same time, you have to be careful with powering them.
 
-The Playground sends data through the A3 port. The GND of the neopixels needs to be connected to the GND of the battery, **AND** the GND of the Playground.
+- Reduce the brightness
+- Don't light up all leds at the same time
+- Full white uses the most power
+
+To prevent power problems, you can use an external power source. In this example, the Playground is only used to send data to the Neopixel strip. The strip has its own power source, for example, a 5V 2Amp adapter from a mobile phone.
 
 ![external](./images/neo_external_power.png)

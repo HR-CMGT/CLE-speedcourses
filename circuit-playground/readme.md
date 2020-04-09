@@ -8,6 +8,7 @@ Some tips and ideas to connect external hardware to your CPE!
 - Infrared communication
 - Rotating Button
 - DC Motor
+- Neopixel Strip
 
 ## Display Sensor Values
 
@@ -50,7 +51,7 @@ Connect 3.3V and GND to the outer pins. Connect A2 to the middle pin. Use code t
 
 ## DC Motor
 
-The DC Motor can be used for driving wheels. Use the **CLEVER Mosfet** to safely control a DC motor.
+The DC Motor can be used for wheels. Use the **CLEVER Mosfet** to safely control a DC motor.
 
 | Pin  | Connection                                                 |
 |------|------------------------------------------------------------|
@@ -60,11 +61,12 @@ The DC Motor can be used for driving wheels. Use the **CLEVER Mosfet** to safely
 | IN+  | PLUS of the battery, OR the VOUT of the Circuit Playground |
 | S    | Connect to playground pin **A1 - A5** to send a PWM signal to the Motor    |
 
-![dcmotor](./images/clever_mosfet2.png)
 This example uses the **VOUT** to get 5 Volt from the CPE. Do **not** use the 3.3V port!
+![dcmotor](./images/clever_mosfet2.png)
 
-![dcbattery](./images/clever_mosfet_extpower_bb.png)
 It's safer to use an external battery to drive the motor. Just make sure the GND of the battery and the Playground are connected.
+![dcbattery](./images/clever_mosfet_extpower_bb.png)
+
 
 ## Servo 
 
@@ -72,3 +74,13 @@ The servo is used for limited but precise movement. Most servos rotate a maximum
 
 ![servo](./images/servo.jpg)
 ![servo](./images/servo3.png)
+
+## Neopixel strip
+
+You can connect external Neopixel (RGB LED) strips to the Circuit Playground.
+
+- [Code Examples](https://learn.adafruit.com/neopixels-with-makecode?view=all)
+- [MakeCode Example](https://www.youtube.com/watch?v=HnmjztjSqIo)
+- [Different types of connections](https://www.youtube.com/watch?v=vCDfyxNFeEw)
+
+If you want to power a LOT of neopixels at the same time, you need an external power source. Otherwise, you will draw too much ampere through your Circuit Playground.

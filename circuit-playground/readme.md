@@ -79,7 +79,11 @@ To prevent power problems, you can use an external power source. In this example
 
 ## DC Motor
 
-The DC Motor can be used for wheels. DC Motors use too much power for the Circuit Playground. The easiest solution for this is to connect an Adafruit Crickit to the Playground. [Follow this Crickit tutorial](../crickit/readme.md)!
+The DC Motor can be used for wheels and other continuous motion.
+
+![dcmotor](./images/dcmotor.png)
+
+DC Motors use too much power for the Circuit Playground. The easiest solution for this is to connect an Adafruit Crickit to the Playground. [Follow this Crickit tutorial](../crickit/readme.md)!
 
 Without a Crickit, you can use a MOSFET to safely connect external power to the motors:
 

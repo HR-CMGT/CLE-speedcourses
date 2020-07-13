@@ -49,24 +49,6 @@ Connect 3.3V and GND to the outer pins. Connect A2 to the middle pin. Use code t
 ![potentio](./images/potentio1.png)
 ![potentio](./images/potentio2.png)
 
-## DC Motor
-
-The DC Motor can be used for wheels. Use the **CLEVER Mosfet** to safely control a DC motor.
-
-| Pin  | Connection                                                 |
-|------|------------------------------------------------------------|
-| OUT- | GND of the DC Motor                                        |
-| OUT+ | PLUS of the DC Motor                                       |
-| IN-  | GND of the battery AND the GND of the Circuit Playground   |
-| IN+  | PLUS of the battery, OR the VOUT of the Circuit Playground |
-| S    | Connect to playground pin **A1 - A5** to send a PWM signal to the Motor    |
-
-This example uses the **VOUT** to get 5 Volt from the CPE. Do **not** use the 3.3V port!
-![dcmotor](./images/clever_mosfet2.png)
-
-It's safer to use an external battery to drive the motor. Just make sure the GND of the battery and the Playground are connected.
-![dcbattery](./images/clever_mosfet_extpower_bb.png)
-
 
 ## Servo 
 
@@ -94,3 +76,27 @@ If you connect a LOT of neopixels at the same time, you have to be careful with 
 To prevent power problems, you can use an external power source. In this example, the Playground is only used to send data to the Neopixel strip. The strip has its own power source, for example, a 5V 2Amp adapter from a mobile phone.
 
 ![external](./images/neo_external_power.png)
+
+## DC Motor
+
+The DC Motor can be used for wheels. DC Motors use too much power for the Circuit Playground. The easiest solution for this is to connect an Adafruit Crickit to the Playground. [Follow this Crickit tutorial](../crickit/readme.md)!
+
+Without a Crickit, you can use a MOSFET to safely connect external power to the motors:
+
+### MOSFET
+
+Use the **CLEVER Mosfet** to safely control a DC motor.
+
+| Pin  | Connection                                                 |
+|------|------------------------------------------------------------|
+| OUT- | GND of the DC Motor                                        |
+| OUT+ | PLUS of the DC Motor                                       |
+| IN-  | GND of the battery AND the GND of the Circuit Playground   |
+| IN+  | PLUS of the battery, OR the VOUT of the Circuit Playground |
+| S    | Connect to playground pin **A1 - A5** to send a PWM signal to the Motor    |
+
+This example uses the **VOUT** to get 5 Volt from the CPE. Do **not** use the 3.3V port!
+![dcmotor](./images/clever_mosfet2.png)
+
+It's safer to use an external battery to drive the motor. Just make sure the GND of the battery and the Playground are connected.
+![dcbattery](./images/clever_mosfet_extpower_bb.png)

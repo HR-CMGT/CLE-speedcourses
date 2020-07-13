@@ -24,7 +24,8 @@ De **Circuit Playground Express** (CPE) is een programmeerbaar bordje met sensor
 - Sluit een micro USB kabel aan op de **SEESAW ONLY** poort van de Crickit. 
 - **Druk twee keer op de reset button**. De ledjes gaan groen en geel branden.
 - De crickit verschijnt als USB drive op je computer.
-- Download het bestand [**seesaw-crickit.uf2**](https://github.com/adafruit/seesaw/releases/download/1.1.6/seesaw-crickit.uf2) en sleep het op de Crickit USB drive!
+- Download het bestand [**seesaw-crickit.uf2**](https://github.com/adafruit/seesaw/releases/download/1.1.6/seesaw-crickit.uf2) en sleep het op de Crickit USB drive.
+- Als dit gelukt is kan je de USB kabel verwijderen. De SEESAW poort gebruik je verder niet meer.
 
 ![drive](./images/circuit_playground_drag.png)
 

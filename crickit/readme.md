@@ -11,6 +11,8 @@ De **Circuit Playground Express** (CPE) is een programmeerbaar bordje met sensor
 - [Circuit Playground starten](#playground)
 - [Motoren aansluiten](#motoren)
 - [Servo aansluiten](#motoren)
+- [Sensoren](#sensoren)
+- [🤖 Bouw een robot!](#robots)
 - [Meer electronica aansluiten](#tips)
 
 <br>
@@ -108,10 +110,48 @@ Een servo is een motor die je in een specifieke stand kan zetten, en die dan in 
 <br>
 <br>
 
+# <a name="sensoren"></a>Sensoren
+
+Je robot kan reageren op knoppen, beweging, licht en geluid.
+
+![sensor](./images/sensor.png)
+
+## Aanraaksensor
+
+De Crickit heeft 4 panelen die reageren op aanraking. Je kan de krokodillenklemmetjes gebruiken om hier een geleidend object aan te bevestigen, bv. een aluminium vlak op het hoofd van je robot.
+
+![touch](./images/touch.png)
+
+Je hebt wat meer code blokken nodig om de aanraakvlakken uit te lezen:
+
+![touchcode](./images/touchcode.png)
+
+<br>
+<br>
+
+# <a name="robots"></a>🤖 Bouw een Robot
+
+Het is tijd om met karton en cocktailprikkers aan de slag te gaan! 
+
+![robots](./images/robots.png)
+
+- Gebruik de motoren om je robot te laten rijden.
+- Gebruik servo's voor de armen of het gezicht van je robot.
+- Gebruik de **lampjes** en de **speaker** van de CPE voor licht en geluid.
+- Gebruik de **sensoren** van de CPE om je robot te laten reageren op geluid of licht!
+- Experimenteer met de blokken in de code omgeving!
+
+
+<br>
+<br>
+
 # <a name="tips"></a>Meer electronica aansluiten
 
 In je starterkit zitten draden, lampjes, draaiknoppen, weerstanden, etc. etc. Lees hier verder over het aansluiten van meer electronica op je robot!
 
+## Links
+
 - [Meer knoppen en lampjes aansluiten op de Circuit Playground](../circuit-playground/readme.md)
 - [Alle mogelijkheden van de Crickit](https://learn.adafruit.com/adafruit-crickit-creative-robotic-interactive-construction-kit?view=all)
+- [Cardboard CMGT Robots!](https://www.instagram.com/p/B2RjYZOBK6a/) en meer [Instagram Robots](https://www.instagram.com/p/B4P3hRAhhjs/)
 

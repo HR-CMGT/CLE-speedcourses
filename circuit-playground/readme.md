@@ -2,82 +2,197 @@
 
 Some tips and ideas to connect external hardware to your CPE!
 
-- Display Sensor Values
-- On/Off Button
-- External LED
-- Infrared communication
-- Rotating Button
-- DC Motor
-- Neopixel Strip
+- [Resistors and Breadboards](#resistors)
+- [External LED](#led)
+- [How to check sensor values](#values)
+- [External Switch 3 pins](#switch)
+- [External Button 2 pins](#button)
+- [Infrared communication](#infrared)
+- [Rotating Button](#potentio)
+- [Servo](#servo)
+- [Distance Sensor](#distance)
+- [Neopixel Strip](#neopixel)
+- [DC Motors](#dcmotor)
+- [Where to buy](#shopping)
 
-## Display Sensor Values
+<br>
+<br>
+<br>
+
+---
+
+## <a name="resistors"></a>Resistors and breadboards
+
+If you connect Power directly to Ground, you get a short circuit ⚡️⚡️⚡️ . A **RESISTOR** prevents short circuits by slowing down the flow of power. Larger resistors will slow down the flow of power more! In this example, the LED will burn less bright, if you increase the resistor. 
+
+![resistor](./images/resistor.png)
+
+
+- [Resistor codes](http://www.resistor-calculator.com)
+ 
+### Breadboards
+
+A breadboard provides an easy way to connect lots of tiny components together without soldering.
+
+![breadboard](./images/breadboard.jpg)
+
+<br>
+<br>
+<br>
+
+---
+
+## <a name="led"></a>External LED
+
+Let's use a breadboard to connect an LED and a 220 Ohm resistor to the CPE! Connect GND to the short wire of the LED and A2 to the long wire.
+
+![led](./images/extled.png)
+
+<br>
+<br>
+<br>
+
+---
+
+## <a name="values"></a>How to check sensor values
 
 Use USB pairing in Chrome to display sensor values from the CPE in the browser.
 
 ![usb](./images/usb.png)
 ![usb](./images/usb2.png)
 
-## ON/OFF Switch - 3 pins
+<br>
+<br>
+<br>
+
+---
+
+## <a name="switch"></a>External Switch 3 pins
 
 Put 3.3V on the first pin. The position of the switch will send power to the GND or to the A2 pin, depending on the position.
 
 ![switch](./images/switch3.png)
 
-## ON/OFF Button - 2 pins
+Gebruik `digitalRead()` om te zien of de switch in positie 0 of 1 staat.
+
+```javascript
+let switchValue = pins.A2.digitalRead()
+```
+![switch](./images/readswitch.png)
+
+---
+<br>
+<br>
+<br>
+
+## <a name="button"></a>External Button 2 pins
 
 Put power from 3.3V or VOUT on one of the pins. Connect the other pin to an input port to read if there is power or not. Do not forget to "pull down" the input pin, to avoid random results.
 
 ![switch](./images/switch1.png)
 ![switch](./images/switch2.png)
 
-## External LED
 
-Connect GND to the short wire of the LED and A2 to the long wire. Make sure there is a small resistor (220Ohm or 330Ohm) in the ciruit.
 
-![led](./images/extled.png)
+<br>
+<br>
+<br>
 
-## Infrared communication
+---
+
+## <a name="infrared"></a>Infrared communication
 
 You can use infrared to send signals from one CPE to another CPE!
 
 ![infrared](./images/infrared.png)
 
-## Rotating button
+<br>
+<br>
+<br>
+
+---
+
+## <a name="potentio"></a>Rotating button (potentiometer)
 
 Connect 3.3V and GND to the outer pins. Connect A2 to the middle pin. Use code to read the the value of A2. This will be a number between 0 and 1024. You can use the **map** function to convert this to values that you need.
 
 ![potentio](./images/potentio1.png)
 ![potentio](./images/potentio2.png)
 
+<br>
+<br>
+<br>
 
-## Servo 
+---
+
+## <a name="servo"></a>Servo 
 
 The servo is used for limited but precise movement. Most servos rotate a maximum of 360 degrees.
 
 ![servo](./images/servo.jpg)
 ![servo](./images/servo3.png)
 
-## Neopixel strip
+<br>
+<br>
+<br>
+
+---
+
+## <a name="distance"></a>Distance sensor
+
+Gebruik een 3.3 Volt Distance sensor om afstanden te meten met de Playground Express. Let op, sommige sensoren werken alleen met 5 Volt. 
+
+![us100](./images/ultrasonic_us100_3v.png)
+
+- Sluit VCC aan op 3.3Volt
+- Sluit GND aan op GND
+- Sluit de TRIG aan op A1
+- Sluit de ECHO aan op A2
+
+De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan met de rechter speaker te meten hoe lang het duurt voordat de echo terug komt. Deze code laat zien hoe je dat doet:
+
+![code_sound](./images/makecode-ultrasound.png)
+
+- [US100 3Volt sensor kopen bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-us-100-uart-with-temperature-sensor)
+- [Adafruit 3Volt sensor](https://www.adafruit.com/product/4007)
+
+Het is ook mogelijk om de meer gangbare 5Volt SR04 afstand sensor te gebruiken. Volg dan deze stappen:
+
+- [Code examples](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04?view=all)
+
+<br>
+<br>
+<br>
+
+---
+
+## <a name="neopixel"></a>Neopixel strip
 
 You can connect external Neopixel (RGB LED) strips to the Circuit Playground.
 
 ![neopixel](./images/neopixel.png)
 
-- [Code Examples](https://learn.adafruit.com/neopixels-with-makecode?view=all)
-- [MakeCode Example](https://www.youtube.com/watch?v=HnmjztjSqIo)
-- [Different types of connections](https://www.youtube.com/watch?v=vCDfyxNFeEw)
-
-If you connect a LOT of neopixels at the same time, you have to be careful with powering them.
+The CPE board can only power a limited amount of Neopixels. To reduce power usage you can:
 
 - Reduce the brightness
 - Don't light up all leds at the same time
-- Full white uses the most power
+- Use single colors instead of full white
 
-To prevent power problems, you can use an external power source. In this example, the Playground is only used to send data to the Neopixel strip. The strip has its own power source, for example, a 5V 2Amp adapter from a mobile phone.
+If you can't do this or want to use LOTS of neopixels, you can use an external power source, for example a 5V 2Amp adapter. Be careful when connecting everything! 2Amps can damage your board or neopixels.
 
 ![external](./images/neo_external_power.png)
 
-## DC Motor
+- [Adafruit makecode neopixel documentation](https://learn.adafruit.com/neopixels-with-makecode?view=all)
+- [📺 MakeCode Example](https://www.youtube.com/watch?v=HnmjztjSqIo) and more [types of connections](https://www.youtube.com/watch?v=vCDfyxNFeEw)
+- [Power usage explanation](http://www.eerkmans.nl/powering-lots-of-leds-from-arduino/)
+
+<br>
+<br>
+<br>
+
+---
+
+## <a name="dcmotor"></a>DC Motor
 
 The DC Motor can be used for wheels and other continuous motion.
 
@@ -85,11 +200,9 @@ The DC Motor can be used for wheels and other continuous motion.
 
 DC Motors use too much power for the Circuit Playground. The easiest solution for this is to connect an Adafruit Crickit to the Playground. [Follow this Crickit tutorial](../crickit/readme.md)!
 
-Without a Crickit, you can use a MOSFET to safely connect external power to the motors:
+### Advanced: MOSFET
 
-### MOSFET
-
-Use the **CLEVER Mosfet** to safely control a DC motor.
+Use the **CLEVER Mosfet** to safely control a DC motor if you don't have a CRICKIT. The **CLEVER Mosfet** is available at live CLE workshops. 
 
 | Pin  | Connection                                                 |
 |------|------------------------------------------------------------|
@@ -102,5 +215,17 @@ Use the **CLEVER Mosfet** to safely control a DC motor.
 This example uses the **VOUT** to get 5 Volt from the CPE. Do **not** use the 3.3V port!
 ![dcmotor](./images/clever_mosfet2.png)
 
-It's safer to use an external battery to drive the motor. Just make sure the GND of the battery and the Playground are connected.
+It's safer to use an external battery to drive the motor. **Make sure the GND of the battery and the Playground are connected.**
+
 ![dcbattery](./images/clever_mosfet_extpower_bb.png)
+
+---
+<br>
+<br>
+
+## <a name="shopping"></a>Shopping
+
+- [Kiwi electronics](https://www.kiwi-electronics.nl)
+- [FLORIS](https://www.floris.cc)
+- [Antratek](https://www.antratek.nl/)
+- [Tinytronics](https://www.tinytronics.nl/shop/nl)

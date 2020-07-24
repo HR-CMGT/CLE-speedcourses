@@ -153,12 +153,13 @@ De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan
 
 ![code_sound](./images/makecode-ultrasound.png)
 
+- [RCW0001 3Volt sensor kopen bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-rcw-0001)
 - [US100 3Volt sensor kopen bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-us-100-uart-with-temperature-sensor)
 - [Adafruit 3Volt sensor](https://www.adafruit.com/product/4007)
 
 Het is ook mogelijk om de meer gangbare 5Volt SR04 afstand sensor te gebruiken. Volg dan deze stappen:
 
-- [Code examples](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04?view=all)
+- [How to connect 5Volt SR04 Distance sensor](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04?view=all)
 
 <br>
 <br>

@@ -153,11 +153,11 @@ De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan
 
 ![code_sound](./images/makecode-ultrasound.png)
 
-- [RCW0001 3Volt sensor kopen bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-rcw-0001)
-- [US100 3Volt sensor kopen bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-us-100-uart-with-temperature-sensor)
-- [Adafruit 3Volt sensor](https://www.adafruit.com/product/4007)
+- [3 Volt RCW0001 afstand sensor bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-rcw-0001)
+- [3 Volt US100 afstand sensor kopen bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-us-100-uart-with-temperature-sensor)
+- [Adafruit 3 Volt afstand sensor](https://www.adafruit.com/product/4007)
 
-Het is ook mogelijk om de meer gangbare 5Volt SR04 afstand sensor te gebruiken. Volg dan deze stappen:
+Het is wel mogelijk om de meer gangbare **5 Volt SR04** afstandsensor te gebruiken, dan moet je de stroom terug brengen naar 3 volt. Volg deze stappen:
 
 - [How to connect 5Volt SR04 Distance sensor](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04?view=all)
 
@@ -199,26 +199,10 @@ The DC Motor can be used for wheels and other continuous motion.
 
 ![dcmotor](./images/dcmotor.png)
 
-DC Motors use too much power for the Circuit Playground. The easiest solution for this is to connect an Adafruit Crickit to the Playground. [Follow this Crickit tutorial](../crickit/readme.md)!
+DC Motors use too much power for the Circuit Playground. [The easiest solution for this is to connect an Adafruit Crickit to the Playground](../crickit/readme.md)!
 
-### Advanced: MOSFET
+If you don't have a CRICKIT [you can use the **CLEVER Mosfet** to safely control a DC motor](./mosfet.md)
 
-Use the **CLEVER Mosfet** to safely control a DC motor if you don't have a CRICKIT. The **CLEVER Mosfet** is available at live CLE workshops. 
-
-| Pin  | Connection                                                 |
-|------|------------------------------------------------------------|
-| OUT- | GND of the DC Motor                                        |
-| OUT+ | PLUS of the DC Motor                                       |
-| IN-  | GND of the battery AND the GND of the Circuit Playground   |
-| IN+  | PLUS of the battery, OR the VOUT of the Circuit Playground |
-| S    | Connect to playground pin **A1 - A5** to send a PWM signal to the Motor    |
-
-This example uses the **VOUT** to get 5 Volt from the CPE. Do **not** use the 3.3V port!
-![dcmotor](./images/clever_mosfet2.png)
-
-It's safer to use an external battery to drive the motor. **Make sure the GND of the battery and the Playground are connected.**
-
-![dcbattery](./images/clever_mosfet_extpower_bb.png)
 
 ---
 <br>

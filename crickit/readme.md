@@ -1,6 +1,7 @@
 # Robots Bouwen met Crickit
 
 In deze workshop bouwen we een robot met de Circuit Playground Express en de Crickit.
+[Bekijk hier alvast de introductievideo over het aansluiten van je Crickit](https://bit.ly/cle-cpx-tube).
 
 ![parts](./images/parts.png)
 
@@ -151,6 +152,7 @@ In je starterkit zitten draden, lampjes, draaiknoppen, weerstanden, etc. etc. Le
 
 ## Links
 
+- [Instructie video](https://bit.ly/cle-cpx-tube)
 - [Meer knoppen en lampjes aansluiten op de Circuit Playground](../circuit-playground/readme.md)
 - [Alle mogelijkheden van de Crickit](https://learn.adafruit.com/adafruit-crickit-creative-robotic-interactive-construction-kit?view=all)
 - [Cardboard CMGT Robots!](https://www.instagram.com/p/B2RjYZOBK6a/) en meer [Instagram Robots](https://www.instagram.com/p/B4P3hRAhhjs/)

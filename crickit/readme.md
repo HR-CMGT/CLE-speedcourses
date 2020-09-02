@@ -1,13 +1,13 @@
 # Robots Bouwen met Crickit
 
 In deze workshop bouwen we een robot met de Circuit Playground Express en de Crickit.
-[Bekijk hier alvast de introductievideo over het aansluiten van je Crickit](https://bit.ly/cle-cpx-tube).
 
 ![parts](./images/parts.png)
 
 De **Circuit Playground Express** (CPE) is een programmeerbaar bordje met sensoren. De **Crickit** is een toevoeging waarmee je **motoren** kan aansluiten op de CPE!
 
 - [Crickit Updaten](#updaten)
+- [Instructie video kijken](#video).
 - [Playground toevoegen](#bouwen)
 - [Circuit Playground starten](#playground)
 - [Motoren aansluiten](#motoren)
@@ -31,6 +31,13 @@ De **Circuit Playground Express** (CPE) is een programmeerbaar bordje met sensor
 - Als dit gelukt is kan je de USB kabel verwijderen. De SEESAW poort gebruik je verder niet meer.
 
 ![drive](./images/circuit_playground_drag.png)
+
+<br>
+<br>
+
+# <a name="video"></a>Instructie video kijken
+
+[Bekijk hier de introductievideo over het aansluiten van je Crickit](https://bit.ly/cle-cpx-tube).
 
 <br>
 <br>

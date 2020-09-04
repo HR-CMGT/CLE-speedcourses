@@ -119,6 +119,8 @@ Connect 3.3V and GND to the outer pins. Connect A2 to the middle pin. Use code t
 ![potentio](./images/potentio1.png)
 ![potentio](./images/potentio2.png)
 
+You can use CONSOLE.LOG to check what values your potentiometer returns. See this [makecode example](https://makecode.com/_csHRjdVVUD7A)
+
 <br>
 <br>
 <br>

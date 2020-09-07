@@ -13,6 +13,7 @@ Some tips and ideas to connect external hardware to your CPE!
 - [Distance Sensor](#distance)
 - [Neopixel Strip](#neopixel)
 - [DC Motors](#dcmotor)
+- [Other parts](#parts)
 - [Where to buy](#shopping)
 
 <br>
@@ -114,10 +115,12 @@ You can use infrared to send signals from one CPE to another CPE!
 
 ## <a name="potentio"></a>Rotating button (potentiometer)
 
-Connect 3.3V and GND to the outer pins. Connect A2 to the middle pin. Use code to read the the value of A2. This will be a number between 0 and 1024. You can use the **map** function to convert this to values that you need.
+Connect the playground 3.3V and GND pads to the outer pins of the potentiometer. Connect the playground A3 pad to the middle pin of the potentiometer. Now, you can read the value of A3 by using the **Analog read A3** block. This should be a number from 0 to 1024.
+
+If you PAIR your playground in Chrome, you can show the value of the of A3 in the console. This way you can check if you really get a number between 0 and 1024. You can use the **map** function to convert this number to any value that you need. In this example code, the lights from 0 to 9 turn on by turning the knob.
 
 ![potentio](./images/potentio1.png)
-![potentio](./images/potentio2.png)
+![potentio](./images/potentio3.png)
 
 <br>
 <br>
@@ -203,6 +206,14 @@ DC Motors use too much power for the Circuit Playground. [The easiest solution f
 
 If you don't have a CRICKIT [you can use the **CLEVER Mosfet** to safely control a DC motor](./mosfet.md)
 
+
+---
+<br>
+<br>
+
+## <a name="parts"></a>Other parts
+
+- [3V Infrared Motion Detector](https://www.adafruit.com/product/4666)
 
 ---
 <br>

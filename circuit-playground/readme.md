@@ -123,10 +123,7 @@ If you PAIR your playground in Chrome, you can show the value of the of A3 in th
 ![potentio](./images/potentio3.png)
 
 
-<video width="400" controls>
-  <source src="potentiometer.mp4" type="video/mp4">
-  Your browser does not support HTML video.
-</video>
+![potgif](./images/potentiometer.gif)
 <br>
 <br>
 <br>

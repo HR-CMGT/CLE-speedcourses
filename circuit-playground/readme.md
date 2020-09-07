@@ -123,7 +123,7 @@ If you PAIR your playground in Chrome, you can show the value of the of A3 in th
 ![potentio](./images/potentio3.png)
 
 
-![potgif](./images/potentiometer.gif)
+![potgif](./images/potentiometer2.gif)
 <br>
 <br>
 <br>

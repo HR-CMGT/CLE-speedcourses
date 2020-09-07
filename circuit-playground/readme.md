@@ -117,13 +117,16 @@ You can use infrared to send signals from one CPE to another CPE!
 
 Connect the playground 3.3V and GND pads to the outer pins of the potentiometer. Connect the playground A3 pad to the middle pin of the potentiometer. Now, you can read the value of A3 by using the **Analog read A3** block. This should be a number from 0 to 1024.
 
-If you PAIR your playground in Chrome, you can show the value of the of A3 in the console. This way you can check if you really get a number between 0 and 1024. You can use the **map** function to convert this number to any value that you need. In this example code, the lights from 0 to 9 turn on by turning the knob.
+If you PAIR your playground in Chrome, you can show the value of the of A3 in the console. This way you can check if you really get a number between 0 and 1024. You can use the **map** function to convert this number to any value that you need. In this example code, the lights from 0 to 9 turn on by turning the knob. [Makecode example.](https://makecode.com/_csHRjdVVUD7A)
 
 ![potentio](./images/potentio1.png)
 ![potentio](./images/potentio3.png)
 
-You can use CONSOLE.LOG to check what values your potentiometer returns. See this [makecode example](https://makecode.com/_csHRjdVVUD7A)
 
+<video width="400" controls>
+  <source src="potentiometer.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
 <br>
 <br>
 <br>

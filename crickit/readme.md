@@ -7,6 +7,7 @@ In deze workshop bouwen we een robot met de Circuit Playground Express en de Cri
 De **Circuit Playground Express** (CPE) is een programmeerbaar bordje met sensoren. De **Crickit** is een toevoeging waarmee je **motoren** kan aansluiten op de CPE!
 
 - [Crickit Updaten](#updaten)
+- [Instructie video kijken](#video).
 - [Playground toevoegen](#bouwen)
 - [Circuit Playground starten](#playground)
 - [Motoren aansluiten](#motoren)
@@ -30,6 +31,13 @@ De **Circuit Playground Express** (CPE) is een programmeerbaar bordje met sensor
 - Als dit gelukt is kan je de USB kabel verwijderen. De SEESAW poort gebruik je verder niet meer.
 
 ![drive](./images/circuit_playground_drag.png)
+
+<br>
+<br>
+
+# <a name="video"></a>Instructie video kijken
+
+[Bekijk hier de introductievideo over het aansluiten van je Crickit](https://bit.ly/cle-cpx-tube).
 
 <br>
 <br>
@@ -151,6 +159,7 @@ In je starterkit zitten draden, lampjes, draaiknoppen, weerstanden, etc. etc. Le
 
 ## Links
 
+- [Instructie video](https://bit.ly/cle-cpx-tube)
 - [Meer knoppen en lampjes aansluiten op de Circuit Playground](../circuit-playground/readme.md)
 - [Alle mogelijkheden van de Crickit](https://learn.adafruit.com/adafruit-crickit-creative-robotic-interactive-construction-kit?view=all)
 - [Cardboard CMGT Robots!](https://www.instagram.com/p/B2RjYZOBK6a/) en meer [Instagram Robots](https://www.instagram.com/p/B4P3hRAhhjs/)

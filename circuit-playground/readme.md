@@ -122,6 +122,8 @@ If you PAIR your playground in Chrome, you can show the value of the of A3 in th
 ![potentio](./images/potentio1.png)
 ![potentio](./images/potentio3.png)
 
+You can use CONSOLE.LOG to check what values your potentiometer returns. See this [makecode example](https://makecode.com/_csHRjdVVUD7A)
+
 <br>
 <br>
 <br>

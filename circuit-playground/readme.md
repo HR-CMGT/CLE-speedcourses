@@ -154,7 +154,7 @@ Gebruik een ultrasnoic distance sensor om afstanden te meten met de Playground E
 - Sluit de TRIG aan op A1
 - Sluit de ECHO aan op A2
 
-De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan met de rechter speaker te meten hoe lang het duurt voordat de echo terug komt. Deze code laat zien hoe je dat doet:
+De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan met de rechter speaker te meten hoe lang het duurt voordat de echo terug komt. Deze code laat zien hoe je dat doet. Let op, het inlezen van de pulse is niet beschikbaar in de **crickit** blocks, dus de sensor zit aangesloten aan de playground.
 
 ![code_sound](./images/makecode-ultrasound.png)
 

@@ -160,13 +160,15 @@ De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan
 
 **Let op** er zijn veel verschillende typen distance sensor. De meest gangbare is de SR04. Deze is 5 Volt, dus dat voltage moet je omzetten naar 3 Volt. [Hier vind je een uitleg van de SR04 sensor aansluiting voor de circuit playground express](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04)
 
+- [SR04 5V distance sensor](https://www.kiwi-electronics.nl/ultrasonic-sensor-hc-sr04?lang=en)
+
+Er bestaan ook 3 Volt distance sensoren:
+
 - [3 Volt RCW0001 afstand sensor bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-rcw-0001)
 - [3 Volt US100 afstand sensor kopen bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-us-100-uart-with-temperature-sensor)
 - [Adafruit 3 Volt afstand sensor](https://www.adafruit.com/product/4007)
 
-Het is wel mogelijk om de meer gangbare **5 Volt SR04** afstandsensor te gebruiken, dan moet je de stroom terug brengen naar 3 volt. Volg deze stappen:
 
-- [How to connect 5Volt SR04 Distance sensor](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04?view=all)
 
 <br>
 <br>

@@ -45,9 +45,15 @@ A breadboard provides an easy way to connect lots of tiny components together wi
 
 ## <a name="led"></a>External LED
 
-Let's use a breadboard to connect an LED and a 220 Ohm resistor to the CPE! Connect GND to the short wire of the LED and A2 to the long wire.
+Je kan een breadboard gebruiken om externe electronica makkelijk aan te sluiten aan de playground. Gebruik een LED en een 220 Ohm weerstand. De weerstand zorgt dat je lampje niet beschadigt. 
+
+Let op dat het lange pootje van de LED naar de stroom gaat, en het korte pootje gaat naar GND. De weerstand mag wel aan beide kanten zitten.
 
 ![led](./images/extled.png)
+
+Als je meerdere LEDS wil aansturen kan je ze allemaal aan een eigen poort aansluiten. Ze kunnen wel de GND delen. Gebruik daarvoor het lange gootje van de breadboard.
+
+![led](./images/breadboard_leds.png)
 
 <br>
 <br>

@@ -26,6 +26,9 @@ Some tips and ideas to connect external hardware to your CPE!
 
 If you connect Power directly to Ground, you get a short circuit ⚡️⚡️⚡️ . A **RESISTOR** prevents short circuits by slowing down the flow of power. Larger resistors will slow down the flow of power more! In this example, the LED will burn less bright, if you increase the resistor. 
 
+- [Youtube: hoe werkt een breadboard](https://www.youtube.com/watch?v=6WReFkfrUIk)
+- [Bekijk onderin deze pagina's een aantal tutorials voor breadboards](https://maker.makecode.com)
+
 ![resistor](./images/resistor.png)
 
 

@@ -26,6 +26,9 @@ Some tips and ideas to connect external hardware to your CPE!
 
 If you connect Power directly to Ground, you get a short circuit ⚡️⚡️⚡️ . A **RESISTOR** prevents short circuits by slowing down the flow of power. Larger resistors will slow down the flow of power more! In this example, the LED will burn less bright, if you increase the resistor. 
 
+- [Youtube: hoe werkt een breadboard](https://www.youtube.com/watch?v=6WReFkfrUIk)
+- [Bekijk onderin deze pagina's een aantal tutorials voor breadboards](https://maker.makecode.com)
+
 ![resistor](./images/resistor.png)
 
 
@@ -151,7 +154,7 @@ The servo is used for limited but precise movement. Most servos rotate a maximum
 
 ## <a name="distance"></a>Distance sensor
 
-Gebruik een 3.3 Volt Distance sensor om afstanden te meten met de Playground Express. Let op, sommige sensoren werken alleen met 5 Volt. 
+Gebruik een ultrasnoic distance sensor om afstanden te meten met de Playground Express. 
 
 ![us100](./images/ultrasonic_us100_3v.png)
 
@@ -160,17 +163,21 @@ Gebruik een 3.3 Volt Distance sensor om afstanden te meten met de Playground Exp
 - Sluit de TRIG aan op A1
 - Sluit de ECHO aan op A2
 
-De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan met de rechter speaker te meten hoe lang het duurt voordat de echo terug komt. Deze code laat zien hoe je dat doet:
+De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan met de rechter speaker te meten hoe lang het duurt voordat de echo terug komt. Deze code laat zien hoe je dat doet. Let op, het inlezen van de pulse is niet beschikbaar in de **crickit** blocks, dus de sensor zit aangesloten aan de playground.
 
 ![code_sound](./images/makecode-ultrasound.png)
+
+**Let op** er zijn veel verschillende typen distance sensor. De meest gangbare is de SR04. Deze is 5 Volt, dus dat voltage moet je omzetten naar 3 Volt. [Hier vind je een uitleg van de SR04 sensor aansluiting voor de circuit playground express](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04)
+
+- [SR04 5V distance sensor](https://www.kiwi-electronics.nl/ultrasonic-sensor-hc-sr04?lang=en)
+
+Er bestaan ook 3 Volt distance sensoren:
 
 - [3 Volt RCW0001 afstand sensor bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-rcw-0001)
 - [3 Volt US100 afstand sensor kopen bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-us-100-uart-with-temperature-sensor)
 - [Adafruit 3 Volt afstand sensor](https://www.adafruit.com/product/4007)
 
-Het is wel mogelijk om de meer gangbare **5 Volt SR04** afstandsensor te gebruiken, dan moet je de stroom terug brengen naar 3 volt. Volg deze stappen:
 
-- [How to connect 5Volt SR04 Distance sensor](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04?view=all)
 
 <br>
 <br>

@@ -12,6 +12,7 @@ Some tips and ideas to connect external hardware to your CPE!
 - [Infrared communication](#infrared)
 - [Rotating Button](#potentio)
 - [Servo](#servo)
+- [Servo with external power](#external)
 - [Distance Sensor](#distance)
 - [Neopixel Strip](#neopixel)
 - [DC Motors](#dcmotor)
@@ -116,12 +117,12 @@ Put power from 3.3V or VOUT on one of the pins. Connect the other pin to an inpu
 
 The force sensor measures how hard you push on the plate. Use a large resistor (10K Ohm). Connect the yellow wire to an analog port such as A1, and then you can read the value on the port
 
+![infrared](./images/force_sensor_cpe.png)
 ```javascript
 let force = pins.A1.analogRead()
 console.log(`The force is ${force}`)
 ```
-
-![infrared](./images/force_sensor_cpe.png)
+![forceblocks](./images/force_blocks.png)
 
 <br>
 <br>
@@ -171,14 +172,26 @@ The servo is used for limited but precise movement. Most servos rotate a maximum
 
 ---
 
+
+
+## <a name="external"></a>Servo with external Power
+
+If your servo draws too much power, or if you need multiple servos, you can connect your servo to an external power source. Make sure the **GND** of the servo is both connected to the Playground and the ground of the external power.
+
+![externalservo](./images/external_servo.png)
+
+---
+<br>
+<br>
+
 ## <a name="distance"></a>Distance sensor
 
 Gebruik een ultrasnoic distance sensor om afstanden te meten met de Playground Express. 
 
-![us100](./images/ultrasonic_us100_3v.png)
+![sr04](./images/distance_sr04.jpg)
 
-- Sluit VCC aan op 3.3Volt
-- Sluit GND aan op GND
+- Sluit VCC aan op stroom
+- Sluit GND aan op GND 
 - Sluit de TRIG aan op A1
 - Sluit de ECHO aan op A2
 
@@ -190,7 +203,7 @@ De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan
 
 - [SR04 5V distance sensor](https://www.kiwi-electronics.nl/ultrasonic-sensor-hc-sr04?lang=en)
 
-Er bestaan ook 3 Volt distance sensoren:
+Er bestaan ook **3 Volt** distance sensoren:
 
 - [3 Volt RCW0001 afstand sensor bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-rcw-0001)
 - [3 Volt US100 afstand sensor kopen bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-us-100-uart-with-temperature-sensor)
@@ -233,25 +246,28 @@ If you can't do this or want to use LOTS of neopixels, you can use an external p
 ## <a name="dcmotor"></a>DC Motor
 
 The DC Motor can be used for wheels and other continuous motion.
+To move heavy objects you need a **Geared DC motor**. The gears are needed to convert fast motion to strong motion.
 
-![dcmotor](./images/dcmotor.png)
+![dcmotor](./images/dcmotors.png)
 
-DC Motors use too much power for the Circuit Playground. [The easiest solution for this is to connect an Adafruit Crickit to the Playground](../crickit/readme.md)!
+DC Motors use too much power for the Circuit Playground. [We solve this by connecting the **Adafruit Crickit** to the Playground](../crickit/readme.md)!
 
 If you don't have a CRICKIT [you can use the **CLEVER Mosfet** to safely control a DC motor](./mosfet.md)
+
 
 
 ---
 <br>
 <br>
 
-## <a name="parts"></a>Other parts
+## <a name="parts"></a>Parts
 
 ![minipir](./images/minipir.jpg)
 
 - [Mini Infrared Motion Detector (PIR) for 3V](https://www.adafruit.com/product/4666)
 - [Force sensor](https://www.kiwi-electronics.nl/ronde-drukgevoelige-weerstand-fsr402?lang=en)
-- [Mini Pan and Tilt kit](https://www.adafruit.com/product/1967)
+- [🤖 Mini Pan and Tilt robot arm!](https://www.adafruit.com/product/1967)
+- [⚙️ Geared DC Motor](https://www.kiwi-electronics.nl/hobby-dc-motor-140rpm-2-stuks?search=dc%20motor&description=true)
 
 ---
 <br>

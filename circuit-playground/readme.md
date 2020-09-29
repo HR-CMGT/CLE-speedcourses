@@ -7,6 +7,7 @@ Some tips and ideas to connect external hardware to your CPE!
 - [How to check sensor values](#values)
 - [External Switch 3 pins](#switch)
 - [External Button 2 pins](#button)
+- [Force sensor](#button)
 - [Infrared communication](#infrared)
 - [Rotating Button](#potentio)
 - [Servo](#servo)
@@ -39,6 +40,8 @@ If you connect Power directly to Ground, you get a short circuit ⚡️⚡️⚡
 A breadboard provides an easy way to connect lots of tiny components together without soldering.
 
 ![breadboard](./images/breadboard.jpg)
+
+- [📺  How to use a breadboard](https://www.youtube.com/watch?v=6WReFkfrUIk)
 
 <br>
 <br>
@@ -103,6 +106,23 @@ Put power from 3.3V or VOUT on one of the pins. Connect the other pin to an inpu
 ![switch](./images/switch2.png)
 
 
+
+<br>
+<br>
+<br>
+
+---
+
+## <a name="force"></a>Force sensor
+
+The force sensor measures how hard you push on the plate. Use a large resistor (10K Ohm). Connect the yellow wire to an analog port such as A1, and then you can read the value on the port
+
+```javascript
+let force = pins.A1.analogRead()
+console.log(`The force is ${force}`)
+```
+
+![infrared](./images/force_sensor_cpe.png)
 
 <br>
 <br>

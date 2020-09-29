@@ -247,7 +247,11 @@ If you don't have a CRICKIT [you can use the **CLEVER Mosfet** to safely control
 
 ## <a name="parts"></a>Other parts
 
-- [3V Infrared Motion Detector](https://www.adafruit.com/product/4666)
+![minipir](./images/minipir.jpg)
+
+- [Mini Infrared Motion Detector (PIR) for 3V](https://www.adafruit.com/product/4666)
+- [Force sensor](https://www.kiwi-electronics.nl/ronde-drukgevoelige-weerstand-fsr402?lang=en)
+- [Mini Pan and Tilt kit](https://www.adafruit.com/product/1967)
 
 ---
 <br>

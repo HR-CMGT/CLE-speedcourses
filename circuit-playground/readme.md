@@ -2,7 +2,8 @@
 
 Some tips and ideas to connect external hardware to your CPE!
 
-- [Resistors and Breadboards](#resistors)
+- [Resistors](#resistors)
+- [Breadboards](#breadboards)
 - [External LED](#led)
 - [How to check sensor values](#values)
 - [External Switch 3 pins](#switch)
@@ -23,19 +24,17 @@ Some tips and ideas to connect external hardware to your CPE!
 
 ---
 
-## <a name="resistors"></a>Resistors and breadboards
+## <a name="resistors"></a>Resistors
 
-If you connect Power directly to Ground, you get a short circuit ⚡️⚡️⚡️ . A **RESISTOR** prevents short circuits by slowing down the flow of power. Larger resistors will slow down the flow of power more! In this example, the LED will burn less bright, if you increase the resistor. 
+If you connect Power directly to Ground, you get a short circuit ⚡️⚡️⚡️ . A **RESISTOR** prevents short circuits by slowing down the flow of power. 
 
-- [Youtube: hoe werkt een breadboard](https://www.youtube.com/watch?v=6WReFkfrUIk)
-- [Bekijk onderin deze pagina's een aantal tutorials voor breadboards](https://maker.makecode.com)
+A LED has almost no resistance by itself, that's why we use a resistor to prevent damage to the LED or the battery. Larger resistors will slow down the flow of power more! In this example, the LED will burn less bright, if you increase the resistor. 
 
-![resistor](./images/resistor.png)
-
+![resistor](./images/resistors.png)
 
 - [Resistor codes](http://www.resistor-calculator.com)
  
-### Breadboards
+## <a name="breadboards"></a>Breadboards
 
 A breadboard provides an easy way to connect lots of tiny components together without soldering.
 

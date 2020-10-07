@@ -72,6 +72,8 @@ Als je meerdere LEDS wil aansturen kan je ze allemaal aan een eigen poort aanslu
 
 The playground express has a port for an external battery. If you use a rechargable **Lithium Polymer** battery, it will recharge if the playground is connected to USB. The batteries are **3.7 Volt**. The amount of **mAh** *(milli Ampere per hour)* determines how long the battery lasts. Smaller batteries have less mAh.
 
+> NOTE: this does not power the [crickit](../crickit/readme.md)! If you have a crickit connected, you should use the crickit's external power.
+
 ![lipoly](./images/lipoly.png)
 
 - [Adafruit Explanation of LiPoly batteries](https://learn.adafruit.com/circuit-playground-lesson-number-0/battery-jack-supply)

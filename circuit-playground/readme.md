@@ -5,6 +5,7 @@ Some tips and ideas to connect external hardware to your CPE!
 - [Resistors](#resistors)
 - [Breadboards](#breadboards)
 - [External LED](#led)
+- [External power for Playground](#power)
 - [How to check sensor values](#values)
 - [External Switch 3 pins](#switch)
 - [External Button 2 pins](#button)
@@ -60,6 +61,21 @@ Let op dat het lange pootje van de LED naar de stroom gaat, en het korte pootje 
 Als je meerdere LEDS wil aansturen kan je ze allemaal aan een eigen poort aansluiten. Ze kunnen wel de GND delen. Gebruik daarvoor het lange gootje van de breadboard.
 
 ![led](./images/breadboard_leds.png)
+
+<br>
+<br>
+<br>
+
+---
+
+## <a name="power"></a>External power for playground
+
+The playground express has a port for an external battery. If you use a rechargable **Lithium Polymer** battery, it will recharge if the playground is connected to USB. The batteries are **3.7 Volt**. The amount of **mAh** *(milli Ampere per hour)* determines how long the battery lasts. Smaller batteries have less mAh.
+
+![lipoly](./images/lipoly.png)
+
+- [Adafruit Explanation of LiPoly batteries](https://learn.adafruit.com/circuit-playground-lesson-number-0/battery-jack-supply)
+- [Lithium Polymer Battery at KIWI electronics](https://www.kiwi-electronics.nl/lithium-ion-polymer-battery-3-7v-1200mAh?search=lipoly&description=true)
 
 <br>
 <br>
@@ -266,6 +282,8 @@ If you don't have a CRICKIT [you can use the **CLEVER Mosfet** to safely control
 
 - [Mini Infrared Motion Detector (PIR) for 3V](https://www.adafruit.com/product/4666)
 - [Force sensor](https://www.kiwi-electronics.nl/ronde-drukgevoelige-weerstand-fsr402?lang=en)
+- [Air quality sensor](https://www.kiwi-electronics.nl/sensoren/adafruit-sgp30-air-quality-sensor-breakout)
+- [Soil Moisture sensor](https://www.kiwi-electronics.nl/sparkfun-soil-moisture-sensor?search=moisture%20sensor&description=true)
 - [🤖 Mini Pan and Tilt robot arm!](https://www.adafruit.com/product/1967)
 - [⚙️ Geared DC Motor](https://www.kiwi-electronics.nl/hobby-dc-motor-140rpm-2-stuks?search=dc%20motor&description=true)
 

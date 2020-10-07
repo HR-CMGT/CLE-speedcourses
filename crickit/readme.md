@@ -13,6 +13,7 @@ De **Circuit Playground Express** (CPE) is een programmeerbaar bordje met sensor
 - [Motoren aansluiten](#motoren)
 - [Servo aansluiten](#motoren)
 - [Sensoren](#sensoren)
+- [Speaker aansluiten](#speaker)
 - [🤖 Bouw een robot!](#robots)
 - [Meer electronica aansluiten](#tips)
 
@@ -103,8 +104,17 @@ Let op dat de motor blijft draaien totdat je een stop commando geeft! In dit voo
 
 ![move](./images/move.png)
 
+## Rijdende robot
+
+Om een zwaar object te laten rijden heb je een **geared DC motor** nodig in plaats van een gewone DC motor. De extra tandwielen zorgen ervoor dat de snelle beweging van de motor omgezet wordt in kracht om je robot te verplaatsen.
+
+![gears](./images/geared-dc.jpg)
+
+- [Geared DC motor kopen bij KIWI](https://www.kiwi-electronics.nl/hobby-dc-motor-140rpm-2-stuks?search=dc%20motor&description=true)
+
 <br>
 <br>
+
 
 # <a name="servo"></a>Servo aansluiten
 
@@ -136,6 +146,19 @@ Je hebt wat meer code blokken nodig om de aanraakvlakken uit te lezen:
 
 <br>
 <br>
+
+# <a name="speaker"></a> Externe speaker
+
+De crickit kan het geluid van de playground automatisch versterken, als je een externe speaker aansluit!
+
+![speaker](./images/crickit_speaker.png)
+
+- [Geschikte speakers](https://learn.adafruit.com/adafruit-crickit-creative-robotic-interactive-construction-kit/recommended-speakers)
+
+<br>
+<br>
+
+
 
 # <a name="robots"></a>🤖 Bouw een Robot
 

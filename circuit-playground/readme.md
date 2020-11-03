@@ -17,6 +17,7 @@ Some tips and ideas to connect external hardware to your CPE!
 - [Distance Sensor](#distance)
 - [Neopixel Strip](#neopixel)
 - [DC Motors](#dcmotor)
+- [Solenoid (push/pull)](#solenoid)
 - [Other parts](#parts)
 - [Where to buy](#shopping)
 
@@ -273,12 +274,33 @@ DC Motors use too much power for the Circuit Playground. [We solve this by conne
 If you don't have a CRICKIT [you can use the **CLEVER Mosfet** to safely control a DC motor](./mosfet.md)
 
 
+---
+<br>
+<br>
+
+## <a name="solenoid"></a>Solenoid (push/pull)
+
+Met een solenoid kan je een horizontale of verticale beweging maken. Deze solenoid is 5 Volt en kan je aansluiten op de **Motor drive van de Crickit**. (Sluit de solenoid niet rechtstreeks aan op de Playground!)
+
+![solenoid](./images/solenoid.jpg)
+
+```typescript
+forever(function () {
+    crickit.drive1.analogWrite(1023)
+    pause(100)
+    crickit.drive1.analogWrite(0)
+    pause(500)
+})
+```
+
+- [📺 MakeCode instruction video](https://www.youtube.com/watch?v=AMvSTm0cWyA)
+- [Robotshop Solenoid](https://www.robotshop.com/nl/nl/5v-solenoid.html)
 
 ---
 <br>
 <br>
 
-## <a name="parts"></a>Parts
+## <a name="parts"></a>Other parts
 
 ![minipir](./images/minipir.jpg)
 

@@ -1,4 +1,5 @@
 let contactLink = document.getElementById("btn-specs");
+
 contactLink.addEventListener("click", function(){
     console.log("je klikt op de specs button");
 

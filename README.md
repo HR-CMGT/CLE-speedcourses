@@ -8,8 +8,9 @@
 
 ### HTML en CSS
 
-- [Responsive Grid - Album playlist](./layout-animation/README.md)
-- [Website Layout - Cybertruck workshop](./cybertruck-responsive/readme.md)
+- [Responsive Grid - Album playlist](./layout-animation/)
+- [Website Layout - Cybertruck workshop](./cybertruck-responsive/)
+- [Front end Forms - Form layout and sending values to PHP](./front-end-forms/)
 
 ### Games
 

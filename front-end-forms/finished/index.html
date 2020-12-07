@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Speed course forms</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>Front-End Speed Course 7 December</header>
+
+    <nav>
+        <div>Reservering</div>
+        <div>Over ons</div>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Reserveren</h1>
+            <form action="./thanks.php" method="post">
+                <div>
+                    <label for="name">Naam:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="date">Datum:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div>
+                    <label for="menu">Menu:</label>
+                    <select name="menu" id="menu">
+                        <option value="" disabled selected>Kies een menu</option>
+                        <option value="Whopper">Whopper</option>
+                        <option value="Sushi">Sushi</option>
+                        <option value="Frietjes">Frietjes</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <input type="checkbox" id="vega" name="vega">
+                    <label for="vega">Vegetarisch</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="gluten" name="gluten">
+                    <label for="gluten">Gluten vrij</label>
+                </div>
+
+                <div>
+                    <button type="submit">Versturen</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h1>Over het restaurant</h1>
+        </section>
+    </main>
+
+    <footer>
+        Twitter | Instagram
+    </footer>
+
+</body>
+
+</html>

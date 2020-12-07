@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(33, 33, 33);
+    font-family: sans-serif;
+    background-color: #7A819E;
+}
+
+main {
+    max-width: 800px;
+    min-height:50vh;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+    width: 100vw;
+    justify-content: flex-start;
+    background-color: #333439;
+}
+
+nav div {
+    padding: 10px;
+    text-align: center;
+    background-color: #333439;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+nav div:hover {
+    background-color: white;
+    color: #333439;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+footer a {
+    color: white;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(213, 220, 232);
+}
+
+section div {
+    margin-top: 16px;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #4343c8;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    height: 40vh;
+    line-height: 40vh;
+    font-size: 2em;
+    font-weight: bolder;
+    color: white;
+    background-image: url(https://pbs.twimg.com/media/En2PtmfVoAEiYfU?format=jpg&name=large);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #333439;
+    text-align: center;
+    padding: 70px 0px;
+    color: white;
+}
+
+@media screen and (max-width: 550px) {
+    nav {
+        display: block;
+    }
+}

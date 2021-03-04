@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* 100 light, 600 heavy */
+}
+
+div {
+    box-sizing: border-box;
+}
+
+#main {
+    margin: 0 auto;
+    max-width: 80vw;
+}
+
+#cards {
+    display: grid;
+    /* kolommen */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* rijen */
+    grid-auto-rows: max-content;
+    /* ruimte tussen rijen en kolommen */
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.card {
+    height: 300px;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.card div {
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+/* responsive */
+
+@media (max-width: 880px) {
+    #cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 705px) {
+    #cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* bonus 
+
+
+.animated-card {
+    opacity: 0;
+    animation: drop-in 1s ease-out 1 forwards;
+}
+
+@keyframes drop-in {
+    0% {
+        transform: translate(20px, 120px) rotate3d(1, 1, 1, 50deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0) rotate3d(1, 1, 1, 0deg);
+        opacity: 1;
+    }
+}
+
+*/

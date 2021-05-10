@@ -2,14 +2,9 @@
 
 - **Game Loop** : Fishes en bubbles laten bewegen met requestAnimationFrame
 - Fishes position opvragen met bounding box
-- 🐠 ∿ Wavy animation
 - Stoppen met bewegen na klik
-
-### Bonus
-
-- Fishes gebruiken als antwoord voor een quiz vraag
+- 🐠 ∿ Wavy animation
 - Score bijhouden
-- Timer aftellen
 
 ## Links
 

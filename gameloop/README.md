@@ -6,8 +6,10 @@
 - 🐠 ∿ Wavy animation
 - Score bijhouden
 
+<br>
+<br>
+
 ## Links
 
-- [Bounding box](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
+- [getBoundingClientRect](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
 - [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
-- [Google Font : Press Start](https://fonts.google.com/specimen/Press+Start+2P)

@@ -1,7 +1,7 @@
 const plopSound = new Audio('./sound/plop.mp3')
 
 function createFishAndBubble(){
-    for(let i = 0;i<15;i++){
+    for(let i = 0;i<10;i++){
         createFish()
         createBubble()
     }
@@ -9,6 +9,7 @@ function createFishAndBubble(){
 
 function createFish(){
     let fish = document.createElement("fish")
+    fishes.push(fish)
     document.body.appendChild(fish)
     let startx = (Math.random() * window.innerWidth)
     let starty = (Math.random() * window.innerHeight)

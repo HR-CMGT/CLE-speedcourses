@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+    background-color: #70CF51;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 1.5em;
+}
+
+fish, bubble, background, score, question {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+question {
+    margin:20px;
+}
+
+score {
+    right:0px;
+    margin:20px;
+}
+
+fish {
+    background-image: url(../images/fish.png);
+    width: 130px;
+    height: 110px;
+    filter: hue-rotate(90deg);
+    cursor: pointer;
+    text-align: center;
+    /* vertical center met flex column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dead {
+    background-image: url(../images/bones.png);
+}
+
+bubble {
+    background-image: url(../images/bubble.png);
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+background {
+    background-image: url(../images/water.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}

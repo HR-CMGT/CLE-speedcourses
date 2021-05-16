@@ -1,11 +1,11 @@
 const plopSound = new Audio('./sound/plop.mp3')
-const scoreField = document.querySelector("score")
-let score = 0
-let fishes = []
-let bubbles = []
+const pauseButton = document.querySelector("pause")! as HTMLElement
+const bg = document.querySelector('background')! as HTMLElement
+let fishes : HTMLElement[] = []
+let bubbles : HTMLElement[] = []
 
 function createFishAndBubble(){
-    for(let i = 0;i<50;i++){
+    for(let i = 0;i<4;i++){
         createFish()
         createBubble()
     }
@@ -15,20 +15,20 @@ function createFishAndBubble(){
 function gameLoop(){
     for(let fish of fishes) {
         let position = fish.getBoundingClientRect()
-        let newXposition = position.x - 1
+        let newXposition = position.left - 1
         if (newXposition < 0 - position.width) {
             newXposition = window.innerWidth
         }
-        let newYposition = position.y + Math.sin(newXposition/15)
+        let newYposition = position.top + Math.sin(newXposition/15)
         fish.style.transform = `translate(${newXposition}px, ${newYposition}px)`
     }
     for (let bubble of bubbles) {
         let position = bubble.getBoundingClientRect()
-        let newposition = position.y - 2
+        let newposition = position.top - 2
         if (newposition < 0 - position.height) {
             newposition = window.innerHeight
         }
-        bubble.style.transform = `translate(${position.x}px, ${newposition}px)`
+        bubble.style.transform = `translate(${position.left}px, ${newposition}px)`
     }
     requestAnimationFrame(()=>gameLoop())
 }
@@ -60,26 +60,17 @@ function createBubble(){
     bubble.addEventListener("click", (e)=>popBubble(e))
 }
 
-function killFish(e){
-    let fish = e.target
-    console.log(fish.dataset.color)
-    if(fish.dataset.color == "blue") {
-        updateScore()
-    }
+function killFish(e:Event){
+    let fish = e.target as HTMLElement
     fish.classList.add("dead")
     fishes = fishes.filter(f => f != fish)
 }
 
-function popBubble(e) {
-    let bubble = e.target
+function popBubble(e:Event) {
+    let bubble = e.target as HTMLElement
     bubble.remove()
     bubbles = bubbles.filter(b => b != bubble)
     plopSound.play()
-}
-
-function updateScore(){
-    score++
-    scoreField.innerText = `Score: ${score}`
 }
 
 createFishAndBubble()

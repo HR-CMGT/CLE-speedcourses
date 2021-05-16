@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #70CF51;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 1.5em;
+}
+
+fish, bubble, background, pause {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+pause {
+    margin:20px;
+}
+
+fish {
+    background-image: url(../images/fish-sprite.png);
+    width: 130px;
+    height: 110px;
+    filter: hue-rotate(90deg);
+    cursor: pointer;
+    text-align: center;
+}
+
+.dead {
+    background-image: url(../images/bones.png);
+}
+
+bubble {
+    background-image: url(../images/bubble.png);
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+background {
+    background-image: url(../images/background-scroll.png);
+    width: 100vw;
+    height: 100vw;
+    background-size:100vw 100vh;
+    background-repeat: repeat-x;
+}

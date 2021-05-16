@@ -38,5 +38,6 @@ function killFish(e : Event){
 
 ## Links
 
+- [CodePen demo](https://codepen.io/eerk/pen/qBrNJNL?editors=0010)
 - [Scrolling background](https://github.com/HR-CMGT/Typescript/blob/master/snippets/scrolling.md)
 - [Spritesheets](https://github.com/HR-CMGT/Typescript/blob/master/snippets/spritesheet.md)

@@ -1,0 +1,46 @@
+html, body {
+    background-color: #133e55;
+    color: white;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+crate, platform, game, barrel, player {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    transform-origin: 50% 50%;
+}
+
+player {
+    width: 60px;
+    height: 80px;
+    background-image: url(../images/mario.png);
+    background-size: 100% 100%;
+}
+
+game {
+    background-color: #118fd3;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+}
+
+crate {
+    background-image: url(../images/crate.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+platform {
+    background-image: url(../images/platform.png);
+}
+
+barrel {
+    background-image: url(../images/barrel.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

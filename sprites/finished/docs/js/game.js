@@ -36,7 +36,7 @@ function updateElements() {
         fishFPS++;
         if (fishFPS % 20 == 0)
             frame++;
-        if (frame >= animframes)
+        if (frame > animframes)
             frame = 0;
         let pos = 0 - (frame * framewidth);
         fish.style.backgroundPosition = `${pos}px 0px`;
@@ -58,11 +58,6 @@ function createFish() {
     let startx = (Math.random() * window.innerWidth);
     let starty = (Math.random() * window.innerHeight);
     let color = Math.random() * 300 + 30;
-    let rng = Math.floor(Math.random() * 4);
-    if (rng == 0) {
-        color = 0;
-        fish.dataset.color = "blue";
-    }
     fishes.push(fish);
     fish.style.transform = `translate(${startx}px, ${starty}px)`;
     fish.style.filter = `hue-rotate(${color}deg)`;

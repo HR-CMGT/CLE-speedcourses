@@ -64,11 +64,6 @@ function createFish(){
     let startx = (Math.random() * window.innerWidth)
     let starty = (Math.random() * window.innerHeight)
     let color = Math.random() * 300 + 30
-    let rng = Math.floor(Math.random() * 4)
-    if(rng == 0) {
-        color = 0
-        fish.dataset.color = "blue"
-    }
     fishes.push(fish)
     fish.style.transform = `translate(${startx}px, ${starty}px)`
     fish.style.filter = `hue-rotate(${color}deg)`
@@ -93,7 +88,7 @@ function killFish(e:Event){
 
 function popBubble(e:Event) {
     let bubble = e.target as HTMLElement
-    bubble.remove()
+    bubble.remove() 
     bubbles = bubbles.filter(b => b != bubble)
     plopSound.play()
 }

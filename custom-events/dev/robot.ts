@@ -6,7 +6,7 @@ export class Robot {
     private y : number = 120
     private _score : number = 0
     private _health : number = 100
-    public gun : Gun
+    private gun : Gun
 
     constructor(){
         const game = document.querySelector('game') as HTMLElement

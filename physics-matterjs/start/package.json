@@ -1,0 +1,25 @@
+{
+    "name": "typescript-matterjs-parcel",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "dev": "parcel dev/index.html",
+        "build": "parcel build dev/index.html --no-minify --public-url ./ --no-source-maps"
+    },
+    "keywords": [],
+    "author": "uw aller eerkmans",
+    "license": "ISC",
+    "browserslist": [
+        "since 2017-06"
+    ],
+    "dependencies": {
+        "@types/matter-js": "^0.14.12",
+        "matter-js": "^0.17.1",
+        "parcel-bundler": "^1.12.5",
+        "typescript": "^4.3.2"
+    },
+    "devDependencies": {
+        "cssnano": "^5.0.4"
+    }
+}

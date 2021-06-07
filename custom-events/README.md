@@ -5,7 +5,7 @@ In deze speed course zien we twee manieren om waarden van een class door te geve
 1. Onze **Game** heeft een **Robot**, daarvan willen we de **Health** en **Score** tonen in de **UI**
 2. De **Robot** heeft een **Gun**, als deze schiet moet de **UI** de ammo status aanpassen.
 
-![diagram](./docs/img/diagram.png)
+<img src="./docs/img/diagram.png" width="400px">
 
 <br>
 <br>

@@ -1,4 +1,4 @@
-# Object Oriented Speed Course : Waarden doorgeven
+# Object Oriented - Communicatie tussen Classes
 
 In deze speed course zien we twee manieren om waarden van een class door te geven aan een andere class.
 

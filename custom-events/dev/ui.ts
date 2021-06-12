@@ -9,7 +9,6 @@ export class UI  {
 
     constructor(r:Robot) {
         this.robot = r
-        //this.ammo = 10
         const game = document.querySelector('game') as HTMLElement
         this.scoreField = document.createElement("ui")
         this.ammoField = document.createElement("ammo")
@@ -19,6 +18,7 @@ export class UI  {
         window.addEventListener("shoot", (e:Event) => this.gunWasFired(e))
     }
 
+    // luister naar shoot events
     private gunWasFired(e:Event){
         let shootEvent = e as CustomEvent
         console.log("gun was fired")
@@ -26,6 +26,7 @@ export class UI  {
         this.ammoField.innerHTML = `Ammo:${shootEvent.detail.ammo}`
     }
 
+    // gebruik verwijzing naar robot om health en score te tonen
     public update(){
         this.scoreField.innerHTML = `${Math.round(this.robot.score)} Health : ${Math.round(this.robot.health)}`
     }

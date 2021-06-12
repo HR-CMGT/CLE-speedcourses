@@ -6,7 +6,7 @@ export class Robot {
     private y : number = 120
     private _score : number = 0
     private _health : number = 100
-    public gun : Gun
+    private gun : Gun
 
     constructor(){
         const game = document.querySelector('game') as HTMLElement
@@ -20,20 +20,9 @@ export class Robot {
         return this._score
     }
 
-    set score(s:number) {
-        if(s > 0) {
-            this._score = s
-        }
-    }
-
     get health() {
         return this._health
     }
-
-    //private keyHandler(e:KeyboardEvent){
-    //    this._score++
-    //    console.log("Je hebt een punt!")
-    //}
 
     public update(): void{
         this._health -= 0.01

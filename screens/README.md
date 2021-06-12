@@ -1,11 +1,8 @@
 # Wisselen tussen schermen
 
-Om te kunnen wisselen tussen schermen plaatsen we een extra `screen` object tussen `game.ts` en de objecten op het scherm, zoals een startknop of een groep robots.
+Om te kunnen wisselen tussen schermen maken we een aparte "Screen" class, waarin dan vervolgens de game elementen geplaatst worden. Vanuit `game.ts` wordt alleen nog maar de `update` van het huidige scherm aangeroepen.
 
-- Game heeft een screen
-- Startscreen heeft een startknop
-- Gamescreen heeft robots
-- Endscreen heeft gameover knop
+<img src="./classdiagram.png" width="600">
 
 Het is belangrijk dat al deze classes een update en remove functie hebben.
 

@@ -1,26 +1,18 @@
 import { GameObject } from "./gameobject.js"
+import { Robot } from "./robot.js"
 import { Startscreen } from "./startscreen.js"
 
-export class Game extends GameObject {
+export class Game {
+
+    robot:Robot
 
     constructor(){
-        super("game")
-
-        const text = document.createElement("div")
-        const btn = document.createElement("button")
-
-        this.element.appendChild(text)
-        this.element.appendChild(btn)
-
-        text.innerText = "Robot Clicker"
-        btn.innerText = "START GAME"
-
-        btn.addEventListener("click", () => console.log("start the game"))
-
+        this.robot = new Robot(this)
         this.gameLoop()
     }
 
     private gameLoop(){
+        this.robot.update()
         requestAnimationFrame(()=>this.gameLoop())
     }
 }

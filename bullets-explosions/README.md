@@ -2,6 +2,8 @@
 
 ## RUIMTEGRUIS
 
+![gruisgif](./ruimtegruis.gif)
+
 Deze week gaan we een game maken waarbij je kan schieten en explosies laten ontstaan.
 
 - Welke class is verantwoordelijk voor bullets en explosions?

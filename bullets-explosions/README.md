@@ -8,9 +8,21 @@ Deze week gaan we een game maken waarbij je kan schieten en explosies laten onts
 
 - Welke class is verantwoordelijk voor bullets en explosions?
 - Hoe kunnen we objecten verwijderen uit de game?
-- Spraak gebruiken
 
 ![gruis](./classdiagram-gruis.png)
+
+<br>
+<br>
+
+Spraak en geluid kan je toevoegen met:
+
+```typescript
+ let sound = new Audio("./sound/laser.mp3")
+sound.play()
+
+this.speech = new Speech()
+this.speech.speak("destroy all enemies!")
+```
 
 <br>
 <br>

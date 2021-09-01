@@ -8,8 +8,9 @@
 
 ### HTML en CSS
 
-- [Responsive Grid - Album playlist](./layout-animation/)
+- [Alan Kay's Dynabook - introductie HTML + CSS in drie lessen](https://github.com/HR-CMGT/alankay-dynabook)
 - [Website Layout - Cybertruck workshop](./cybertruck-responsive/)
+- [Responsive Grid - Album playlist](./layout-animation/)
 - [Front end Forms - Form layout and sending values to PHP](./front-end-forms/)
 
 ### Games

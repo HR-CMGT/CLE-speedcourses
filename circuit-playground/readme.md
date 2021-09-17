@@ -220,9 +220,9 @@ If your servo draws too much power, or if you need multiple servos, you can conn
 
 ## <a name="distance"></a>Distance sensor
 
-Gebruik een **3 Volt** ultrasonic distance sensor om afstanden te meten met de Playground Express. 
+Gebruik een **3 Volt RCW0001** ultrasonic distance sensor om afstanden te meten met de Playground Express. 
 
-![rcw0001](./images/rcw0001.png)
+![rcw0001](./images/bothdistance.png)
 
 ![distance](./images/distance3vplayground.png)
 
@@ -239,7 +239,9 @@ De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan
 
 > Het inlezen van de pulse is niet beschikbaar in de **crickit** blocks, dus de sensor is aangesloten op de playground.
 
-⚠️ De meest gangbare dinstance sensor is de SR04. Deze is **5 Volt**, dat moet je omzetten naar **3 Volt**. [Hier vind je een uitleg van de SR04 sensor aansluiting](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04)
+### ⚠️ 5 Volt sensor
+
+De SR04 is **5 Volt**, dat kan je omzetten naar **3 Volt**. [Hier vind je een uitleg van de SR04 sensor aansluiting](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04)
 
 - [3 Volt RCW-0001 afstand sensor bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-rcw-0001)
 - [3 Volt RCWL-1601 afstand sensor](https://www.adafruit.com/product/4007)

@@ -57,6 +57,10 @@ Je kan een breadboard gebruiken om externe electronica makkelijk aan te sluiten 
 
 Let op dat het lange pootje van de LED naar de stroom gaat, en het korte pootje gaat naar GND. De weerstand mag wel aan beide kanten zitten.
 
+Test of het lampje gaat branden door de rode draad rechtstreeks op de stroom (3.3V) van de playground aan te sluiten. De zwarte draad gaat naar GND>
+
+Als dat werkt sluit je de rode draad aan op de A2 poort van de playground. Hier kan je met code stroom op zetten.
+
 ![led](./images/extled.png)
 
 Als je meerdere LEDS wil aansturen kan je ze allemaal aan een eigen poort aansluiten. Ze kunnen wel de GND delen. Gebruik daarvoor het lange gootje van de breadboard.
@@ -216,28 +220,31 @@ If your servo draws too much power, or if you need multiple servos, you can conn
 
 ## <a name="distance"></a>Distance sensor
 
-Gebruik een ultrasnoic distance sensor om afstanden te meten met de Playground Express. 
+Gebruik een **3 Volt** ultrasonic distance sensor om afstanden te meten met de Playground Express. 
 
-![sr04](./images/distance_sr04.jpg)
+![rcw0001](./images/rcw0001.png)
+
+![distance](./images/distance3vplayground.png)
 
 - Sluit VCC aan op stroom
 - Sluit GND aan op GND 
-- Sluit de TRIG aan op A1
+- Sluit de TRIG aan op A3
 - Sluit de ECHO aan op A2
 
-De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan met de rechter speaker te meten hoe lang het duurt voordat de echo terug komt. Deze code laat zien hoe je dat doet. Let op, het inlezen van de pulse is niet beschikbaar in de **crickit** blocks, dus de sensor zit aangesloten aan de playground.
+De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan met de rechter speaker te meten hoe lang het duurt voordat de echo terug komt. 
 
-![code_sound](./images/makecode-ultrasound.png)
+![code_sound](./images/distance3v.png)
 
-**Let op** er zijn veel verschillende typen distance sensor. De meest gangbare is de SR04. Deze is 5 Volt, dus dat voltage moet je omzetten naar 3 Volt. [Hier vind je een uitleg van de SR04 sensor aansluiting voor de circuit playground express](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04)
+[Voorbeeld in MakeCode](https://makecode.com/_a8M8fMhfE1Tp)
 
-- [SR04 5V distance sensor](https://www.kiwi-electronics.nl/ultrasonic-sensor-hc-sr04?lang=en)
+> Het inlezen van de pulse is niet beschikbaar in de **crickit** blocks, dus de sensor is aangesloten op de playground.
 
-Er bestaan ook **3 Volt** distance sensoren:
+⚠️ De meest gangbare dinstance sensor is de SR04. Deze is **5 Volt**, dat moet je omzetten naar **3 Volt**. [Hier vind je een uitleg van de SR04 sensor aansluiting](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04)
 
-- [3 Volt RCW0001 afstand sensor bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-rcw-0001)
-- [3 Volt US100 afstand sensor kopen bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-us-100-uart-with-temperature-sensor)
-- [Adafruit 3 Volt afstand sensor](https://www.adafruit.com/product/4007)
+- [3 Volt RCW-0001 afstand sensor bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-rcw-0001)
+- [3 Volt RCWL-1601 afstand sensor](https://www.adafruit.com/product/4007)
+- [5 Volt SR04 distance sensor](https://www.kiwi-electronics.nl/ultrasonic-sensor-hc-sr04?lang=en)
+
 
 
 

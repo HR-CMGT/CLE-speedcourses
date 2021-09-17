@@ -168,10 +168,21 @@ Connect the playground 3.3V and GND pads to the outer pins of the potentiometer.
 If you PAIR your playground in Chrome, you can show the value of the of A3 in the console. This way you can check if you really get a number between 0 and 1024. You can use the **map** function to convert this number to any value that you need. In this example code, the lights from 0 to 9 turn on by turning the knob. [Makecode example.](https://makecode.com/_csHRjdVVUD7A)
 
 ![potentio](./images/potentio1.png)
-![potentio](./images/potentio3.png)
+![potentio](./images/potmeter-graph.png)
 
 
 ![potgif](./images/potentiometer2.gif)
+
+```javascript
+let buttonValue = 0
+
+forever(function () {
+    buttonValue = pins.A2.analogRead()
+    console.logValue("draaiknop", buttonValue)
+    light.graph(Math.map(buttonValue, 0, 1023, 0, 10), 10)
+})
+
+```
 <br>
 <br>
 <br>

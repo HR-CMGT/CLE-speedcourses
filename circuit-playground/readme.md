@@ -224,12 +224,14 @@ Gebruik een **3 Volt RCW0001** ultrasonic distance sensor om afstanden te meten 
 
 ![rcw0001](./images/bothdistance.png)
 
-![distance](./images/distance3vplayground.png)
+![distance](./images/both-sensors.png)
 
 - Sluit VCC aan op stroom
 - Sluit GND aan op GND 
 - Sluit de TRIG aan op A3
 - Sluit de ECHO aan op A2
+
+⚠️ De SR04 is **5 Volt**, dat moet je [eerst geschikt maken voor **3 Volt**](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04)
 
 De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan met de rechter speaker te meten hoe lang het duurt voordat de echo terug komt. 
 
@@ -238,10 +240,6 @@ De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan
 [Voorbeeld in MakeCode](https://makecode.com/_a8M8fMhfE1Tp)
 
 > Het inlezen van de pulse is niet beschikbaar in de **crickit** blocks, dus de sensor is aangesloten op de playground.
-
-### ⚠️ 5 Volt sensor
-
-De SR04 is **5 Volt**, dat kan je omzetten naar **3 Volt**. [Hier vind je een uitleg van de SR04 sensor aansluiting](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04)
 
 - [3 Volt RCW-0001 afstand sensor bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-rcw-0001)
 - [3 Volt RCWL-1601 afstand sensor](https://www.adafruit.com/product/4007)

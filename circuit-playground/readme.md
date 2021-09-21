@@ -5,6 +5,7 @@ Some tips and ideas to connect external hardware to your CPE!
 - [Resistors](#resistors)
 - [Breadboards](#breadboards)
 - [External LED](#led)
+- [Push Button](#pushbutton)
 - [External power for Playground](#power)
 - [How to check sensor values](#values)
 - [External Switch 3 pins](#switch)
@@ -66,6 +67,30 @@ Als dat werkt sluit je de rode draad aan op de A2 poort van de playground. Hier 
 Als je meerdere LEDS wil aansturen kan je ze allemaal aan een eigen poort aansluiten. Ze kunnen wel de GND delen. Gebruik daarvoor het lange gootje van de breadboard.
 
 ![led](./images/breadboard_leds.png)
+
+<br>
+<br>
+<br>
+
+---
+
+## <a name="pushbutton"></a>Pushbutton
+
+![pushbutton](./images/pushbutton-breadboard.png)
+
+The push button is just a way to send power through a wire, or block the power. When the button is pushed, power is allowed through to the wire that leads to A3. You can then use the `digitalRead()` command to detect if the wire is powered.
+
+![pushbutton](./images/pushbutton-blocks.png)
+
+```javascript
+forever(function () {
+    if (pins.A3.digitalRead()) {
+        light.setAll(0x00ff00)
+    } else {
+        light.setAll(0xff0000)
+    }
+})
+```
 
 <br>
 <br>

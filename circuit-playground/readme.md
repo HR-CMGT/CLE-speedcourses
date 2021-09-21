@@ -13,7 +13,7 @@ Some tips and ideas to connect external hardware to your CPE!
 - [Force sensor](#button)
 - [Infrared communication](#infrared)
 - [Rotating Button](#potentio)
-- [Solid Core Wire]("#solidwire")
+- [Solid Core Wire](#solidwire)
 - [Servo](#servo)
 - [Servo with external power](#external)
 - [Distance Sensor](#distance)

@@ -13,6 +13,7 @@ Some tips and ideas to connect external hardware to your CPE!
 - [Force sensor](#button)
 - [Infrared communication](#infrared)
 - [Rotating Button](#potentio)
+- [Solid Wire]("#solidwire")
 - [Servo](#servo)
 - [Servo with external power](#external)
 - [Distance Sensor](#distance)
@@ -212,6 +213,21 @@ forever(function () {
 })
 
 ```
+
+<br>
+<br>
+<br>
+
+---
+
+## <a name="servo"></a>Solid Core Wire
+
+Met een rolletje [*solid core wire*](https://www.youtube.com/watch?v=ver-Av8vr1Q) kan je een steviger prototype bouwen op je breadboard.
+
+![servo](./images/solidcore.png)
+
+- [Solid Core Wire bestellen bij Kiwi Electronics](https://www.kiwi-electronics.nl/en/search?search=solid%20core%20wire)
+
 <br>
 <br>
 <br>

@@ -220,7 +220,7 @@ forever(function () {
 
 ---
 
-## <a name="servo"></a>Solid Core Wire
+## <a name="solidwire"></a>Solid Core Wire
 
 Met een rolletje [*solid core wire*](https://www.youtube.com/watch?v=ver-Av8vr1Q) kan je een steviger prototype bouwen op je breadboard.
 

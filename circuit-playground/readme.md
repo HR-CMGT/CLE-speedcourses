@@ -284,7 +284,7 @@ De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan
 
 - [3 Volt RCW-0001 afstand sensor bij TinyTronics](https://www.tinytronics.nl/shop/en/sensors/distance/ultrasonic-sensor-rcw-0001)
 - [3 Volt RCWL-1601 afstand sensor](https://www.adafruit.com/product/4007)
-# (- [5 Volt SR04 distance sensor](https://www.kiwi-electronics.nl/ultrasonic-sensor-hc-sr04?lang=en))
+<!-- - [5 Volt SR04 distance sensor](https://www.kiwi-electronics.nl/ultrasonic-sensor-hc-sr04?lang=en) -->
 - [5 Volt distance sensor](https://learn.adafruit.com/distance-measurement-ultrasound-hcsr04?view=all)
 
 

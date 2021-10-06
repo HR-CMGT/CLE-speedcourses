@@ -365,12 +365,14 @@ forever(function () {
 ![minipir](./images/minipir.jpg)
 
 - [Mini Infrared Motion Detector (PIR) for 3V](https://www.adafruit.com/product/4666)
+- [On Off Switch](https://www.kiwi-electronics.nl/nl/aan-uit-tuimelschakelaar-rood-3630)
 - [Force sensor](https://www.kiwi-electronics.nl/ronde-drukgevoelige-weerstand-fsr402?lang=en)
 - [Air quality sensor](https://www.kiwi-electronics.nl/sensoren/adafruit-sgp30-air-quality-sensor-breakout)
 - [Soil Moisture sensor](https://www.kiwi-electronics.nl/sparkfun-soil-moisture-sensor?search=moisture%20sensor&description=true)
 - [🤖 Mini Pan and Tilt robot arm!](https://www.adafruit.com/product/1967)
 - [⚙️ Geared DC Motor](https://www.kiwi-electronics.nl/hobby-dc-motor-140rpm-2-stuks?search=dc%20motor&description=true)
-- [Speaker](https://learn.adafruit.com/adafruit-crickit-creative-robotic-interactive-construction-kit/makecode-audio)
+- [How to connect several DC Motors directly to power](https://www.youtube.com/watch?v=aV8clSDuwm8). You can replace the switch with a Relais!
+- [Relais to control externally powered devices](https://www.benselectronics.nl/1-kanaals-relais-board-3v.html)
 
 ---
 <br>

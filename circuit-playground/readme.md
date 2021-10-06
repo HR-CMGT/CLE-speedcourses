@@ -370,6 +370,7 @@ forever(function () {
 - [Soil Moisture sensor](https://www.kiwi-electronics.nl/sparkfun-soil-moisture-sensor?search=moisture%20sensor&description=true)
 - [🤖 Mini Pan and Tilt robot arm!](https://www.adafruit.com/product/1967)
 - [⚙️ Geared DC Motor](https://www.kiwi-electronics.nl/hobby-dc-motor-140rpm-2-stuks?search=dc%20motor&description=true)
+- [Speaker](https://learn.adafruit.com/adafruit-crickit-creative-robotic-interactive-construction-kit/makecode-audio)
 
 ---
 <br>

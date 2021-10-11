@@ -329,7 +329,7 @@ To move heavy objects you need a **Geared DC motor**. The gears are needed to co
 
 ![dcmotor](./images/dcmotors.png)
 
-DC Motors use too much power for the Circuit Playground. [We solve this by connecting the **Adafruit Crickit** to the Playground](../crickit/readme.md)!
+DC Motors use too much power for the Circuit Playground. You can solve this by [using the **Adafruit Crickit**](../crickit/readme.md). The Crickit allows you to control two motors separately. You can also [connect dc motors to their own power source with a relais](#relais). The relais allows you to connect more than two motors. 
 
 If you don't have a CRICKIT [you can use the **CLEVER Mosfet** to safely control a DC motor](./mosfet.md)
 

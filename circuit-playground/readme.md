@@ -374,7 +374,7 @@ In het volgende voorbeeld zie je een 9 Volt batterij waar 3 DC motoren op zijn a
 
 ![relais](./images/relais-dc-motors.png)
 
-> ⚠️ Let op dat je geen al te hoge voltages aansluit (*geen 220 Volt!*). De bedrading moet hier ook tegen kunnen, en kortsluiting op een hoog voltage kan gevaarlijk zijn.
+> ⚠️ Let op dat je geen hoge voltages aansluit (*geen 220 Volt!!*). Je kan jezelf ernstig bezeren. Hou het bij lage voltages (~3 tot ~12 volt) en apparaten die daarvoor bedoeld zijn.
 
 <br>
 

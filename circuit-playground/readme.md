@@ -20,6 +20,7 @@ Some tips and ideas to connect external hardware to your CPE!
 - [Neopixel Strip](#neopixel)
 - [DC Motors](#dcmotor)
 - [Solenoid (push/pull)](#solenoid)
+- [Relais](#relais)
 - [Other parts](#parts)
 - [Where to buy](#shopping)
 
@@ -329,9 +330,11 @@ To move heavy objects you need a **Geared DC motor**. The gears are needed to co
 
 ![dcmotor](./images/dcmotors.png)
 
-DC Motors use too much power for the Circuit Playground. You can solve this by [using the **Adafruit Crickit**](../crickit/readme.md). The Crickit allows you to control two motors separately. You can also [connect dc motors to their own power source with a relais](#relais). The relais allows you to connect more than two motors. 
+DC Motors use too much power for the Circuit Playground. You can solve this by [using the **Adafruit Crickit**](../crickit/readme.md). The Crickit allows you to control two motors separately. 
 
-If you don't have a CRICKIT [you can use the **CLEVER Mosfet** to safely control a DC motor](./mosfet.md)
+You can also [connect dc motors to their own power source with a relais](#relais). The relais allows you to connect more than two motors. 
+
+The [mosfet](./mosfet.md) is another way to connect a DC motor to a playground.
 
 
 ---
@@ -353,8 +356,32 @@ forever(function () {
 })
 ```
 
-- [📺 MakeCode instruction video](https://www.youtube.com/watch?v=AMvSTm0cWyA)
+- [📺 Solenoid MakeCode instruction video](https://www.youtube.com/watch?v=AMvSTm0cWyA)
 - [Robotshop Solenoid](https://www.robotshop.com/nl/nl/5v-solenoid.html)
+
+<br>
+<br>
+
+## <a name="#relais"></a>Relais
+
+Met een **relais** kan je een extern circuit **aan / uit** zetten via de playground express. Je kan dan allerei electrische apparaten aan of uit zetten zonder dat je playground express beschadigd raakt! 
+
+Met de code `digitalWrite()` kan je het relais laten schakelen tussen AAN en UIT.
+
+![relais](./images/relais.png)
+
+In het volgende voorbeeld zie je een 9 Volt batterij waar 3 DC motoren op zijn aangesloten. De stroom die naar de 3 motoren gaat, kan je aan en uit zetten via het [relais](https://www.benselectronics.nl/1-kanaals-relais-board-3v.html).
+
+![relais](./images/relais-dc-motors.png)
+
+> ⚠️ Let op dat je geen al te hoge voltages aansluit (*geen 220 Volt!*). De bedrading moet hier ook tegen kunnen, en kortsluiting op een hoog voltage kan gevaarlijk zijn.
+
+<br>
+
+- [3 Volt Relais kopen](https://www.benselectronics.nl/1-kanaals-relais-board-3v.html)
+- [📺 aansluiten van meerdere DC motoren aan batterij](https://www.youtube.com/watch?v=aV8clSDuwm8).
+
+
 
 ---
 <br>
@@ -371,8 +398,6 @@ forever(function () {
 - [Soil Moisture sensor](https://www.kiwi-electronics.nl/sparkfun-soil-moisture-sensor?search=moisture%20sensor&description=true)
 - [🤖 Mini Pan and Tilt robot arm!](https://www.adafruit.com/product/1967)
 - [⚙️ Geared DC Motor](https://www.kiwi-electronics.nl/hobby-dc-motor-140rpm-2-stuks?search=dc%20motor&description=true)
-- [How to connect several DC Motors directly to power](https://www.youtube.com/watch?v=aV8clSDuwm8). You can replace the switch with a Relais!
-- [Relais to control externally powered devices](https://www.benselectronics.nl/1-kanaals-relais-board-3v.html)
 
 ---
 <br>
@@ -381,6 +406,6 @@ forever(function () {
 ## <a name="shopping"></a>Shopping
 
 - [Kiwi electronics](https://www.kiwi-electronics.nl)
-- [FLORIS](https://www.floris.cc)
 - [Antratek](https://www.antratek.nl/)
 - [Tinytronics](https://www.tinytronics.nl/shop/nl)
+- [Ben's Electronics]()

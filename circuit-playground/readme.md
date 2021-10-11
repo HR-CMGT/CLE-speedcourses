@@ -364,7 +364,7 @@ forever(function () {
 
 ## <a name="#relais"></a>Relais
 
-Met een **relais** kan je een extern circuit **aan / uit** zetten via de playground express. Je kan dan allerei electrische apparaten aan of uit zetten zonder dat je playground express beschadigd raakt! 
+Met een **relais** kan je een extern circuit **aan / uit** zetten via de playground express. Dit kan handig zijn als je meer dan 3 ~ 5 Volt nodig hebt voor je externe apparaten. 
 
 Met de code `digitalWrite()` kan je het relais laten schakelen tussen AAN en UIT.
 

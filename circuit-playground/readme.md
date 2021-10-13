@@ -408,4 +408,5 @@ In het volgende voorbeeld zie je een 9 Volt batterij waar 3 DC motoren op zijn a
 - [Kiwi electronics](https://www.kiwi-electronics.nl)
 - [Antratek](https://www.antratek.nl/)
 - [Tinytronics](https://www.tinytronics.nl/shop/nl)
-- [Ben's Electronics]()
+- [Ben's Electronics](https://www.benselectronics.nl)
+- [Elektronica voor jou](https://elektronicavoorjou.nl)

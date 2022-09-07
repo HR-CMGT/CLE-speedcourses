@@ -391,6 +391,7 @@ In het volgende voorbeeld zie je een 9 Volt batterij waar 3 DC motoren op zijn a
 
 ![minipir](./images/minipir.jpg)
 
+- [Lichtgevend draad 🤯](https://learn.adafruit.com/el-wire)
 - [Mini Infrared Motion Detector (PIR) for 3V](https://www.adafruit.com/product/4666)
 - [On Off Switch](https://www.kiwi-electronics.nl/nl/aan-uit-tuimelschakelaar-rood-3630)
 - [Force sensor](https://www.kiwi-electronics.nl/ronde-drukgevoelige-weerstand-fsr402?lang=en)

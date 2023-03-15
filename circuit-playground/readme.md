@@ -396,6 +396,7 @@ In het volgende voorbeeld zie je een 9 Volt batterij waar 3 DC motoren op zijn a
 - [On Off Switch](https://www.kiwi-electronics.nl/nl/aan-uit-tuimelschakelaar-rood-3630)
 - [Force sensor](https://www.kiwi-electronics.nl/ronde-drukgevoelige-weerstand-fsr402?lang=en)
 - [Air quality sensor](https://www.kiwi-electronics.nl/sensoren/adafruit-sgp30-air-quality-sensor-breakout)
+- [Human Presence Sensor](https://www.antratek.nl/24ghz-mmwave-radar-sensor-human-static-presence-module)
 - [Soil Moisture sensor](https://www.kiwi-electronics.nl/sparkfun-soil-moisture-sensor?search=moisture%20sensor&description=true)
 - [🤖 Mini Pan and Tilt robot arm!](https://www.adafruit.com/product/1967)
 - [⚙️ Geared DC Motor](https://www.kiwi-electronics.nl/hobby-dc-motor-140rpm-2-stuks?search=dc%20motor&description=true)

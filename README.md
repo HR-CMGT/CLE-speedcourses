@@ -1,5 +1,7 @@
 # CLE Speedcourses
 
+Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons worden gegeven / gegeven zijn.
+
 ### Internet of Things
 
 - [🤖 Robots bouwen met Crickit](./crickit/readme.md)
@@ -8,6 +10,7 @@
 
 ### HTML en CSS
 
+- [Bulma Hackathon](./bulma/)
 - [Alan Kay's Dynabook - introductie HTML + CSS in drie lessen](https://github.com/HR-CMGT/alankay-dynabook)
 - [Website Layout - Cybertruck workshop](./cybertruck-responsive/)
 - [Responsive Grid - Album playlist](./layout-animation/)

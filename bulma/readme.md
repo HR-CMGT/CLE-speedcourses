@@ -70,16 +70,19 @@ In plaats van zelf `css classes` te schrijven, kan je rechtstreeks `bulma classe
 - Pagination
 - etc. etc.
 
+Bulma is vergelijkbaar met TailWindCSS, het verschil is dat Bulma geen javascript component heeft.
+
 <br><br><br>
 
 ## Startcode
 
-Om te beginnen zal je altijd de Bulma CSS file aan je `index.html` moeten toevoegen. 
-
+Voeg bulma toe aan je `index.html`
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 ```
 Je vindt hier een [voorbeeld index.html file](./index.html)
+
 
 
 <br><br><br>
@@ -87,4 +90,7 @@ Je vindt hier een [voorbeeld index.html file](./index.html)
 ## Links
 
 - [Bulma](https://bulma.io)
+- [fontAwesome icons](https://fontawesome.com/search?s=solid&f=classic&o=r) 
+- [Material Icons](https://fonts.google.com/icons)
+- [Ionic Icons](https://ionic.io/ionicons)
 

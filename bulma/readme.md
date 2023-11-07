@@ -41,8 +41,22 @@ Zoek vervolgens op het internet naar ***drie websites*** die over dit onderwerp 
 ### Zelfstandig werken ochtend
 
 - Bouw je eigen front-end website over jouw gekozen onderwerp. 
-- Gebruik hierbij bulma.css om de layout op te zetten. 
 - Gebruik de drie gevonden websites als visuele inspiratie. 
+- Gebruik ***bulma.css*** om je layout op te zetten:
+    - Gebruik `is-` en `has-` om tekstkleuren en achtergrondkleuren te bepalen
+    - Gebruik `p-` en `m-` om margins en paddings aan te geven. 
+- Gebruik minimaal deze bulma componenten:
+    - Hero, Section en Footer (paginabreed)
+    - Container (gecentreerd op de pagina)
+    - Navbar
+    - Columns / Column om items responsive naast elkaar te zetten
+    - Image
+- Daarnaast kan je voor specifieke doeleinden de volgende componenten gebruiken:
+    - Breadcrumb
+    - Pagination
+    - Dropdown
+    - Panel, Card, Media Object
+    - Form 
 
 ### PAUZE EN LUNCH
 
@@ -59,18 +73,13 @@ Zoek vervolgens op het internet naar ***drie websites*** die over dit onderwerp 
 
 ## Wat is Bulma
 
-Bulma is een CSS framework waarin een groot aantal layout oplossingen voor front-end projecten al zijn ingebouwd. 
+Bulma is een CSS framework waarin een groot aantal layout oplossingen voor front-end projecten al zijn ingebouwd. In plaats van zelf `css classes` te schrijven, kan je rechtstreeks `bulma classes` aan je HTML elementen toevoegen. Je layout wordt automatisch responsive! Bulma is vergelijkbaar met TailWindCSS, het verschil is dat Bulma geen javascript component heeft. Voorbeeld, een P met link tekst en een padding van 4rem:
 
-In plaats van zelf `css classes` te schrijven, kan je rechtstreeks `bulma classes` aan je HTML elementen toevoegen. Zo kan je direct een layout bouwen voor bijvoorbeeld:
-
-- Navigatiebalk
-- Responsive layout met flex
-- Breadcrumbs
-- Cards
-- Pagination
-- etc. etc.
-
-Bulma is vergelijkbaar met TailWindCSS, het verschil is dat Bulma geen javascript component heeft.
+```html
+<p class="has-text-link-dark p-4">
+    gebruik p en m voor margin en padding. Gebruik has-text en has-background voor kleur.
+</p>
+```
 
 <br><br><br>
 

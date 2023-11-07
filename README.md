@@ -10,7 +10,7 @@ Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons w
 
 ### HTML en CSS
 
-- [Bulma Hackathon](./bulma/)
+- 🐉 [Bulma Hackathon](./bulma/)
 - [Alan Kay's Dynabook - introductie HTML + CSS in drie lessen](https://github.com/HR-CMGT/alankay-dynabook)
 - [Website Layout - Cybertruck workshop](./cybertruck-responsive/)
 - [Responsive Grid - Album playlist](./layout-animation/)
@@ -25,7 +25,7 @@ Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons w
 - [Canvas en Keyboard input](./canvas-keyboard)
 - [Communicatie tussen Classes](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/custom-events)
 - [Wisselen tussen schermen](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/screens)
-- [💥 Bullets and Explosions](./bullets-explosions/)
+- [Bullets and Explosions](./bullets-explosions/)
 
 #### Frameworks
 

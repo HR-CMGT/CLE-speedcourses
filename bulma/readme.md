@@ -56,7 +56,8 @@ Zoek vervolgens op het internet naar ***drie websites*** die over dit onderwerp 
     - Pagination
     - Dropdown
     - Panel, Card, Media Object
-    - Form 
+    - Form
+- Gebruik je eigen `style.css` file om kleuren aan te passen, achtergrondafbeeldingen en animaties toe te voegen, etc. 
 
 ### PAUZE EN LUNCH
 

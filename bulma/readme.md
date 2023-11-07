@@ -4,10 +4,10 @@
 
 > *Bouw een front-end project met een CSS framework!*
 
-- Programma
-- Wat is Bulma
-- Startcode
-- Links
+- [Programma](#programma)
+- [Wat is Bulma](#wat-is-bulma)
+- [Startcode](#startcode)
+- [Links](#links)
 
 <br><br><br>
 

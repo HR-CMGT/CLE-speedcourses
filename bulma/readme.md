@@ -63,8 +63,8 @@ Zoek vervolgens op het internet naar ***drie websites*** die over dit onderwerp 
 
 ### Zelfstandig werken middag
 
-- Bij voldoende vraag, volg de herhalingsles CSS animatie
-- Zelfstandig werken om de opdracht af te maken
+- Workshop: bouw een slideshow animation.
+- Zelfstandig werken om de opdracht af te maken.
 
 ### AFSLUITING EN PRESENTATIES
 

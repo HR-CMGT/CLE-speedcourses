@@ -100,6 +100,7 @@ Je vindt hier een [voorbeeld index.html file](./index.html)
 ## Links
 
 - [Bulma](https://bulma.io)
+- [Bulma Extensions](https://bulma.io/extensions/)
 - [fontAwesome icons](https://fontawesome.com/search?s=solid&f=classic&o=r) 
 - [Material Icons](https://fonts.google.com/icons)
 - [Ionic Icons](https://ionic.io/ionicons)

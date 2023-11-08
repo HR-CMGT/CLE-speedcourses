@@ -4,10 +4,16 @@
 
 > *Bouw een front-end project met een CSS framework!*
 
-- [Programma](#programma)
 - [Wat is Bulma](#wat-is-bulma)
+- [Programma](#programma)
 - [Startcode](#startcode)
 - [Links](#links)
+
+<br><br><br>
+
+## Wat is Bulma
+
+Bulma is een CSS framework waarin een groot aantal layout oplossingen voor front-end projecten al zijn ingebouwd. In plaats van zelf `css classes` te schrijven, kan je rechtstreeks `bulma classes` aan je HTML elementen toevoegen. Een voorbeeld hiervan is `<p class="m-4">Hi</p>`. Dit is een `<p>` met een margin van 4. Bulma maakt je layout automatisch *responsive*, waardoor je niet zelf `@media` queries hoeft te schrijven. Bulma is vergelijkbaar met TailWind en Material UI. 
 
 <br><br><br>
 
@@ -69,18 +75,6 @@ Zoek vervolgens op het internet naar ***drie websites*** die over dit onderwerp 
 ### AFSLUITING EN PRESENTATIES
 
 *Plaats je website online op github pages en paste de link in teams*. Op de mini eindmarkt: zet je site open op je laptop.
-
-<br><br><br>
-
-## Wat is Bulma
-
-Bulma is een CSS framework waarin een groot aantal layout oplossingen voor front-end projecten al zijn ingebouwd. In plaats van zelf `css classes` te schrijven, kan je rechtstreeks `bulma classes` aan je HTML elementen toevoegen. Je layout wordt automatisch responsive! Bulma is vergelijkbaar met TailWindCSS, het verschil is dat Bulma geen javascript component heeft. Voorbeeld, een P met link tekst en een padding van 4rem:
-
-```html
-<p class="has-text-link-dark p-4">
-    gebruik p en m voor margin en padding. Gebruik has-text en has-background voor kleur.
-</p>
-```
 
 <br><br><br>
 

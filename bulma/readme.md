@@ -46,7 +46,7 @@ Zoek vervolgens op het internet naar ***drie websites*** die over dit onderwerp 
 
 ### Zelfstandig werken ochtend
 
-- Zoek ***drie websites*** over jouw onderwerp voor visuele inspiratie.
+- Bekijk bestaande websites over jouw onderwerp om visuele inspiratie op te doen.
 - Bouw je eigen front-end website met ***Bulma.CSS***, over jouw gekozen onderwerp. 
 - Gebruik ***bulma.css*** om je layout op te zetten:
     - Gebruik `is-` en `has-` om tekstkleuren en achtergrondkleuren te bepalen

@@ -80,10 +80,14 @@ Zoek vervolgens op het internet naar ***drie websites*** die over dit onderwerp 
 
 ## Startcode
 
-Voeg bulma toe aan je `index.html`
+Voeg Bulma en fontAwesome toe aan je `index.html`
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+```
+Je kan Bulma ook in je CSS importeren in plaats van in de html
+```css
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 ```
 Je vindt hier een [voorbeeld index.html file](./index.html)
 

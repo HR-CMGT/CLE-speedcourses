@@ -21,16 +21,16 @@ Bulma is een CSS framework waarin een groot aantal layout oplossingen voor front
 
 |Deel   |Tijd   |Activiteit   |
 |---|---|---|
-|1  |9:30 ~ 10:00 | Onderwerp kiezen  |
-|2  |10:00 ~ 10:30 | Introductie Bulma.css  |
-|   |10:30 ~ 12:30 | Zelfstandig werken  |
+|1  |Voorbereiding | Onderwerp kiezen  |
+|2  |9:30 ~ 10:00 | Introductie Bulma.css  |
+|   |10:00 ~ 12:30 | Zelfstandig werken  |
 |*PAUZE* |12:30 ~ 13:00 | *PAUZE en LUNCH*  |
 |3  |13:00 ~ 15:00 | Zelfstandig werken, eventueel speedcourse animatie  |
 |4  |15:00 ~ 16:00 | Afsluiting en presentaties |
 
 <br><br><br>
 
-### HACKATHON START
+### Voorbereiding
 
 Kies een van onderstaande drie onderwerpen
 
@@ -46,8 +46,8 @@ Zoek vervolgens op het internet naar ***drie websites*** die over dit onderwerp 
 
 ### Zelfstandig werken ochtend
 
-- Bouw je eigen front-end website over jouw gekozen onderwerp. 
-- Gebruik de drie gevonden websites als visuele inspiratie. 
+- Zoek ***drie websites*** over jouw onderwerp voor visuele inspiratie.
+- Bouw je eigen front-end website met ***Bulma.CSS***, over jouw gekozen onderwerp. 
 - Gebruik ***bulma.css*** om je layout op te zetten:
     - Gebruik `is-` en `has-` om tekstkleuren en achtergrondkleuren te bepalen
     - Gebruik `p-` en `m-` om margins en paddings aan te geven. 
@@ -61,8 +61,10 @@ Zoek vervolgens op het internet naar ***drie websites*** die over dit onderwerp 
     - Breadcrumb
     - Pagination
     - Dropdown
-    - Panel, Card, Media Object
+    - Level
+    - Panel, Card, Media Object, Tag
     - Form
+    - Zelfgekozen component
 - Gebruik je eigen `style.css` file om kleuren aan te passen, achtergrondafbeeldingen en animaties toe te voegen, etc. 
 
 ### PAUZE EN LUNCH

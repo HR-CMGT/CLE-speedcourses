@@ -27,7 +27,7 @@ Bulma is een CSS framework waarin een groot aantal layout oplossingen voor front
 |*PAUZE* |12:30 ~ 13:00 | *PAUZE en LUNCH*  |
 |3  |13:00 ~ 14:30 | Zelfstandig werken, optioneel speedcourse animatie  |
 |   |14:30 ~ 15:00 | Project online zetten op Github Pages  |
-|4  |15:00 ~ 16:00 | Afsluiting en presentaties |
+|4  |15:00 ~ 16:00 | Eindmarkt! Plak je link in teams, project open zetten op laptop |
 
 <br><br><br>
 

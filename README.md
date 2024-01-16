@@ -16,6 +16,10 @@ Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons w
 - [Responsive Grid - Album playlist](./layout-animation/)
 - [Front end Forms - Form layout and sending values to PHP](./front-end-forms/)
 
+### PHP
+
+- [Filteren van beschikbare tijden en kalenderweergave](https://github.com/HR-CMGT/speed-course-available-dates)
+  
 ### Games
 
 #### Vanilla JS (no framework)

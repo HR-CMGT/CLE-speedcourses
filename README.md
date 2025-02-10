@@ -22,6 +22,9 @@ Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons w
   
 ### Games
 
+- [MakeCode Arcade](https://arcade.makecode.com)
+- [Je MakeCode Arcade game op de CMGT arcade kast plaatsen](https://github.com/HR-CMGT/arcade-game?tab=readme-ov-file#makecode-arcade)
+
 #### Vanilla JS (no framework)
 
 - [Game Loop](./gameloop)

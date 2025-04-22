@@ -9,9 +9,9 @@ Hackathon
 - Klik op de download knop, kies de ***KITRONIC*** handheld als doel
 - Je game wordt als `UTF2` file gedownload
 - Sleep dit bestand op de KITRONIC USB drive via de windows explorer / finder
-- Optioneel: klik op "PAIR USB" om rechttreeks naar je device te downloaden (Chrome only)
+- Dit zorgt ook voor automatic eject, dus je moet de arcade weer opnieuw aansluiten als je weer een game wil plaatsen.
+- Optioneel: klik op "PAIR USB" om rechttreeks naar je device te kunnen downloaden (Chrome only)
 
 ### Arcade kast
-
 
 - [Je MakeCode Arcade game op de CMGT arcade kast plaatsen](https://github.com/HR-CMGT/arcade-game?tab=readme-ov-file#makecode-arcade)

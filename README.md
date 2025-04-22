@@ -7,7 +7,7 @@ Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons w
 - [🤖 Robots bouwen met Crickit](./crickit/readme.md)
 - [Circuit Playground Connections](./circuit-playground/readme.md)
 - [Feather with WIFI](./feather-iot/readme.md)
-- [Kitronic Makecode Arcade](./makecode-arcade.md)
+- [Kitronic Makecode Arcade](./arcade/makecode-arcade.md)
 
 ### HTML en CSS
 

@@ -20,12 +20,7 @@ Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons w
 
 - [Filteren van beschikbare tijden en kalenderweergave](https://github.com/HR-CMGT/speed-course-available-dates)
   
-### Games
-
-- [MakeCode Arcade](https://arcade.makecode.com)
-- [Je MakeCode Arcade game op de CMGT arcade kast plaatsen](https://github.com/HR-CMGT/arcade-game?tab=readme-ov-file#makecode-arcade)
-
-#### Vanilla JS (no framework)
+#### Games
 
 - [Game Loop](./gameloop)
 - [Sprites](./sprites)
@@ -34,7 +29,7 @@ Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons w
 - [Wisselen tussen schermen](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/screens)
 - [Bullets and Explosions](./bullets-explosions/)
 
-#### Frameworks
+#### Game Frameworks
 
 - [Advanced Games Workshop with Phaser](https://github.com/HR-CMGT/CLE4-phaser-workshop)
 - [Games Workshop with P5](https://github.com/HR-CMGT/CLE4-P5-workshop)

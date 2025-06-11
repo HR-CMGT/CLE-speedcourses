@@ -4,6 +4,7 @@
 - Tiling background
 - Custom hitbox zodat je achter een boom langs kan lopen
 - Camera volgt speler, camera gaat niet buiten beeld
+- Enemy state
 - Enemy gaat je volgen zodra je in de buurt bent
 - Wapens oppakken en gebruiken
 - Enemy stopt met volgen als je je verstopt achter een boom
@@ -74,6 +75,28 @@ export class Tree extends Actor {
         this.graphics.use(Resources.Tree.toSprite())
         this.body.collisionType = CollisionType.Fixed
         this.collider.useBoxCollider(90, 70, Vector.Half, new Vector(0, 30)); // w,h,anchor,offset
+    }
+}
+```
+
+<br><bR><br>
+
+## Enemy state
+
+Je kan een vijand wisselend gedrag geven met een `state` variabele:
+
+```js
+class Sheep extends Actor {
+    state = "idle"
+
+    onPostUpdate(engine){
+        switch (this.state) {
+        case "idle":
+            console.log("doing nothing...")
+            break;
+        case "following":
+            console.log("following the player!")
+            break;
     }
 }
 ```

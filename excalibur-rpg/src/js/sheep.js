@@ -54,6 +54,7 @@ export class Sheep extends Actor {
                     this.state = "idle"
                     this.graphics.use(Resources.Sleep.toSprite())
                 }
+                break;
         }
     }
 

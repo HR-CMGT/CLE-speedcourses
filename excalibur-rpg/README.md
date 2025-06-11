@@ -4,15 +4,39 @@
 - Tiling background
 - Custom hitbox zodat je achter een boom langs kan lopen
 - Camera volgt speler, camera gaat niet buiten beeld
-- Enemy gaat je volgen zodra je in de buurt bent via [Vector distance](https://excaliburjs.com/docs/vector/)
-- Enemy stopt met volgen als je je verstopt achter een boom (Er is geen *Line-of-Sight* meer). [RayCast](https://excaliburjs.com/docs/ray/). 
+- Enemy gaat je volgen zodra je in de buurt bent
 - Wapens oppakken en gebruiken
+- Enemy stopt met volgen als je je verstopt achter een boom
 
 <br><br><br>
 
 # Code Snippets
 
 Alle snippets om de workshop te kunnen afronden
+
+<br><br><br>
+
+## Camera follow
+
+Camera follows player
+
+```js
+this.currentScene.camera.strategy.elasticToActor(this.chicken, 0.2, 0.6)
+this.currentScene.camera.strategy.limitCameraBounds(new BoundingBox(0, 0, 2000, 1200))
+```
+Player cannot leave bounding box
+
+```js
+import { clamp } from "excalibur"
+
+onPreUpdate(engine) {
+    // ...     
+    this.vel = new Vector(xspeed, yspeed)
+    this.pos.x = clamp(this.pos.x, 0, 2000);
+    this.pos.y = clamp(this.pos.y, 0, 1200);
+}
+```
+
 
 <br><br><br>
 
@@ -49,8 +73,7 @@ export class Tree extends Actor {
     onInitialize(engine) {
         this.graphics.use(Resources.Tree.toSprite())
         this.body.collisionType = CollisionType.Fixed
-        const customHitbox = Shape.Box(90,70, Vector.Half, new Vector(0,30))  // w,h,anchor,offset
-        this.collider.set(customHitbox)
+        this.collider.useBoxCollider(90, 70, Vector.Half, new Vector(0, 30)); // w,h,anchor,offset
     }
 }
 ```
@@ -58,6 +81,23 @@ export class Tree extends Actor {
 <br><bR><br>
 
 ## Vectoren
+
+Een vector kan je gebruiken als richting om in te lopen. Naar rechts lopen is: `let direction = new Vector(1,0)`. Dit moet je normalizen om te zorgen dat een snelheid van `1, 1` niet sneller gaat dan `1,0` of `0,1`
+
+![vector](./public/images/vector.png)
+
+De `direction` vermenigvuldig je met een `speed` (bv. 200) om de uiteindelijke velocity te krijgen.
+
+```js
+let direction = new Vector(1,1)
+let normalizedDirection = direction.normalize()
+this.vel = normalizedDirection.scale(200)
+```
+
+De vector class heeft allerlei handige functies ingebouwd. In dit plaatje zie je de `direction` van de `Sheep` naar de `Chicken`. Dit kan je gebruiken om een actor naar een andere actor toe te laten bewegen (huisdier komt naar je toe, of een homing missile!)
+
+![vector](./public/images/vector-chicken.png)
+
 
 ```js
 // afstand tussen twee vectoren
@@ -71,26 +111,65 @@ const direction = vectorToChicken.normalize()
 direction = direction.negate()
 
 // richting vermenigvuldigen om een snelheid te krijgen
-const speed = direction.scale(2)
+this.vel = direction.scale(2)
 
-// snelheid optellen bij positie
+// snelheid handmatig optellen bij positie
 this.pos = this.pos.add(speed)
+```
+
+<br><br><br>
+
+## Weapon pickup
+
+Voeg de class `Pickup` toe aan de game. Dit is alleen een plaatje van een sword met een hit event: als de `Chicken` de `Pickup` aanraakt, dan wordt de pickup verwijderd en de functie `pickUpSword` in de `Chicken` aangeroepen.
+
+#### pickup.js
+
+```js
+class Pickup extends Actor {
+    hitSomething(event){
+        if(event.other.owner instanceof Chicken) {
+            event.other.owner.pickupSword()
+            this.kill()
+        }
+    }
+}
+```
+De chicken heeft een functie om een Sword op te pakken. De chicken heeft een `attack` functie. Daarin kijk je of de kip al een wapen heeft, en zo ja, dan roep je de `attack()` functie van het zwaard aan.
+
+#### chicken.js
+
+```js
+class Chicken extends Actor {
+     weapon
+     pickupSword(){
+        this.weapon = new Sword()
+        this.addChild(this.weapon)
+     }
+     attack(){
+        if(this.weapon){
+            this.weapon.attack()
+        }
+     }
+}
+```
+#### sword.js
+
+```js
+class Sword extends Actor {
+    attack(){
+    }
+}
 ```
 
 
 <br><br><br>
 
-## 🤯 Line of Sight met Raycast
+## Line of Sight
 
-Zie ook [Vector math voorbeeld](#vector-math-voorbeeld)
+Je kan vanuit de wereld een *raycast* doen, dit is een lijn die *alle* colliders toont waar de lijn doorheen gaat. In dit voorbeeld gebruiken we een `Ray` om te zien of er een `Tree` is tussen `Sheep` en `Chicken`.
 
-### Alle objecten op een ray testen
-
-Je kan vanuit de wereld een *raycast* doen, dit is een lijn die *alle* colliders toont waar de lijn doorheen gaat. Een `Ray` heeft een `startpunt` (Vector) en een `direction` (Vector). De `rayCast` heeft een `length` (number). 
-
-Met `Vector.distance` kan je zien hoe ver het doel van het startpunt is. Met `Vector.sub` kan je het verschil tussen twee vectoren uitrekenen. Dat gebruik je dan weer voor de `direction` om vanaf het startpunt het doel te bereiken.
-
-> *In dit voorbeeld start de `Ray` in de sheep, en gaat door *tot* de chicken. Als daar een `Tree` tussen zit stopt het schaap met het volgen van de kip. `🐑 ------🌳--🌳------> 🐓`*
+>🐑 ------🌳-------> 🐓
 
 SHEEP.JS
 ```js
@@ -98,83 +177,27 @@ onPreUpdate(engine){
     const distance = Vector.distance(engine.chicken.pos, this.pos)
     const vectorToChicken = engine.chicken.pos.sub(this.pos) 
     const direction = vectorToChicken.normalize()
-
     const ray = new Ray(this.pos, direction)
     const hits = this.scene.physics.rayCast(ray, {
         maxDistance: distance,
         searchAllColliders: true,
+        filter: (potentialHit) => {
+            return potentialHit.collider.owner instanceof Tree
+        }
     })
+
+    // check trees
+    if(hits.length > 0) {
+        console.log("er is minstens 1 boom tussen sheep en chicken")
+    }
 }
 ```
 
-Met `filter` kan je specifieke colliders accepteren als obstakel. Dit is nodig omdat anders de kip en het schaap ook als obstakel worden gezien.
 
-```js
-const hits = this.scene.physics.rayCast(ray, {
-    maxDistance: distance,
-    searchAllColliders: true,
-    filter: (potentialHit) => {
-        return potentialHit.collider.owner instanceof Tree
-    }
-})
-```
 
 - [Ray documentatie](https://excaliburjs.com/docs/ray/)
-- [PhysicsWorld documentatie](https://excaliburjs.com/api/class/PhysicsWorld/)
-- [Parameters to filter in or out objects](https://excaliburjs.com/api/interface/RayCastOptions/)
-- [The returned hits](https://excaliburjs.com/api/interface/RayCastHit/)
-- [CollisionGroups](https://excaliburjs.com/docs/collisiongroups) 
+- [Ray Filter](https://excaliburjs.com/api/interface/RayCastOptions/)
 
-<br><Br><br>
-
-### Check of een ray één doel raakt
-
-In onderstaand voorbeeld cast je de ray niet in de wereld maar op een Actor. Je krijgt terug *waar* de ray die actor raakt. Dit kan `null` zijn. 
-
-```js
-const distanceToChicken = this.chicken.pos.sub(this.sheep.pos)
-const direction = distanceToChicken.normalize()
-const ray = new Ray(this.sheep.pos, direction)
-const point = this.chicken.collider.get().rayCast(ray)
-if (point) {
-    console.log(`ray hits chicken at ${point}`)
-}
-```
 
 <br><br><br>
-
-## Camera volgt speler
-
-GAME.JS
-```js
-export class Game extends Engine {
-    startGame(){
-        // camera volgt kip
-        // this.currentScene.camera.strategy.lockToActor(this.chicken)
-        // camera met vertraging
-        this.currentScene.camera.strategy.elasticToActor(this.chicken, 0.2, 0.6)
-        // camera kan niet buiten het level kijken
-        let boundingBox = new BoundingBox(0, 0, 2000, 1200);
-        this.currentScene.camera.strategy.limitCameraBounds(boundingBox)
-    }
-}
-
-```
-
-- [camera strategies](https://excaliburjs.com/docs/cameras/#camera-strategies)
-
-<br><br><br>
-
-## Vector math voorbeeld
-
-```js
-// afstand tussen ship en enemy
-let distance = Vector.distance(ship.pos, enemy.pos)
-// verschil in vector tussen ship en enemy
-let vectorDifference = enemy.pos.sub(player.pos) 
-// direction van ship naar enemy
-let direction = vectorDifference.normalize()
-// elk frame de direction naar enemy optellen bij ship
-ship.pos = ship.pos.add(direction)
-```
 

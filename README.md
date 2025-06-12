@@ -25,8 +25,7 @@ Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons w
 
 ### HTML en CSS
 
-- 🐉 [Bulma Hackathon](./bulma/)
-- [Alan Kay's Dynabook - introductie HTML + CSS in drie lessen](https://github.com/HR-CMGT/alankay-dynabook)
+- [Bulma Hackathon](./bulma/)
 - [Responsive Grid - Album playlist](./layout-animation/)
 - [Front end Forms - Form layout and sending values to PHP](./front-end-forms/)
 

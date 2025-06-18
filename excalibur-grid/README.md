@@ -34,7 +34,7 @@ ork.pos = new Vector(column * 100, row * 100)
 
 <br><br><br>
 
-### Drag & Drop on a grid
+### Drag & Drop snapping on a grid
 
 - Als een draggable item wordt losgelaten krijg je een `evt.worldPos` (de positie in de wereld waar je het item los laat).
 - Dit kan je afronden naar hele hondertallen, zodat je altijd in het grid terecht komt.
@@ -45,6 +45,23 @@ let snappedX = Math.round(posDropped.x / 100) * 100
 let snappedY = Math.round(posDropped.y / 100) * 100
 this.pos = new Vector(snappedX, snappedY)
 ```
+
+<br><br><br>
+
+### Wisselen tussen vaste grid posities
+
+- Er zijn drie vaste grid posities, bestaande uit een rij en kolom waar de actor mag staan: 
+```js
+this.allowedPositions = [
+    { row: 2, column: 3 },
+    { row: 3, column: 1 },
+    { row: 4, column: 4 },
+]
+```
+- Via `currentIndex` hou je bij wat de huidige positie is.
+- Met de cursorkeys spring je naar de volgende positie.
+
+Voorbeeldcode vind je in [chicken.js](./src/js/chicken.js)
 
 <br><br><br>
 

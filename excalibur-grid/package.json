@@ -1,0 +1,16 @@
+{
+  "name": "startproject",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --outDir=docs --base=./"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "excalibur": "^0.30.3"
+  }
+}

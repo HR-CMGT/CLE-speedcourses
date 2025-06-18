@@ -7,6 +7,7 @@ Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons w
 #### Excalibur
 
 - [Top Down RPG](./excalibur-rpg/)
+- [Player Progress bijhouden. Actors op een grid plaatsen.](./excalibur-grid/)
 
 #### Vanilla JS
 

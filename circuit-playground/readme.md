@@ -1,29 +1,31 @@
 # Circuit Playground Connections
 
-Enkele tips en ideeën om externe hardware aan te sluiten op je CPE!
+Enkele tips en ideeën om externe hardware aan te sluiten op je Playground Express!
 
-- [Circuits](#circuit)
-- [External pins](#analog)
+- [Circuits](#circuits)
+- [External pins](#external-pins)
 - [Resistors](#resistors)
 - [Breadboards](#breadboards)
-- [External LED](#led)
+- [External LED](#external-led)
 - [Push Button](#pushbutton)
-- [External power for Playground](#power)
-- [How to check sensor values](#values)
-- [External Switch 3 pins](#switch)
-- [External Button 2 pins](#button)
-- [Force sensor](#button)
-- [Infrared communication](#infrared)
-- [Rotating Button](#potentio)
-- [Solid Core Wire](#solidwire)
+- [External power for Playground](#external-power-for-playground)
+- [How to check sensor values](#how-to-check-sensor-values)
+- [External Switch 3 pins](#external-switch-3-pins)
+- [External Button 2 pins](#external-button-2-pins)
+- [Force sensor](#force-sensor)
+- [Infrared communication](#infrared-communication)
+- [Rotating Button](#rotating-button-potentiometer)
+- [Flex sensor](#flex-sensor)
+- [Solid Core Wire](#solid-core-wire)
 - [Servo](#servo)
-- [Servo with external power](#external)
-- [Distance Sensor](#distance)
-- [Neopixel Strip](#neopixel)
-- [DC Motors](#dcmotor)
-- [Solenoid (push/pull)](#solenoid)
+- [Servo with external power](#servo-with-external-power)
+- [Distance Sensor](#distance-sensor)
+- [Neopixel Strip](#neopixel-strip)
+- [DC Motors](#dc-motor)
+- [Solenoid (push/pull)](#solenoid-pushpull)
+- [Motion Detector](#motion-detector)
 - [Relais](#relais)
-- [Other parts](#parts)
+- [Other parts](#other-parts)
 - [Where to buy](#shopping)
 
 <br>
@@ -32,7 +34,7 @@ Enkele tips en ideeën om externe hardware aan te sluiten op je CPE!
 
 ---
 
-## <a name="circuit"></a>Circuits
+## Circuits
 
 Je kan externe circuits maken vanaf de Playground Express met behulp van de external pins. Je kan stroom rechtstreeks halen van de 3.3V pin, of je kan stroom naar de andere pins sturen met behulp van code.
 ![imgpower](./images/pin-power.jpg)
@@ -45,7 +47,7 @@ Je kan externe circuits maken vanaf de Playground Express met behulp van de exte
 
 ---
 
-## <a name="analog"></a>External Pins
+## External Pins
 
 Je kan stroom naar de external pins van de Playground Express sturen.
 
@@ -66,7 +68,7 @@ Sommige pins staan toe om een waarde tussen 0 en 1023 in te stellen. Dit beteken
 
 ---
 
-## <a name="resistors"></a>Resistors
+## Resistors
 
 Als je Power rechtstreeks verbindt met Ground, krijg je kortsluiting ⚡️⚡️⚡️. Een **RESISTOR** voorkomt kortsluiting door de stroom te vertragen.
 
@@ -76,7 +78,7 @@ Een LED heeft bijna geen weerstand, daarom gebruiken we een resistor om beschadi
 
 - [Resistor codes](http://www.resistor-calculator.com)
  
-## <a name="breadboards"></a>Breadboards
+## Breadboards
 
 Een breadboard biedt een makkelijke manier om veel kleine componenten met elkaar te verbinden zonder te solderen.
 
@@ -90,7 +92,7 @@ Een breadboard biedt een makkelijke manier om veel kleine componenten met elkaar
 
 ---
 
-## <a name="led"></a>External LED
+## External LED
 
 Je kan een breadboard gebruiken om externe electronica makkelijk aan te sluiten aan de playground. Gebruik een LED en een 220 Ohm weerstand. De weerstand zorgt dat je lampje niet beschadigt. 
 
@@ -112,7 +114,7 @@ Als je meerdere LEDS wil aansturen kan je ze allemaal aan een eigen poort aanslu
 
 ---
 
-## <a name="pushbutton"></a>Pushbutton
+## Pushbutton
 
 ![pushbutton](./images/pushbutton-breadboard.png)
 
@@ -136,7 +138,7 @@ forever(function () {
 
 ---
 
-## <a name="power"></a>External power for playground
+## External power for playground
 
 De playground express heeft een poort voor een externe batterij. Als je een oplaadbare **Lithium Polymer** batterij gebruikt, zal deze opladen als de playground verbonden is met USB. De batterijen zijn **3.7 Volt**. De hoeveelheid **mAh** *(milli Ampere per uur)* bepaalt hoe lang de batterij meegaat. Kleinere batterijen hebben minder mAh.
 
@@ -153,7 +155,7 @@ De playground express heeft een poort voor een externe batterij. Als je een opla
 
 ---
 
-## <a name="values"></a>How to check sensor values
+## How to check sensor values
 
 Gebruik USB pairing in Chrome om sensor waardes van de CPE in de browser weer te geven.
 
@@ -166,7 +168,7 @@ Gebruik USB pairing in Chrome om sensor waardes van de CPE in de browser weer te
 
 ---
 
-## <a name="switch"></a>External Switch 3 pins
+## External Switch 3 pins
 
 Zet 3.3V op de eerste pin. De positie van de switch zal stroom sturen naar de GND of naar de A2 pin, afhankelijk van de positie.
 
@@ -184,7 +186,7 @@ let switchValue = pins.A2.digitalRead()
 <br>
 <br>
 
-## <a name="button"></a>External Button 2 pins
+## External Button 2 pins
 
 Zet stroom van 3.3V of VOUT op een van de pins. Verbind de andere pin met een input poort om te lezen of er stroom is of niet. Vergeet niet om de input pin "pull down" te zetten, om willekeurige resultaten te voorkomen.
 
@@ -199,7 +201,7 @@ Zet stroom van 3.3V of VOUT op een van de pins. Verbind de andere pin met een in
 
 ---
 
-## <a name="force"></a>Force sensor
+## Force sensor
 
 De force sensor meet hoe hard je op de plaat duwt. Gebruik een grote resistor (10K Ohm). Verbind de gele draad met een analog poort zoals A1, en dan kan je de waarde op de poort lezen.
 
@@ -216,7 +218,7 @@ console.log(`The force is ${force}`)
 
 ---
 
-## <a name="infrared"></a>Infrared communication
+## Infrared communication
 
 Je kan infrared gebruiken om signalen van de ene CPE naar de andere CPE te sturen!
 
@@ -228,7 +230,7 @@ Je kan infrared gebruiken om signalen van de ene CPE naar de andere CPE te sture
 
 ---
 
-## <a name="potentio"></a>Rotating button (potentiometer)
+## Rotating button (potentiometer)
 
 Verbind de playground 3.3V en GND pads met de buitenste pins van de potentiometer. Verbind de playground A3 pad met de middelste pin van de potentiometer. Nu, je kan de waarde van A3 lezen door het **Analog read A3** block te gebruiken. Dit zou een getal van 0 tot 1024 moeten zijn.
 
@@ -257,7 +259,21 @@ forever(function () {
 
 ---
 
-## <a name="solidwire"></a>Solid Core Wire
+## Flex sensor
+
+De Flex sensor kan meten hoe ver deze is gebogen.
+
+![flexy](./images/flex-sensor.jpg)
+
+- [flex sensor](https://www.adafruit.com/product/1070)
+
+<Br>
+<br>
+<br>
+
+---
+
+## Solid Core Wire
 
 Met een rolletje [*solid core wire*](https://www.youtube.com/watch?v=ver-Av8vr1Q) kan je een steviger prototype bouwen op je breadboard.
 
@@ -271,7 +287,7 @@ Met een rolletje [*solid core wire*](https://www.youtube.com/watch?v=ver-Av8vr1Q
 
 ---
 
-## <a name="servo"></a>Servo 
+## Servo 
 
 De servo wordt gebruikt voor beperkte maar precieze beweging. De meeste servo's draaien maximaal 360 graden.
 
@@ -286,7 +302,7 @@ De servo wordt gebruikt voor beperkte maar precieze beweging. De meeste servo's 
 
 
 
-## <a name="external"></a>Servo with external Power
+## Servo with external Power
 
 Als je servo te veel stroom verbruikt, of als je meerdere servo's nodig hebt, kan je je servo aansluiten op een externe stroombron. Zorg ervoor dat de **GND** van de servo zowel verbonden is met de Playground als met de ground van de externe stroom.
 
@@ -296,9 +312,11 @@ Als je servo te veel stroom verbruikt, of als je meerdere servo's nodig hebt, ka
 <br>
 <br>
 
-## <a name="distance"></a>Distance sensor
+## Distance sensor
 
 Gebruik een **3 Volt RCW0001** ultrasonic distance sensor om afstanden te meten met de Playground Express. 
+
+Als je per ongeluk de SR04 sensor hebt gekocht, dan is het wat meer werk om deze correct aan te sluiten.
 
 ![rcw0001](./images/bothdistance.png)
 
@@ -333,7 +351,7 @@ De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan
 
 ---
 
-## <a name="neopixel"></a>Neopixel strip
+## Neopixel strip
 
 Je kan externe Neopixel (RGB LED) strips aansluiten op de Circuit Playground.
 
@@ -359,7 +377,7 @@ Als je dit niet kan doen of VEEL neopixels wil gebruiken, kan je een externe str
 
 ---
 
-## <a name="dcmotor"></a>DC Motor
+## DC Motor
 
 De DC Motor kan gebruikt worden voor wielen en andere continue beweging.
 Om zware objecten te bewegen heb je een **Geared DC motor** nodig. De gears zijn nodig om snelle beweging om te zetten naar sterke beweging.
@@ -377,7 +395,7 @@ Het [mosfet](./mosfet.md) is een andere manier om een DC motor aan te sluiten op
 <br>
 <br>
 
-## <a name="solenoid"></a>Solenoid (push/pull)
+## Solenoid (push/pull)
 
 Met een solenoid kan je een horizontale of verticale beweging maken. Deze solenoid is 5 Volt en kan je aansluiten op de **Motor drive van de Crickit**. (Sluit de solenoid niet rechtstreeks aan op de Playground!)
 
@@ -398,7 +416,18 @@ forever(function () {
 <br>
 <br>
 
-## <a name="#relais"></a>Relais
+## Motion Detector
+
+<img width="200" src="./images/minipir.jpg">
+
+[Mini Motion Detector (PIR) for 3V](https://www.adafruit.com/product/4666)
+
+<br>
+
+<br>
+<br>
+
+## Relais
 
 Met een **relais** kan je een extern circuit **aan / uit** zetten via de playground express. Dit kan handig zijn als je meer dan 3 ~ 5 Volt nodig hebt voor je externe apparaten. 
 
@@ -423,16 +452,16 @@ In het volgende voorbeeld zie je een 9 Volt batterij waar 3 DC motoren op zijn a
 <br>
 <br>
 
-## <a name="parts"></a>Other parts
+## Other parts
 
-![minipir](./images/minipir.jpg)
+
 
 - [Lichtgevend draad 🤯](https://learn.adafruit.com/el-wire)
-- [Mini Infrared Motion Detector (PIR) for 3V](https://www.adafruit.com/product/4666)
 - [On Off Switch](https://www.kiwi-electronics.nl/nl/aan-uit-tuimelschakelaar-rood-3630)
+- [Ribbon Sensor](https://www.adafruit.com/product/178)
+- [Circular touch sensor](https://www.adafruit.com/product/1069)
 - [Force sensor](https://www.kiwi-electronics.nl/ronde-drukgevoelige-weerstand-fsr402?lang=en)
-- [Air quality sensor](https://www.kiwi-electronics.nl/sensoren/adafruit-sgp30-air-quality-sensor-breakout)
-- [Human Presence Sensor](https://www.antratek.nl/24ghz-mmwave-radar-sensor-human-static-presence-module)
+- [Air quality sensor](https://www.kiwi-electronics.com/en/adafruit-sgp30-air-quality-sensor-breakout-voc-eco2-3347)
 - [Soil Moisture sensor](https://www.kiwi-electronics.nl/sparkfun-soil-moisture-sensor?search=moisture%20sensor&description=true)
 - [🤖 Mini Pan and Tilt robot arm!](https://www.adafruit.com/product/1967)
 - [⚙️ Geared DC Motor](https://www.kiwi-electronics.nl/hobby-dc-motor-140rpm-2-stuks?search=dc%20motor&description=true)
@@ -441,7 +470,7 @@ In het volgende voorbeeld zie je een 9 Volt batterij waar 3 DC motoren op zijn a
 <br>
 <br>
 
-## <a name="shopping"></a>Shopping
+## Shopping
 
 - [Kiwi electronics](https://www.kiwi-electronics.nl)
 - [Antratek](https://www.antratek.nl/)

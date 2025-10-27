@@ -39,16 +39,6 @@ Je kan externe circuits maken vanaf de Playground Express met behulp van de exte
 
 - [Bekijk hier alle external pins](https://learn.adafruit.com/adafruit-circuit-playground-express/pinouts)
 
-<br>
-<br>
-<br>
-
----
-
-## <a name="analog"></a>External Pins
-
-Je kan stroom naar de external pins van de Playground Express sturen.
-
 ### Digital values
 
 Voor de meeste pins kan je de stroom op HIGH of LOW zetten, dit betekent dat er 3 Volt op de pin staat of 0 Volt. Je kan dit instellen met `digital write`. Je kan ook *lezen* of er stroom op een pin staat, met behulp van `digital read`.

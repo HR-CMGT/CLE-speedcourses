@@ -2,6 +2,7 @@
 
 Some tips and ideas to connect external hardware to your CPE!
 
+- [External pins](#analog)
 - [Resistors](#resistors)
 - [Breadboards](#breadboards)
 - [External LED](#led)
@@ -23,6 +24,27 @@ Some tips and ideas to connect external hardware to your CPE!
 - [Relais](#relais)
 - [Other parts](#parts)
 - [Where to buy](#shopping)
+
+<br>
+<br>
+<br>
+
+---
+
+## <a name="analog"></a>External Pins
+
+You can send power to the external pins of the Playground Express. 
+
+### Digital values
+
+For most of the pins, you can set the power to HIGH or LOW, this means there is either 3 Volt on the pin or 0 Volt. You can set this using "digital write". You can also *read* if there is power on a pin, using `digital read`.
+
+### Analog values
+
+Some of the pins allow setting a value between 0 and 1023. This means more or less power goes to the pin. You could use this to make a led pulse on and off. More importantly, you can `analog read` a pin, to see the value of an external input.
+
+<img width="400" height="276" alt="pins" src="./images/pins.png" />
+
 
 <br>
 <br>

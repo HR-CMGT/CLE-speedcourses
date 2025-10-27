@@ -1,6 +1,6 @@
 # Circuit Playground Connections
 
-Enkele tips en ideeën om externe hardware aan te sluiten op je CPE!
+Some tips and ideas to connect external hardware to your CPE!
 
 - [Circuits](#circuit)
 - [External pins](#analog)
@@ -34,7 +34,7 @@ Enkele tips en ideeën om externe hardware aan te sluiten op je CPE!
 
 ## <a name="circuit"></a>Circuits
 
-Je kan externe circuits maken vanaf de Playground Express met behulp van de external pins. Je kan stroom rechtstreeks halen van de 3.3V pin, of je kan stroom naar de andere pins sturen met behulp van code.
+You can create external circuits from the Playground Express using the external pins. You can get power straight from the 3.3V pin, or you can send power to the other pins using code. 
 ![imgpower](./images/pin-power.jpg)
 
 - [Bekijk hier alle external pins](https://learn.adafruit.com/adafruit-circuit-playground-express/pinouts)
@@ -47,15 +47,15 @@ Je kan externe circuits maken vanaf de Playground Express met behulp van de exte
 
 ## <a name="analog"></a>External Pins
 
-Je kan stroom naar de external pins van de Playground Express sturen.
+You can send power to the external pins of the Playground Express. 
 
 ### Digital values
 
-Voor de meeste pins kan je de stroom op HIGH of LOW zetten, dit betekent dat er 3 Volt op de pin staat of 0 Volt. Je kan dit instellen met `digital write`. Je kan ook *lezen* of er stroom op een pin staat, met behulp van `digital read`.
+For most of the pins, you can set the power to HIGH or LOW, this means there is either 3 Volt on the pin or 0 Volt. You can set this using "digital write". You can also *read* if there is power on a pin, using `digital read`.
 
 ### Analog values
 
-Sommige pins staan toe om een waarde tussen 0 en 1023 in te stellen. Dit betekent dat er meer of minder stroom naar de pin gaat. Dit bepaalt bijvoorbeeld hoe snel een motor gaat. Je kan `analog read` gebruiken op een pin, om de waarde van een externe input te lezen, dit gebruik je bv. voor een draaiknop.
+Some of the pins allow setting a value between 0 and 1023. This means more or less power goes to the pin. You could use this to make a led pulse on and off. More importantly, you can `analog read` a pin, to see the value of an external input.
 
 <img width="400" height="276" alt="pins" src="./images/pins.png" />
 
@@ -68,9 +68,9 @@ Sommige pins staan toe om een waarde tussen 0 en 1023 in te stellen. Dit beteken
 
 ## <a name="resistors"></a>Resistors
 
-Als je Power rechtstreeks verbindt met Ground, krijg je kortsluiting ⚡️⚡️⚡️. Een **RESISTOR** voorkomt kortsluiting door de stroom te vertragen.
+If you connect Power directly to Ground, you get a short circuit ⚡️⚡️⚡️ . A **RESISTOR** prevents short circuits by slowing down the flow of power. 
 
-Een LED heeft bijna geen weerstand, daarom gebruiken we een resistor om beschadiging aan de LED of de batterij te voorkomen. Grotere resistors zullen de stroom meer vertragen! In dit voorbeeld zal de LED minder fel branden als je de resistor vergroot. 
+A LED has almost no resistance by itself, that's why we use a resistor to prevent damage to the LED or the battery. Larger resistors will slow down the flow of power more! In this example, the LED will burn less bright, if you increase the resistor. 
 
 ![resistor](./images/resistors.png)
 
@@ -78,7 +78,7 @@ Een LED heeft bijna geen weerstand, daarom gebruiken we een resistor om beschadi
  
 ## <a name="breadboards"></a>Breadboards
 
-Een breadboard biedt een makkelijke manier om veel kleine componenten met elkaar te verbinden zonder te solderen.
+A breadboard provides an easy way to connect lots of tiny components together without soldering.
 
 ![breadboard](./images/breadboard.jpg)
 
@@ -96,7 +96,7 @@ Je kan een breadboard gebruiken om externe electronica makkelijk aan te sluiten 
 
 Let op dat het lange pootje van de LED naar de stroom gaat, en het korte pootje gaat naar GND. De weerstand mag wel aan beide kanten zitten.
 
-Test of het lampje gaat branden door de rode draad rechtstreeks op de stroom (3.3V) van de playground aan te sluiten. De zwarte draad gaat naar GND.
+Test of het lampje gaat branden door de rode draad rechtstreeks op de stroom (3.3V) van de playground aan te sluiten. De zwarte draad gaat naar GND>
 
 Als dat werkt sluit je de rode draad aan op de A2 poort van de playground. Hier kan je met code stroom op zetten.
 
@@ -116,7 +116,7 @@ Als je meerdere LEDS wil aansturen kan je ze allemaal aan een eigen poort aanslu
 
 ![pushbutton](./images/pushbutton-breadboard.png)
 
-De push button is gewoon een manier om stroom door een draad te laten gaan, of de stroom te blokkeren. Als de button wordt ingedrukt, mag de stroom door naar de draad die naar A3 leidt. Je kan dan het `digitalRead()` commando gebruiken om te detecteren of de draad stroom heeft.
+The push button is just a way to send power through a wire, or block the power. When the button is pushed, power is allowed through to the wire that leads to A3. You can then use the `digitalRead()` command to detect if the wire is powered.
 
 ![pushbutton](./images/pushbutton-blocks.png)
 
@@ -138,9 +138,9 @@ forever(function () {
 
 ## <a name="power"></a>External power for playground
 
-De playground express heeft een poort voor een externe batterij. Als je een oplaadbare **Lithium Polymer** batterij gebruikt, zal deze opladen als de playground verbonden is met USB. De batterijen zijn **3.7 Volt**. De hoeveelheid **mAh** *(milli Ampere per uur)* bepaalt hoe lang de batterij meegaat. Kleinere batterijen hebben minder mAh.
+The playground express has a port for an external battery. If you use a rechargable **Lithium Polymer** battery, it will recharge if the playground is connected to USB. The batteries are **3.7 Volt**. The amount of **mAh** *(milli Ampere per hour)* determines how long the battery lasts. Smaller batteries have less mAh.
 
-> LET OP: dit geeft geen stroom aan de [crickit](../crickit/readme.md)! Als je een crickit hebt aangesloten, moet je de externe stroom van de crickit gebruiken.
+> NOTE: this does not power the [crickit](../crickit/readme.md)! If you have a crickit connected, you should use the crickit's external power.
 
 ![lipoly](./images/lipoly.png)
 
@@ -155,7 +155,7 @@ De playground express heeft een poort voor een externe batterij. Als je een opla
 
 ## <a name="values"></a>How to check sensor values
 
-Gebruik USB pairing in Chrome om sensor waardes van de CPE in de browser weer te geven.
+Use USB pairing in Chrome to display sensor values from the CPE in the browser.
 
 ![usb](./images/usb.png)
 ![usb](./images/usb2.png)
@@ -168,7 +168,7 @@ Gebruik USB pairing in Chrome om sensor waardes van de CPE in de browser weer te
 
 ## <a name="switch"></a>External Switch 3 pins
 
-Zet 3.3V op de eerste pin. De positie van de switch zal stroom sturen naar de GND of naar de A2 pin, afhankelijk van de positie.
+Put 3.3V on the first pin. The position of the switch will send power to the GND or to the A2 pin, depending on the position.
 
 ![switch](./images/switch3.png)
 
@@ -186,7 +186,7 @@ let switchValue = pins.A2.digitalRead()
 
 ## <a name="button"></a>External Button 2 pins
 
-Zet stroom van 3.3V of VOUT op een van de pins. Verbind de andere pin met een input poort om te lezen of er stroom is of niet. Vergeet niet om de input pin "pull down" te zetten, om willekeurige resultaten te voorkomen.
+Put power from 3.3V or VOUT on one of the pins. Connect the other pin to an input port to read if there is power or not. Do not forget to "pull down" the input pin, to avoid random results.
 
 ![switch](./images/switch1.png)
 ![switch](./images/switch2.png)
@@ -201,7 +201,7 @@ Zet stroom van 3.3V of VOUT op een van de pins. Verbind de andere pin met een in
 
 ## <a name="force"></a>Force sensor
 
-De force sensor meet hoe hard je op de plaat duwt. Gebruik een grote resistor (10K Ohm). Verbind de gele draad met een analog poort zoals A1, en dan kan je de waarde op de poort lezen.
+The force sensor measures how hard you push on the plate. Use a large resistor (10K Ohm). Connect the yellow wire to an analog port such as A1, and then you can read the value on the port
 
 ![infrared](./images/force_sensor_cpe.png)
 ```javascript
@@ -218,7 +218,7 @@ console.log(`The force is ${force}`)
 
 ## <a name="infrared"></a>Infrared communication
 
-Je kan infrared gebruiken om signalen van de ene CPE naar de andere CPE te sturen!
+You can use infrared to send signals from one CPE to another CPE!
 
 ![infrared](./images/infrared.png)
 
@@ -230,9 +230,9 @@ Je kan infrared gebruiken om signalen van de ene CPE naar de andere CPE te sture
 
 ## <a name="potentio"></a>Rotating button (potentiometer)
 
-Verbind de playground 3.3V en GND pads met de buitenste pins van de potentiometer. Verbind de playground A3 pad met de middelste pin van de potentiometer. Nu, je kan de waarde van A3 lezen door het **Analog read A3** block te gebruiken. Dit zou een getal van 0 tot 1024 moeten zijn.
+Connect the playground 3.3V and GND pads to the outer pins of the potentiometer. Connect the playground A3 pad to the middle pin of the potentiometer. Now, you can read the value of A3 by using the **Analog read A3** block. This should be a number from 0 to 1024.
 
-Als je je playground PAIRT in Chrome, kan je de waarde van A3 in de console laten zien. Op deze manier kan je controleren of je echt een getal tussen 0 en 1024 krijgt. Je kan de **map** functie gebruiken om dit getal om te zetten naar elke waarde die je nodig hebt. In deze voorbeeldcode gaan de lampjes van 0 tot 9 aan door aan de knop te draaien. [Makecode voorbeeld.](https://makecode.com/_csHRjdVVUD7A)
+If you PAIR your playground in Chrome, you can show the value of the of A3 in the console. This way you can check if you really get a number between 0 and 1024. You can use the **map** function to convert this number to any value that you need. In this example code, the lights from 0 to 9 turn on by turning the knob. [Makecode example.](https://makecode.com/_csHRjdVVUD7A)
 
 ![potentio](./images/potentio1.png)
 ![potentio](./images/potmeter-graph.png)
@@ -273,7 +273,7 @@ Met een rolletje [*solid core wire*](https://www.youtube.com/watch?v=ver-Av8vr1Q
 
 ## <a name="servo"></a>Servo 
 
-De servo wordt gebruikt voor beperkte maar precieze beweging. De meeste servo's draaien maximaal 360 graden.
+The servo is used for limited but precise movement. Most servos rotate a maximum of 360 degrees.
 
 ![servo](./images/servo.jpg)
 ![servo](./images/servo3.png)
@@ -288,7 +288,7 @@ De servo wordt gebruikt voor beperkte maar precieze beweging. De meeste servo's 
 
 ## <a name="external"></a>Servo with external Power
 
-Als je servo te veel stroom verbruikt, of als je meerdere servo's nodig hebt, kan je je servo aansluiten op een externe stroombron. Zorg ervoor dat de **GND** van de servo zowel verbonden is met de Playground als met de ground van de externe stroom.
+If your servo draws too much power, or if you need multiple servos, you can connect your servo to an external power source. Make sure the **GND** of the servo is both connected to the Playground and the ground of the external power.
 
 ![externalservo](./images/external_servo.png)
 
@@ -335,17 +335,17 @@ De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan
 
 ## <a name="neopixel"></a>Neopixel strip
 
-Je kan externe Neopixel (RGB LED) strips aansluiten op de Circuit Playground.
+You can connect external Neopixel (RGB LED) strips to the Circuit Playground.
 
 ![neopixel](./images/neopixel.png)
 
-Het CPE board kan slechts een beperkt aantal Neopixels van stroom voorzien. Om het stroomverbruik te verminderen kan je:
+The CPE board can only power a limited amount of Neopixels. To reduce power usage you can:
 
-- De helderheid verlagen
-- Niet alle leds tegelijk laten branden
-- Enkele kleuren gebruiken in plaats van volledig wit
+- Reduce the brightness
+- Don't light up all leds at the same time
+- Use single colors instead of full white
 
-Als je dit niet kan doen of VEEL neopixels wil gebruiken, kan je een externe stroombron gebruiken, bijvoorbeeld een 5V 2Amp adapter. Wees voorzichtig bij het aansluiten van alles! 2Amps kan je board of neopixels beschadigen.
+If you can't do this or want to use LOTS of neopixels, you can use an external power source, for example a 5V 2Amp adapter. Be careful when connecting everything! 2Amps can damage your board or neopixels.
 
 ![external](./images/neo_external_power.png)
 
@@ -361,16 +361,16 @@ Als je dit niet kan doen of VEEL neopixels wil gebruiken, kan je een externe str
 
 ## <a name="dcmotor"></a>DC Motor
 
-De DC Motor kan gebruikt worden voor wielen en andere continue beweging.
-Om zware objecten te bewegen heb je een **Geared DC motor** nodig. De gears zijn nodig om snelle beweging om te zetten naar sterke beweging.
+The DC Motor can be used for wheels and other continuous motion.
+To move heavy objects you need a **Geared DC motor**. The gears are needed to convert fast motion to strong motion.
 
 ![dcmotor](./images/dcmotors.png)
 
-DC Motors gebruiken te veel stroom voor de Circuit Playground. Je kan dit oplossen door [de **Adafruit Crickit** te gebruiken](../crickit/readme.md). De Crickit stelt je in staat om twee motors afzonderlijk te besturen. 
+DC Motors use too much power for the Circuit Playground. You can solve this by [using the **Adafruit Crickit**](../crickit/readme.md). The Crickit allows you to control two motors separately. 
 
-Je kan ook [dc motors aansluiten op hun eigen stroombron met een relais](#relais). Het relais stelt je in staat om meer dan twee motors aan te sluiten. 
+You can also [connect dc motors to their own power source with a relais](#relais). The relais allows you to connect more than two motors. 
 
-Het [mosfet](./mosfet.md) is een andere manier om een DC motor aan te sluiten op een playground.
+The [mosfet](./mosfet.md) is another way to connect a DC motor to a playground.
 
 
 ---

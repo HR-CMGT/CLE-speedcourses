@@ -3,7 +3,6 @@
 Enkele tips en ideeën om externe hardware aan te sluiten op je Playground Express!
 
 - [Circuits](#circuits)
-- [External pins](#external-pins)
 - [Resistors](#resistors)
 - [Breadboards](#breadboards)
 - [External LED](#external-led)
@@ -36,16 +35,17 @@ Enkele tips en ideeën om externe hardware aan te sluiten op je Playground Expre
 
 ## Circuits
 
-Je kan externe circuits maken vanaf de Playground Express met behulp van de external pins. Je kan stroom rechtstreeks halen van de 3.3V pin, of je kan stroom naar de andere pins sturen met behulp van code.
+Je kan externe circuits aansluiten op de Playground Express met behulp van de external pins. 
+
 ![imgpower](./images/pin-power.jpg)
 
 - [Bekijk hier alle external pins](https://learn.adafruit.com/adafruit-circuit-playground-express/pinouts)
 
-### Digital values
+### Digital pins
 
 Voor de meeste pins kan je de stroom op HIGH of LOW zetten, dit betekent dat er 3 Volt op de pin staat of 0 Volt. Je kan dit instellen met `digital write`. Je kan ook *lezen* of er stroom op een pin staat, met behulp van `digital read`.
 
-### Analog values
+### Analog pins
 
 Sommige pins staan toe om een waarde tussen 0 en 1023 in te stellen. Dit betekent dat er meer of minder stroom naar de pin gaat. Dit bepaalt bijvoorbeeld hoe snel een motor gaat. Je kan `analog read` gebruiken op een pin, om de waarde van een externe input te lezen, dit gebruik je bv. voor een draaiknop.
 

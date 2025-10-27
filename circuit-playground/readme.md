@@ -2,6 +2,7 @@
 
 Some tips and ideas to connect external hardware to your CPE!
 
+- [Circuits](#circuit)
 - [External pins](#analog)
 - [Resistors](#resistors)
 - [Breadboards](#breadboards)
@@ -24,6 +25,19 @@ Some tips and ideas to connect external hardware to your CPE!
 - [Relais](#relais)
 - [Other parts](#parts)
 - [Where to buy](#shopping)
+
+<br>
+<br>
+<br>
+
+---
+
+## <a name="circuit"></a>Circuits
+
+You can create external circuits from the Playground Express using the external pins. You can get power straight from the 3.3V pin, or you can send power to the other pins using code. 
+![imgpower](./images/pin-power.jpg)
+
+- [Bekijk hier alle external pins](https://learn.adafruit.com/adafruit-circuit-playground-express/pinouts)
 
 <br>
 <br>

@@ -217,6 +217,7 @@ De Flex sensor kan meten hoe ver deze is gebogen. De aansluiting is hetzelfde al
 
 - [flex sensor](https://www.adafruit.com/product/1070)
 - [tutorial voor flex en force sensor](https://learn.adafruit.com/force-sensitive-resistor-fsr?view=all)
+- [youtube : using the flex sensor on the adafruit circuit playground express](https://www.youtube.com/watch?v=ICcp1wpC06g)
 
 <Br>
 <br>

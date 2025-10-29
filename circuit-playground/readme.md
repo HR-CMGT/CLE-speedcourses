@@ -14,7 +14,7 @@ Enkele tips en ideeën om externe hardware aan te sluiten op je Playground Expre
 - [Force sensor](#force-sensor)
 - [Infrared communication](#infrared-communication)
 - [Rotating Button](#rotating-button-potentiometer)
-- [Flex sensor](#flex-sensor)
+- [Flex sensor](#flex-sensor) met [tutorial voor flex en force sensor](https://learn.adafruit.com/force-sensitive-resistor-fsr?view=all)
 - [Solid Core Wire](#solid-core-wire)
 - [Servo](#servo)
 - [Servo with external power](#servo-with-external-power)

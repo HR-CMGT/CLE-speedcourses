@@ -11,10 +11,10 @@ Enkele tips en ideeën om externe hardware aan te sluiten op je Playground Expre
 - [How to check sensor values](#how-to-check-sensor-values)
 - [External Switch 3 pins](#external-switch-3-pins)
 - [External Button 2 pins](#external-button-2-pins)
+- [Flex sensor](#flex-sensor)
 - [Force sensor](#force-sensor)
 - [Infrared communication](#infrared-communication)
 - [Rotating Button](#rotating-button-potentiometer)
-- [Flex sensor](#flex-sensor) met [tutorial voor flex en force sensor](https://learn.adafruit.com/force-sensitive-resistor-fsr?view=all)
 - [Solid Core Wire](#solid-core-wire)
 - [Servo](#servo)
 - [Servo with external power](#servo-with-external-power)
@@ -206,6 +206,22 @@ console.log(`The force is ${force}`)
 <br>
 <br>
 
+
+---
+
+## Flex sensor
+
+De Flex sensor kan meten hoe ver deze is gebogen.
+
+![flexy](./images/flex-sensor.jpg)
+
+- [flex sensor](https://www.adafruit.com/product/1070)
+- [tutorial voor flex en force sensor](https://learn.adafruit.com/force-sensitive-resistor-fsr?view=all)
+
+<Br>
+<br>
+<br>
+
 ---
 
 ## Infrared communication
@@ -247,19 +263,6 @@ forever(function () {
 <br>
 <br>
 
----
-
-## Flex sensor
-
-De Flex sensor kan meten hoe ver deze is gebogen.
-
-![flexy](./images/flex-sensor.jpg)
-
-- [flex sensor](https://www.adafruit.com/product/1070)
-
-<Br>
-<br>
-<br>
 
 ---
 

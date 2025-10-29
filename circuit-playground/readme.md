@@ -211,7 +211,7 @@ console.log(`The force is ${force}`)
 
 ## Flex sensor
 
-De Flex sensor kan meten hoe ver deze is gebogen.
+De Flex sensor kan meten hoe ver deze is gebogen. De aansluiting is hetzelfde als bij de bovenstaande force sensor.
 
 ![flexy](./images/flex-sensor.jpg)
 

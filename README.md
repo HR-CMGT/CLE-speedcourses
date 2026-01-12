@@ -33,3 +33,4 @@ Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons w
 ### PHP
 
 - [Filteren van beschikbare tijden en kalenderweergave](https://github.com/HR-CMGT/speed-course-available-dates)
+- [Tonen en toevoegen van een 1-op-veelrelatie](./1-to-many)

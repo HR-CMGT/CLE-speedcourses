@@ -38,3 +38,4 @@ Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons w
 ## AI
 
 - [AI algoritmes en recommender system](https://github.com/HR-CMGT/recommender-workshop)
+- [Colab Notebook voor Stable Diffusion](https://github.com/HR-CMGT/CLE-speedcourses/blob/master/colab/README.md)

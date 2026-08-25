@@ -5,4 +5,4 @@ Code voorbeeld voor TLE workshop: AI Image Generation.
 - Log in op [google colab](https://colab.google.com)
 - Maak een ***new notebook***
 - Zet de *runtime* op **GPU of T4 GPU***
-- Kopieer handmatig cellen uit [ai-image-generation.ipynb](./ai-image-generation.ipynb) of IMPORTEER het bestand.
+- Kopieer handmatig cellen uit [ai_image_generation.ipynb](./ai_image_generation.ipynb) of IMPORTEER het bestand.

@@ -26,7 +26,7 @@ Controleer of de CUDA GPU beschikbaar is. Je ziet hier ook hoeveel RAM beschikba
 
 CEL 2
 
-Installeer de huggingface library voor het downloaden van modellen.
+Installeer de [huggingface](https://huggingface.co/models?pipeline_tag=text-to-image&sort=trending) library voor het downloaden van modellen.
 
 ```python
 !pip install -q -U diffusers transformers accelerate
@@ -34,7 +34,7 @@ Installeer de huggingface library voor het downloaden van modellen.
 
 CEL 3
 
-Deze cel installeert Stable Diffusion XL fp16. Klik "grant access" als er om toestemming wordt gevraagd.
+Deze cel installeert Stable Diffusion XL fp16. Klik "grant access" als er om toestemming wordt gevraagd. Het model moet geschikt zijn voor de GPU met 16GB RAM. Om te leren hoe alles werkt gebruiken we hier een wat ouder model. [Meer modellen op HuggingFace](https://huggingface.co/models?pipeline_tag=text-to-image&sort=trending)
 
 ```python
 import torch

@@ -31,6 +31,8 @@ CEL 2
 
 CEL 3
 
+Deze cel installeert Stable Diffusion XL fp16. Klik "grant access" als er om toestemming wordt gevraagd.
+
 ```python
 import torch
 from diffusers import AutoPipelineForText2Image
@@ -46,6 +48,8 @@ pipe = pipe.to("cuda")
 
 CEL 4
 
+Als het downloaden is gelukt, kan je een prompt gaan uitvoeren!
+
 ```python
 prompt = "A broken robot standing in the rainy streets of neon tokyo"
 
@@ -58,4 +62,8 @@ image = pipe(
 display(image)
 ```
 
-Experimenteer met de prompt en het aantal `inference_steps`!
+<br><bR><br>
+
+### Troubleshooting
+
+Als er iets helemaal mis gaat kan je het hele notebook restarten met ***Runtime > Restart Session***. Klik daarna één voor één op de *play* buttons van elke cel. Wacht tot een cel klaar is voordat je op de volgende klikt.

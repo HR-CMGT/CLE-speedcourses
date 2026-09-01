@@ -25,10 +25,11 @@ De **Circuit Playground Express** (CPE) is een programmeerbaar bordje met sensor
 
 ![reset](./images/reset_update.png)
 
-- Sluit een micro USB kabel aan op de **SEESAW ONLY** poort van de Crickit. 
+- Sluit een micro USB kabel aan op de **SEESAW ONLY** poort van de Crickit en zet de switch op **ON**. 
 - **Druk twee keer op de reset button**. De ledjes gaan groen en geel branden.
 - De crickit verschijnt als USB drive op je computer.
 - Download het bestand [**seesaw-crickit.uf2**](https://github.com/adafruit/seesaw/releases/download/1.1.6/seesaw-crickit.uf2) en sleep het op de Crickit USB drive.
+- Gele LED gaat uit, Neopixel gaat rood knipperen.
 - Als dit gelukt is kan je de USB kabel verwijderen. De SEESAW poort gebruik je verder niet meer.
 
 ![drive](./images/circuit_playground_drag.png)

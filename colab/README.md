@@ -72,3 +72,4 @@ display(image)
 - Probeer verschillende prompts, vraag de Gemini assistent om je prompt aan te passen zodat het goed werkt met Stable Diffusion SDXL.
 - Vraag de Gemini assistent om uitleg en suggesties.
 - Als er iets helemaal mis gaat kan je het hele notebook restarten met ***Runtime > Restart Session***. Klik daarna één voor één op de *play* buttons van elke cel. Wacht tot een cel klaar is voordat je op de volgende klikt.
+- Vraag aan AI om python code waarmee je [FLUX 2 KLEIN 4B](https://bfl.ai/models/flux-2-klein) 8GB kan gebruiken in plaats van Stable Diffusion.

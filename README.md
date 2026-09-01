@@ -2,6 +2,11 @@
 
 Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons worden gegeven / gegeven zijn.
 
+## AI
+
+- [AI algoritmes en recommender system](https://github.com/HR-CMGT/recommender-workshop)
+- [Colab Notebook voor Stable Diffusion](https://github.com/HR-CMGT/CLE-speedcourses/blob/master/colab/README.md)
+
 ## Games
 
 #### Excalibur
@@ -35,7 +40,4 @@ Hier vind je een overzicht van workshops die in CLE Speedcourses en Hackathons w
 - [Filteren van beschikbare tijden en kalenderweergave](https://github.com/HR-CMGT/speed-course-available-dates)
 - [Tonen en toevoegen van een 1-op-veelrelatie](./1-to-many)
 
-## AI
 
-- [AI algoritmes en recommender system](https://github.com/HR-CMGT/recommender-workshop)
-- [Colab Notebook voor Stable Diffusion](https://github.com/HR-CMGT/CLE-speedcourses/blob/master/colab/README.md)

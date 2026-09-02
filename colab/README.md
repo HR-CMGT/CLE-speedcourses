@@ -72,4 +72,23 @@ display(image)
 - Probeer verschillende prompts, vraag de Gemini assistent om je prompt aan te passen zodat het goed werkt met Stable Diffusion SDXL.
 - Vraag de Gemini assistent om uitleg en suggesties.
 - Als er iets helemaal mis gaat kan je het hele notebook restarten met ***Runtime > Restart Session***. Klik daarna één voor één op de *play* buttons van elke cel. Wacht tot een cel klaar is voordat je op de volgende klikt.
-- Vraag aan AI om python code waarmee je [FLUX 1 SCHNELL, of FLUX 2 KLEIN](https://bfl.ai/models/flux-2-klein) kan gebruiken in plaats van Stable Diffusion. Let op dat het model niet groter kan zijn dan 8 ~ 10GB. Let op dat de AI snapt dat je in een gratis colab notebook werkt.
+
+<br><br><br>
+
+### Beter Model
+
+Vraag AI om een beter model te laden en de code daarop aan te passen. Let op dat het model niet groter kan zijn dan 8 ~ 10GB. Let op dat de AI snapt dat je in een gratis colab notebook werkt. Hieronder een voorbeeld voor ***Juggernaut-XL-v9***.
+
+```python
+import torch
+from diffusers import DiffusionPipeline
+
+pipe = DiffusionPipeline.from_pretrained(
+    "RunDiffusion/Juggernaut-XL-v9",
+    torch_dtype=torch.float16,
+    variant="fp16",
+    use_safetensors=True
+).to("cuda")
+```
+
+<br><br><br>

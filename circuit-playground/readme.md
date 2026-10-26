@@ -6,6 +6,7 @@ Enkele tips en ideeën om externe hardware aan te sluiten op je Playground Expre
 - [Resistors](#resistors)
 - [Breadboards](#breadboards)
 - [External LED](#external-led)
+- [Hoeveel sensoren kan je aansluiten](#hoeveel-sensoren-kan-je-aansluiten)
 - [Push Button](#pushbutton)
 - [External power for Playground](#external-power-for-playground)
 - [How to check sensor values](#how-to-check-sensor-values)
@@ -97,6 +98,21 @@ Als dat werkt sluit je de rode draad aan op de A2 poort van de playground. Hier 
 Als je meerdere LEDS wil aansturen kan je ze allemaal aan een eigen poort aansluiten. Ze kunnen wel de GND delen. Gebruik daarvoor het lange gootje van de breadboard.
 
 ![led](./images/breadboard_leds.png)
+
+<br>
+<br>
+<br>
+
+---
+
+## Hoeveel sensoren kan je aansluiten
+
+Elke output PIN kan 3.3 volt aan een component geven. Echter, het totaal van alle componenten op alle outputs mag niet meer dan 500 milliAmpere verbruiken. Op het datasheet van een component staat vermeld hoeveel milliAmpere het verbruikt. [Je kan dit ook zelf meten met een multimeter!](https://www.youtube.com/shorts/fvofeRNyHCA)
+
+<img width="650" height="436" alt="power-playground" src="https://github.com/user-attachments/assets/2bf5743c-8f72-4b25-908d-2b794f5f9fc0" />
+
+
+
 
 <br>
 <br>

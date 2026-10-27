@@ -25,6 +25,7 @@ Enkele tips en ideeën om externe hardware aan te sluiten op je Playground Expre
 - [Solenoid (push/pull)](#solenoid-pushpull)
 - [Motion Detector](#motion-detector)
 - [Relais](#relais)
+- [Geheugen voor je programma en variabelen](#geheugen-voor-je-programma-en-variabelen)
 - [Other parts](#other-parts)
 - [Where to buy](#shopping)
 
@@ -457,6 +458,16 @@ In het volgende voorbeeld zie je een 9 Volt batterij waar 3 DC motoren op zijn a
 - [📺 aansluiten van meerdere DC motoren aan batterij](https://www.youtube.com/watch?v=aV8clSDuwm8).
 
 
+
+---
+
+<br>
+<br>
+<br>
+
+## Geheugen voor je programma en variabelen
+
+De Playground express heeft 2MB Flash storage voor je programma. Hier kan je een behoorlijk groot programma in kwijt, echter tijdens het draaien is er maar 32KB ruimte in het geheugen om variabelen in bij te houden. Hou het aantal variabelen en de lengte van je arrays dus beperkt. Als een array duizenden waarden krijgt, kan je een "out of memory" error krijgen.
 
 ---
 <br>

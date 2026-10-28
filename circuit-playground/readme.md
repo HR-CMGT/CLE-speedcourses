@@ -156,7 +156,9 @@ De playground express heeft een poort voor een externe batterij. Als je een opla
 ![lipoly](./images/lipoly.png)
 
 - [Adafruit Explanation of LiPoly batteries](https://learn.adafruit.com/circuit-playground-lesson-number-0/battery-jack-supply)
-- [Lithium Polymer Battery at KIWI electronics](https://www.kiwi-electronics.nl/lithium-ion-polymer-battery-3-7v-1200mAh?search=lipoly&description=true)
+- [Lithium Polymer Battery at KIWI electronics](https://www.kiwi-electronics.com/index.php?route=product/search&search=lithum%20polymer)
+
+
 
 <br>
 <br>

@@ -10,6 +10,7 @@ Enkele tips en ideeën om externe hardware aan te sluiten op je Playground Expre
 - [Push Button](#pushbutton)
 - [External power for Playground](#external-power-for-playground)
 - [How to check sensor values](#how-to-check-sensor-values)
+- [Touch sensoren](#touch-sensoren)
 - [External Switch 3 pins](#external-switch-3-pins)
 - [External Button 2 pins](#external-button-2-pins)
 - [Flex sensor](#flex-sensor)
@@ -28,6 +29,7 @@ Enkele tips en ideeën om externe hardware aan te sluiten op je Playground Expre
 - [Geheugen voor je programma en variabelen](#geheugen-voor-je-programma-en-variabelen)
 - [Other parts](#other-parts)
 - [Where to buy](#shopping)
+- [Sensoren voor CircuitPython](#sensoren-voor-circuitpython)
 
 <br>
 <br>
@@ -172,6 +174,22 @@ Gebruik USB pairing in Chrome om sensor waardes van de CPE in de browser weer te
 <br>
 <br>
 <br>
+
+---
+
+## Touch Sensoren
+
+De pins werken als touch sensoren, die kan je ook verlengen door er een draadje aan te verbinden, zo lang de objecten stroom geleiden zal de touch sensor blijven werken.
+
+<img width="600" alt="touch-lemons" src="https://github.com/user-attachments/assets/d75fbbcd-2199-44bb-957d-2ed9dfac7862" />
+
+
+
+
+<br>
+<br>
+<br>
+
 
 ---
 
@@ -497,4 +515,26 @@ De Playground express heeft 2MB Flash storage voor je programma. Hier kan je een
 - [Antratek](https://www.antratek.nl/)
 - [Tinytronics](https://www.tinytronics.nl/shop/nl)
 - [Ben's Electronics](https://www.benselectronics.nl)
+- [Conrad](https://www.conrad.nl)
 - [Elektronica voor jou](https://elektronicavoorjou.nl)
+
+---
+
+<br>
+<br>
+
+## Sensoren voor CircuitPython
+
+Let op, sommige complexe sensoren hebben code libraries nodig om te werken, de meeste van die libraries zijn alleen beschikbaar in CircuitPython. Je moet je playground dan omzetten om te kunnen werken met Python. Dit raden we af voor deze CLE, je kan dit doen als je al bekend bent met programmeren in Python. Twee voorbeelden:
+
+#### 7-Segment-LCD (TM1637)
+
+<img width="514" height="302" alt="tm1637" src="https://github.com/user-attachments/assets/ecf96f33-77b6-44f4-92ae-e1f859331e74" />
+
+
+#### RFID 
+
+<img width="720" height="720" alt="rfid" src="https://github.com/user-attachments/assets/80807d73-f174-48ec-afdf-75054b3f6fdc" />
+
+
+

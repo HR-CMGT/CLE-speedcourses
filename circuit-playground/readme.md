@@ -525,16 +525,18 @@ De Playground express heeft 2MB Flash storage voor je programma. Hier kan je een
 
 ## Sensoren voor CircuitPython
 
-Let op, sommige complexe sensoren hebben code libraries nodig om te werken, de meeste van die libraries zijn alleen beschikbaar in CircuitPython. Je moet je playground dan omzetten om te kunnen werken met Python. Dit raden we af voor deze CLE, je kan dit doen als je al bekend bent met programmeren in Python. Twee voorbeelden:
+Let op, sommige complexe sensoren hebben code libraries nodig om te werken, de meeste van die libraries zijn alleen beschikbaar in CircuitPython. Dit raden we af, tenzij je al bekend bent met programmeren in Python.
+
+- [Hoe zet ik Python op de CPX](https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart)
+- Twee voorbeelden voor sensoren met Python libraries:
 
 #### 7-Segment-LCD (TM1637)
 
-<img width="514" height="302" alt="tm1637" src="https://github.com/user-attachments/assets/ecf96f33-77b6-44f4-92ae-e1f859331e74" />
+<img width="500"  alt="tm1637" src="https://github.com/user-attachments/assets/ecf96f33-77b6-44f4-92ae-e1f859331e74" />
 
+#### RFID scanner
 
-#### RFID 
-
-<img width="720" height="720" alt="rfid" src="https://github.com/user-attachments/assets/80807d73-f174-48ec-afdf-75054b3f6fdc" />
+<img width="500"  alt="rfid" src="https://github.com/user-attachments/assets/80807d73-f174-48ec-afdf-75054b3f6fdc" />
 
 
 

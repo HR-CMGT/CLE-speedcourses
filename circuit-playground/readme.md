@@ -21,7 +21,7 @@ Enkele tips en ideeën om externe hardware aan te sluiten op je Playground Expre
 - [Servo](#servo)
 - [Servo with external power](#servo-with-external-power)
 - [Distance Sensor](#distance-sensor)
-- [Neopixel Strip](#neopixel-strip)
+- [Neopixels](#neopixels)
 - [DC Motors](#dc-motor)
 - [Solenoid (push/pull)](#solenoid-pushpull)
 - [Motion Detector](#motion-detector)
@@ -382,9 +382,9 @@ De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan
 
 ---
 
-## Neopixel strip
+## Neopixels
 
-Je kan externe Neopixel (RGB LED) strips aansluiten op de Circuit Playground.
+Je kan externe Neopixels (aanstuurbare RGB LEDs) aansluiten op de Circuit Playground. Dit kan een strip zijn of een "blinky" matrix. Bij beide moet je opletten dat een enkele RGB Neopixel 60 milliAmp gebruikt, als je de kleur WIT aanzet op volle brightness. Bij de playground mag je niet over 500 mAmps heen gaan, bij de Crickit hangt dit af van de stroombron van de Crickit. 
 
 ![neopixel](./images/neopixel.png)
 
@@ -400,7 +400,11 @@ Als je dit niet kan doen of VEEL neopixels wil gebruiken, kan je een externe str
 
 - [Adafruit makecode neopixel documentation](https://learn.adafruit.com/neopixels-with-makecode?view=all)
 - [📺 MakeCode Example](https://www.youtube.com/watch?v=HnmjztjSqIo) and more [types of connections](https://www.youtube.com/watch?v=vCDfyxNFeEw)
+- [Adafruit BLINKY pixel matrix](https://www.kiwi-electronics.com/nl/neopixel-neomatrix-8x8-64-rgb-led-pixel-matrix-1426)
 - [Power usage explanation](http://www.eerkmans.nl/powering-lots-of-leds-from-arduino/)
+
+<img width="800" height="600" alt="blinky" src="https://github.com/user-attachments/assets/de44b454-583b-499d-b92e-ccc6977fd828" />
+
 
 <br>
 <br>

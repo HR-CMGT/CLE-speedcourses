@@ -398,7 +398,7 @@ Je kan externe Neopixels (aanstuurbare RGB LEDs) aansluiten op de Circuit Playgr
 
 Rekenvoorbeeld: je wil 30 lampjes aanzetten op VOL WIT. Dit kost 60 mAmps per lampje, maal 30 = 1800 mAmp (1.8 Amp). Dit kan dus niet met de CPX, maar wel met de Crickit. Verminder de Amps door de *helderheid* te verlagen of door maar 1 kleur aan te zetten (rood, groen of blauw).
 
-[💡 Gebruik de Neopixel Amp Calculator!](https://codepen.io/editor/eerk/pen/01a19ca9-bd13-7121-9c1d-6181e55a3beb)
+[💡 Gebruik de Neopixel Amp Calculator!](https://codepen.io/editor/eerk/pen/01a19ca9-bd13-7121-9c1d-6181e55a3beb?orientation=left&panel=files&show=preview)
 
 | Strip | Matrix |
 | :---: | :---: |

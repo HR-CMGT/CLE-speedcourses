@@ -114,14 +114,24 @@ Elke output PIN kan 3.3 volt aan een component geven. Echter, het totaal van all
 
 <img width="650" height="436" alt="power-playground" src="https://github.com/user-attachments/assets/2bf5743c-8f72-4b25-908d-2b794f5f9fc0" />
 
-
-
+---
 
 <br>
 <br>
 <br>
+
+## Stroom met de Crickit
+
+Als de [Crickit](../crickit/readme.md) is aangesloten werkt de stroom iets anders. De Crickit krijgt 5V van batterijen of een muurplug, en kan maximaal 4 AMPS verwerken. Dit is nodig omdat de motoren teveel stroom vragen voor een gewone CPX. De Crickit zorgt dat de CPX wel gewoon 3.3V krijgt en dat daar niet teveel Amps op komen te staan.
+
+<img width="750" height="625" alt="diagram-crickit-small" src="https://github.com/user-attachments/assets/1d0d74d2-07c0-4024-ba11-b1c0f98cd240" />
+
 
 ---
+
+<br>
+<br>
+<br>
 
 ## Pushbutton
 
@@ -158,11 +168,11 @@ De playground express heeft een poort voor een externe batterij. Als je een opla
 - [Adafruit Explanation of LiPoly batteries](https://learn.adafruit.com/circuit-playground-lesson-number-0/battery-jack-supply)
 - [Lithium Polymer Battery at KIWI electronics](https://www.kiwi-electronics.com/index.php?route=product/search&search=lithum%20polymer)
 
+<br>
+<br>
+<br>
 
 
-<br>
-<br>
-<br>
 
 ---
 
@@ -384,27 +394,25 @@ De afstand sensor werkt door een geluid te sturen over de linker speaker, en dan
 
 ## Neopixels
 
-Je kan externe Neopixels (aanstuurbare RGB LEDs) aansluiten op de Circuit Playground. Dit kan een strip zijn of een "blinky" matrix. Bij beide moet je opletten dat een enkele RGB Neopixel 60 milliAmp gebruikt, als je de kleur WIT aanzet op volle brightness. Bij de playground mag je niet over 500 mAmps heen gaan, bij de Crickit hangt dit af van de stroombron van de Crickit. 
+Je kan externe Neopixels (aanstuurbare RGB LEDs) aansluiten op de Circuit Playground. Dit kan een strip zijn of een "blinky" matrix. Bij beide moet je opletten dat een enkele RGB Neopixel maximaal 60 milliAmp gebruikt. Bij de playground mag je niet over 500 mAmps heen gaan, bij de Crickit kan je maximaal 4 AMPS gebruiken. Let op dat batterijen dan erg snel leeg gaan, je kan dan beter een muurplug gebruiken. Voor de veiligheid raden we aan niet over 5V 2AMP heen te gaan.
 
-![neopixel](./images/neopixel.png)
+Rekenvoorbeeld: je wil 30 lampjes aanzetten op VOL WIT. Dit kost 60 mAmps per lampje, maal 30 = 1800 mAmp (1.8 Amp). Dit kan dus niet met de CPX, maar wel met de Crickit. Verminder de Amps door de *helderheid* te verlagen of door maar 1 kleur aan te zetten (rood, groen of blauw).
 
-Het CPE board kan slechts een beperkt aantal Neopixels van stroom voorzien. Om het stroomverbruik te verminderen kan je:
+| Strip | Matrix |
+| :---: | :---: |
+| <img width="400" alt="strip" src="./images/neopixel.png" /> | <img width="400" alt="blinky" src="https://github.com/user-attachments/assets/de44b454-583b-499d-b92e-ccc6977fd828" /> |
+| NeoPixel LED strip | Blinky Neopixels |
 
-- De helderheid verlagen
-- Niet alle leds tegelijk laten branden
-- Enkele kleuren gebruiken in plaats van volledig wit
+### Externe Stroom
 
-Als je dit niet kan doen of VEEL neopixels wil gebruiken, kan je een externe stroombron gebruiken, bijvoorbeeld een 5V 2Amp adapter. Wees voorzichtig bij het aansluiten van alles! 2Amps kan je board of neopixels beschadigen.
+Het is mogelijk om de neopixels een eigen stroombron te geven. Ook hier moet je opletten dat je Amps niet te hoog worden, we raden max 2 Amps aan.
 
 ![external](./images/neo_external_power.png)
 
 - [Adafruit makecode neopixel documentation](https://learn.adafruit.com/neopixels-with-makecode?view=all)
 - [📺 MakeCode Example](https://www.youtube.com/watch?v=HnmjztjSqIo) and more [types of connections](https://www.youtube.com/watch?v=vCDfyxNFeEw)
-- [Adafruit BLINKY pixel matrix](https://www.kiwi-electronics.com/nl/neopixel-neomatrix-8x8-64-rgb-led-pixel-matrix-1426)
 - [Power usage explanation](http://www.eerkmans.nl/powering-lots-of-leds-from-arduino/)
-
-<img width="800" height="600" alt="blinky" src="https://github.com/user-attachments/assets/de44b454-583b-499d-b92e-ccc6977fd828" />
-
+- [Adafruit BLINKY pixel matrix](https://www.kiwi-electronics.com/nl/neopixel-neomatrix-8x8-64-rgb-led-pixel-matrix-1426)
 
 <br>
 <br>
@@ -497,9 +505,30 @@ De Playground express heeft 2MB Flash storage voor je programma. Hier kan je een
 <br>
 <br>
 
-## Other parts
 
 
+## Sensoren voor CircuitPython
+
+Let op, sommige complexe sensoren hebben code libraries nodig om te werken, de meeste van die libraries zijn alleen beschikbaar in CircuitPython. Dit raden we af, tenzij je al bekend bent met programmeren in Python.
+
+- [Hoe zet ik Python op de CPX](https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart)
+- Twee voorbeelden voor sensoren met Python libraries:
+
+#### 7-Segment-LCD (TM1637)
+
+<img width="450"  alt="tm1637" src="https://github.com/user-attachments/assets/ecf96f33-77b6-44f4-92ae-e1f859331e74" />
+
+#### RFID scanner
+
+<img width="450"  alt="rfid" src="https://github.com/user-attachments/assets/80807d73-f174-48ec-afdf-75054b3f6fdc" />
+
+---
+
+<br>
+<br>
+
+
+## Meer onderdelen
 
 - [Lichtgevend draad 🤯](https://learn.adafruit.com/el-wire)
 - [On Off Switch](https://www.kiwi-electronics.nl/nl/aan-uit-tuimelschakelaar-rood-3630)
@@ -528,21 +557,6 @@ De Playground express heeft 2MB Flash storage voor je programma. Hier kan je een
 
 <br>
 <br>
-
-## Sensoren voor CircuitPython
-
-Let op, sommige complexe sensoren hebben code libraries nodig om te werken, de meeste van die libraries zijn alleen beschikbaar in CircuitPython. Dit raden we af, tenzij je al bekend bent met programmeren in Python.
-
-- [Hoe zet ik Python op de CPX](https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart)
-- Twee voorbeelden voor sensoren met Python libraries:
-
-#### 7-Segment-LCD (TM1637)
-
-<img width="500"  alt="tm1637" src="https://github.com/user-attachments/assets/ecf96f33-77b6-44f4-92ae-e1f859331e74" />
-
-#### RFID scanner
-
-<img width="500"  alt="rfid" src="https://github.com/user-attachments/assets/80807d73-f174-48ec-afdf-75054b3f6fdc" />
 
 
 
